@@ -14,27 +14,25 @@
  *  @author [Allan Jardine](http://sprymedia.co.uk), Nuno Gomes
  */
 
-(function(){
+(function() {
 
-// Change this list to the valid characters you want
-var validChars = "$£€c" + "0123456789" + ".-,'";
+  // Change this list to the valid characters you want
+  var validChars = "$£€c" + "0123456789" + ".-,'";
 
-// Init the regex just once for speed - it is "closure locked"
-var
-	str = jQuery.fn.dataTableExt.oApi._fnEscapeRegex( validChars ),
-	re = new RegExp('[^'+str+']');
+  // Init the regex just once for speed - it is "closure locked"
+  var
+    str = jQuery.fn.dataTableExt.oApi._fnEscapeRegex(validChars),
+    re = new RegExp('[^' + str + ']');
 
 
-jQuery.fn.dataTableExt.aTypes.unshift(
-   function ( data )
-	{
-		if ( typeof data !== 'string' || re.test(data) ) {
-			return null;
-		}
+  jQuery.fn.dataTableExt.aTypes.unshift(
+    function(data) {
+      if (typeof data !== 'string' || re.test(data)) {
+        return null;
+      }
 
-		return 'currency';
-	}
-);
+      return 'currency';
+    }
+  );
 
 }());
-

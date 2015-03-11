@@ -15,7 +15,7 @@ class Morris.Grid extends Morris.EventEmitter
     if @el.css('position') == 'static'
       @el.css('position', 'relative')
 
-    @options = $.extend {}, @gridDefaults, (@defaults || {}), options
+    @options = $.extend {} , @gridDefaults, (@defaults || {} ), options
 
     # backwards compatibility for units -> postUnits
     if typeof @options.units is 'string'
@@ -43,10 +43,10 @@ class Morris.Grid extends Morris.EventEmitter
       offset = @el.offset()
       x = evt.pageX - offset.left
       if @selectFrom
-        left = @data[@hitTest(Math.min(x, @selectFrom))]._x
-        right = @data[@hitTest(Math.max(x, @selectFrom))]._x
+        left = @data[@hitTest(Math.min(x, @selectFrom)) ]._x
+        right = @data[@hitTest(Math.max(x, @selectFrom)) ]._x
         width = right - left
-        @selectionRect.attr({ x: left, width: width })
+        @selectionRect.attr({ x: left, width: width } )
       else
         @fire 'hovermove', x, evt.pageY - offset.top
 
@@ -67,7 +67,7 @@ class Morris.Grid extends Morris.EventEmitter
 
     if @options.rangeSelect
       @selectionRect = @raphael.rect(0, 0, 0, @el.innerHeight())
-        .attr({ fill: @options.rangeSelectColor, stroke: false })
+        .attr({ fill: @options.rangeSelectColor, stroke: false } )
         .toBack()
         .hide()
 
@@ -252,7 +252,7 @@ class Morris.Grid extends Morris.EventEmitter
     gmin = Math.floor(ymin / unit) * unit
     gmax = Math.ceil(ymax / unit) * unit
     step = (gmax - gmin) / (nlines - 1)
-    if unit == 1 and step > 1 and Math.ceil(step) != step
+    if unit == 1 and step > 1 and Math.ceil(step) ! = step
       step = Math.ceil(step)
       gmax = gmin + step * (nlines - 1)
 
@@ -274,7 +274,7 @@ class Morris.Grid extends Morris.EventEmitter
     w = @el.width()
     h = @el.height()
 
-    if @elementWidth != w or @elementHeight != h or @dirty
+    if @elementWidth ! = w or @elementHeight ! = h or @dirty
       @elementWidth = w
       @elementHeight = h
       @dirty = false
@@ -289,7 +289,7 @@ class Morris.Grid extends Morris.EventEmitter
         @left += Math.max(yLabelWidths...)
       if @options.axes in [true, 'both', 'x']
         bottomOffsets = for i in [0...@data.length]
-          @measureText(@data[i].text, -@options.xLabelAngle).height
+          @measureText(@data[i].text, - @options.xLabelAngle).height
         @bottom -= Math.max(bottomOffsets...)
       @width = Math.max(1, @right - @left)
       @height = Math.max(1, @bottom - @top)
@@ -394,15 +394,15 @@ class Morris.Grid extends Morris.EventEmitter
   startRange: (x) ->
     @hover.hide()
     @selectFrom = x
-    @selectionRect.attr({ x: x, width: 0 }).show()
+    @selectionRect.attr({ x: x, width: 0 } ).show()
 
   endRange: (x) ->
     if @selectFrom
       start = Math.min(@selectFrom, x)
       end = Math.max(@selectFrom, x)
       @options.rangeSelect.call @el,
-        start: @data[@hitTest(start)].x
-        end: @data[@hitTest(end)].x
+        start: @data[@hitTest(start) ].x
+        end: @data[@hitTest(end) ].x
       @selectFrom = null
 
   resizeHandler: =>
@@ -439,10 +439,10 @@ Morris.parseDate = (date) ->
       parseInt(o[3], 10)).getTime()
   else if p
     # calculate number of weeks in year given
-    ret = new Date(parseInt(p[1], 10), 0, 1);
+    ret = new Date(parseInt(p[1], 10), 0, 1) ;
     # first thursday in year (ISO 8601 standard)
     if ret.getDay() isnt 4
-      ret.setMonth(0, 1 + ((4 - ret.getDay()) + 7) % 7);
+      ret.setMonth(0, 1 + ((4 - ret.getDay()) + 7) % 7) ;
     # add weeks
     ret.getTime() + parseInt(p[2], 10) * 604800000
   else if q
@@ -457,7 +457,7 @@ Morris.parseDate = (date) ->
     else
       # timezone info supplied, use UTC
       offsetmins = 0
-      if q[6] != 'Z'
+      if q[6] ! = 'Z'
         offsetmins = parseInt(q[8], 10) * 60 + parseInt(q[9], 10)
         offsetmins = 0 - offsetmins if q[7] == '+'
       Date.UTC(
@@ -483,7 +483,7 @@ Morris.parseDate = (date) ->
     else
       # timezone info supplied, use UTC
       offsetmins = 0
-      if r[8] != 'Z'
+      if r[8] ! = 'Z'
         offsetmins = parseInt(r[10], 10) * 60 + parseInt(r[11], 10)
         offsetmins = 0 - offsetmins if r[9] == '+'
       Date.UTC(

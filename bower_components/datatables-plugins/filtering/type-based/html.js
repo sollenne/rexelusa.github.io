@@ -23,16 +23,16 @@
  *    } );
  */
 
-(function () {
+(function() {
 
-var _div = document.createElement('div');
+  var _div = document.createElement('div');
 
-jQuery.fn.dataTable.ext.type.search.html = function ( data ) {
-	_div.innerHTML = data;
+  jQuery.fn.dataTable.ext.type.search.html = function(data) {
+    _div.innerHTML = data;
 
-	return _div.textContent ?
-		_div.textContent.replace(/\n/g," ") :
-		_div.innerText.replace(/\n/g," ");
-};
+    return _div.textContent ?
+      _div.textContent.replace(/\n/g, " ") :
+      _div.innerText.replace(/\n/g, " ");
+  };
 
 })();

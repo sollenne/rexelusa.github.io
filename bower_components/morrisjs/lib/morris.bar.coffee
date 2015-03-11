@@ -1,7 +1,7 @@
 class Morris.Bar extends Morris.Grid
   constructor: (options) ->
     return new Morris.Bar(options) unless (@ instanceof Morris.Bar)
-    super($.extend {}, options, parseTime: false)
+    super($.extend {} , options, parseTime: false)
 
   init: ->
     @cumulative = @options.stacked
@@ -68,8 +68,8 @@ class Morris.Bar extends Morris.Grid
       label.transform("r#{-@options.xLabelAngle}")
       labelBox = label.getBBox()
       label.transform("t0,#{labelBox.height / 2}...")
-      if @options.xLabelAngle != 0
-        offset = -0.5 * textBox.width *
+      if @options.xLabelAngle ! = 0
+        offset = - 0.5 * textBox.width *
           Math.cos(@options.xLabelAngle * Math.PI / 180.0)
         label.transform("t#{offset},0...")
       # try to avoid overlaps
@@ -77,7 +77,7 @@ class Morris.Bar extends Morris.Grid
           prevLabelMargin >= labelBox.x + labelBox.width or
           prevAngleMargin? and prevAngleMargin >= labelBox.x) and
          labelBox.x >= 0 and (labelBox.x + labelBox.width) < @el.width()
-        if @options.xLabelAngle != 0
+        if @options.xLabelAngle ! = 0
           margin = 1.25 * @options.gridTextSize /
             Math.sin(@options.xLabelAngle * Math.PI / 180.0)
           prevAngleMargin = labelBox.x - margin
@@ -99,7 +99,7 @@ class Morris.Bar extends Morris.Grid
     @bars = for row, idx in @data
       lastTop = 0
       for ypos, sidx in row._y
-        if ypos != null
+        if ypos ! = null
           if zeroPos
             top = Math.min(ypos, zeroPos)
             bottom = Math.max(ypos, zeroPos)
@@ -172,10 +172,10 @@ class Morris.Bar extends Morris.Grid
     content = "<div class='morris-hover-row-label'>#{row.label}</div>"
     for y, j in row.y
       content += """
-        <div class='morris-hover-point' style='color: #{@colorFor(row, j, 'label')}'>
+         < div class = 'morris-hover-point' style='color: #{@colorFor(row, j, 'label')}' >
           #{@options.labels[j]}:
           #{@yLabelFormat(y)}
-        </div>
+        </div >
       """
     if typeof @options.hoverCallback is 'function'
       content = @options.hoverCallback(index, @options, content, row.src)
@@ -200,7 +200,7 @@ class Morris.Bar extends Morris.Grid
       .attr('fill-opacity', opacity)
       .attr('stroke', 'none')
 
-  roundedRect: (x, y, w, h, r = [0,0,0,0]) ->
+  roundedRect: (x, y, w, h, r = [0, 0, 0, 0]) ->
     [ "M", x, r[0] + y, "Q", x, y, x + r[0], y,
       "L", x + w - r[1], y, "Q", x + w, y, x + w, y + r[1],
       "L", x + w, y + h - r[2], "Q", x + w, y + h, x + w - r[2], y + h,

@@ -47,7 +47,7 @@ function Section(heading, customizable) {
   this.subsections = [];
 }
 
-Section.prototype.addSubSection = function (subsection) {
+Section.prototype.addSubSection = function(subsection) {
   this.subsections.push(subsection);
 };
 
@@ -57,7 +57,7 @@ function SubSection(heading) {
   this.variables = [];
 }
 
-SubSection.prototype.addVar = function (variable) {
+SubSection.prototype.addVar = function(variable) {
   this.variables.push(variable);
 };
 
@@ -80,14 +80,14 @@ function Tokenizer(fileContent) {
   this._next = undefined;
 }
 
-Tokenizer.prototype.unshift = function (token) {
+Tokenizer.prototype.unshift = function(token) {
   if (this._next !== undefined) {
     throw new Error('Attempted to unshift twice!');
   }
   this._next = token;
 };
 
-Tokenizer.prototype._shift = function () {
+Tokenizer.prototype._shift = function() {
   // returning null signals EOF
   // returning undefined means the line was ignored
   if (this._next !== undefined) {
@@ -129,7 +129,7 @@ Tokenizer.prototype._shift = function () {
   return undefined;
 };
 
-Tokenizer.prototype.shift = function () {
+Tokenizer.prototype.shift = function() {
   while (true) {
     var result = this._shift();
     if (result === undefined) {
@@ -143,7 +143,7 @@ function Parser(fileContent) {
   this._tokenizer = new Tokenizer(fileContent);
 }
 
-Parser.prototype.parseFile = function () {
+Parser.prototype.parseFile = function() {
   var sections = [];
   while (true) {
     var section = this.parseSection();
@@ -157,7 +157,7 @@ Parser.prototype.parseFile = function () {
   }
 };
 
-Parser.prototype.parseSection = function () {
+Parser.prototype.parseSection = function() {
   var section = this._tokenizer.shift();
   if (section === null) {
     return null;
@@ -168,8 +168,7 @@ Parser.prototype.parseSection = function () {
   var docstring = this._tokenizer.shift();
   if (docstring instanceof SectionDocstring) {
     section.docstring = docstring;
-  }
-  else {
+  } else {
     this._tokenizer.unshift(docstring);
   }
   this.parseSubSections(section);
@@ -177,7 +176,7 @@ Parser.prototype.parseSection = function () {
   return section;
 };
 
-Parser.prototype.parseSubSections = function (section) {
+Parser.prototype.parseSubSections = function(section) {
   while (true) {
     var subsection = this.parseSubSection();
     if (subsection === null) {
@@ -185,8 +184,7 @@ Parser.prototype.parseSubSections = function (section) {
         // Presume an implicit initial subsection
         subsection = new SubSection('');
         this.parseVars(subsection);
-      }
-      else {
+      } else {
         break;
       }
     }
@@ -199,7 +197,7 @@ Parser.prototype.parseSubSections = function (section) {
   }
 };
 
-Parser.prototype.parseSubSection = function () {
+Parser.prototype.parseSubSection = function() {
   var subsection = this._tokenizer.shift();
   if (subsection instanceof SubSection) {
     this.parseVars(subsection);
@@ -209,7 +207,7 @@ Parser.prototype.parseSubSection = function () {
   return null;
 };
 
-Parser.prototype.parseVars = function (subsection) {
+Parser.prototype.parseVars = function(subsection) {
   while (true) {
     var variable = this.parseVar();
     if (variable === null) {
@@ -219,7 +217,7 @@ Parser.prototype.parseVars = function (subsection) {
   }
 };
 
-Parser.prototype.parseVar = function () {
+Parser.prototype.parseVar = function() {
   var docstring = this._tokenizer.shift();
   if (!(docstring instanceof VarDocstring)) {
     this._tokenizer.unshift(docstring);

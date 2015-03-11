@@ -1,13 +1,13 @@
 //
 // Button groups
 // --------------------------------------------------
-
 // Make the div behave like a button
 .btn-group,
 .btn-group-vertical {
   position: relative;
   display: inline-block;
-  vertical-align: middle; // match .btn alignment given font-size hack above
+  vertical-align: middle;
+  // match .btn alignment given font-size hack above
   > .btn {
     position: relative;
     float: left;
@@ -20,7 +20,6 @@
     }
   }
 }
-
 // Prevent double borders when buttons are next to each other
 .btn-group {
   .btn + .btn,
@@ -30,12 +29,11 @@
     margin-left: -1px;
   }
 }
-
 // Optional: Group multiple button groups together for a toolbar
 .btn-toolbar {
-  margin-left: -5px; // Offset the first child's margin
+  margin-left: -5px;
+  // Offset the first child's margin
   &:extend(.clearfix all);
-
   .btn-group,
   .input-group {
     float: left;
@@ -46,11 +44,9 @@
     margin-left: 5px;
   }
 }
-
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
-
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
   margin-left: 0;
@@ -63,7 +59,6 @@
 .btn-group > .dropdown-toggle:not(:first-child) {
   .border-left-radius(0);
 }
-
 // Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)
 .btn-group > .btn-group {
   float: left;
@@ -80,26 +75,25 @@
 .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
   .border-left-radius(0);
 }
-
 // On active and open, don't show outline
 .btn-group .dropdown-toggle:active,
 .btn-group.open .dropdown-toggle {
   outline: 0;
 }
-
-
 // Sizing
 //
 // Remix the default button sizing classes into new ones for easier manipulation.
-
-.btn-group-xs > .btn { &:extend(.btn-xs); }
-.btn-group-sm > .btn { &:extend(.btn-sm); }
-.btn-group-lg > .btn { &:extend(.btn-lg); }
-
-
+.btn-group-xs > .btn {
+  &:extend(.btn-xs);
+}
+.btn-group-sm > .btn {
+  &:extend(.btn-sm);
+}
+.btn-group-lg > .btn {
+  &:extend(.btn-lg);
+}
 // Split button dropdowns
 // ----------------------
-
 // Give the line between buttons some depth
 .btn-group > .btn + .dropdown-toggle {
   padding-left: 8px;
@@ -109,19 +103,15 @@
   padding-left: 12px;
   padding-right: 12px;
 }
-
 // The clickable button for toggling the menu
 // Remove the gradient and set the same inset shadow as the :active state
 .btn-group.open .dropdown-toggle {
   .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
-
   // Show no shadow for `.btn-link` since it has no other button styles.
   &.btn-link {
     .box-shadow(none);
   }
 }
-
-
 // Reposition the caret
 .btn .caret {
   margin-left: 0;
@@ -135,11 +125,8 @@
 .dropup .btn-lg .caret {
   border-width: 0 @caret-width-large @caret-width-large;
 }
-
-
 // Vertical button groups
 // ----------------------
-
 .btn-group-vertical {
   > .btn,
   > .btn-group,
@@ -149,7 +136,6 @@
     width: 100%;
     max-width: 100%;
   }
-
   // Clear floats so dropdown menus can be properly placed
   > .btn-group {
     &:extend(.clearfix all);
@@ -157,7 +143,6 @@
       float: none;
     }
   }
-
   > .btn + .btn,
   > .btn + .btn-group,
   > .btn-group + .btn,
@@ -166,7 +151,6 @@
     margin-left: 0;
   }
 }
-
 .btn-group-vertical > .btn {
   &:not(:first-child):not(:last-child) {
     border-radius: 0;
@@ -192,11 +176,8 @@
 .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
   .border-top-radius(0);
 }
-
-
 // Justified button groups
 // ----------------------
-
 .btn-group-justified {
   display: table;
   width: 100%;
@@ -211,13 +192,10 @@
   > .btn-group .btn {
     width: 100%;
   }
-
   > .btn-group .dropdown-menu {
     left: auto;
   }
 }
-
-
 // Checkbox and radio options
 //
 // In order to support the browser's form validation feedback, powered by the
@@ -229,7 +207,6 @@
 //
 // See https://github.com/twbs/bootstrap/pull/12794 and
 // https://github.com/twbs/bootstrap/pull/14559 for more information.
-
 [data-toggle="buttons"] {
   > .btn,
   > .btn-group > .btn {

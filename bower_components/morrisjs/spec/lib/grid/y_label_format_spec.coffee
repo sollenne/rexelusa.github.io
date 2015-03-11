@@ -6,7 +6,7 @@ describe 'Morris.Grid#yLabelFormat', ->
       "#{flabel.toFixed(1)}k"
     line = Morris.Line
       element: 'graph'
-      data: [{x: 1, y: 1500}, {x: 2, y: 2500}]
+      data: [{x: 1, y: 1500} , {x: 2, y: 2500} ]
       xkey: 'x'
       ykeys: ['y']
       labels: ['dontcare']

@@ -1,36 +1,30 @@
 //
 // Carousel
 // --------------------------------------------------
-
-
 // Wrapper for the slide container and indicators
 .carousel {
   position: relative;
 }
-
 .carousel-inner {
   position: relative;
   overflow: hidden;
   width: 100%;
-
   > .item {
     display: none;
     position: relative;
     .transition(.6s ease-in-out left);
-
     // Account for jankitude on images
     > img,
     > a > img {
       &:extend(.img-responsive);
       line-height: 1;
     }
-
     // WebKit CSS3 transforms for supported devices
-    @media all and (transform-3d), (-webkit-transform-3d) {
+    @media all and (transform-3d),
+    (-webkit-transform-3d) {
       .transition-transform(~'0.6s ease-in-out');
       .backface-visibility(~'hidden');
       .perspective(1000);
-
       &.next,
       &.active.right {
         .translate3d(100%, 0, 0);
@@ -49,24 +43,20 @@
       }
     }
   }
-
   > .active,
   > .next,
   > .prev {
     display: block;
   }
-
   > .active {
     left: 0;
   }
-
   > .next,
   > .prev {
     position: absolute;
     top: 0;
     width: 100%;
   }
-
   > .next {
     left: 100%;
   }
@@ -77,19 +67,15 @@
   > .prev.right {
     left: 0;
   }
-
   > .active.left {
     left: -100%;
   }
   > .active.right {
     left: 100%;
   }
-
 }
-
 // Left/right controls for nav
 // ---------------------------
-
 .carousel-control {
   position: absolute;
   top: 0;
@@ -103,7 +89,6 @@
   text-shadow: @carousel-text-shadow;
   // We can't have this transition here because WebKit cancels the carousel
   // animation if you trip this while in the middle of another animation.
-
   // Set gradients for backgrounds
   &.left {
     #gradient > .horizontal(@start-color: rgba(0,0,0,.5); @end-color: rgba(0,0,0,.0001));
@@ -113,7 +98,6 @@
     right: 0;
     #gradient > .horizontal(@start-color: rgba(0,0,0,.0001); @end-color: rgba(0,0,0,.5));
   }
-
   // Hover/focus state
   &:hover,
   &:focus {
@@ -122,7 +106,6 @@
     text-decoration: none;
     .opacity(.9);
   }
-
   // Toggles
   .icon-prev,
   .icon-next,
@@ -145,31 +128,29 @@
   }
   .icon-prev,
   .icon-next {
-    width:  20px;
+    width: 20px;
     height: 20px;
     margin-top: -10px;
     line-height: 1;
     font-family: serif;
   }
-
-
   .icon-prev {
     &:before {
-      content: '\2039';// SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
+      content: '\2039';
+      // SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
     }
   }
   .icon-next {
     &:before {
-      content: '\203a';// SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+      content: '\203a';
+      // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
     }
   }
 }
-
 // Optional indicator pips
 //
 // Add an unordered list with the following class and add a list item for each
 // slide your carousel holds.
-
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -180,17 +161,15 @@
   padding-left: 0;
   list-style: none;
   text-align: center;
-
   li {
     display: inline-block;
-    width:  10px;
+    width: 10px;
     height: 10px;
     margin: 1px;
     text-indent: -999px;
     border: 1px solid @carousel-indicator-border-color;
     border-radius: 10px;
     cursor: pointer;
-
     // IE8-9 hack for event handling
     //
     // Internet Explorer 8-9 does not support clicks on elements without a set
@@ -200,17 +179,18 @@
     //
     // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
     // set alpha transparency for the best results possible.
-    background-color: #000 \9; // IE8
-    background-color: rgba(0,0,0,0); // IE9
+    background-color: #000 \9;
+    // IE8
+    background-color: rgba(0,0,0,0);
+    // IE9
   }
   .active {
     margin: 0;
-    width:  12px;
+    width: 12px;
     height: 12px;
     background-color: @carousel-indicator-active-bg;
   }
 }
-
 // Optional captions
 // -----------------------------
 // Hidden by default for smaller viewports
@@ -226,14 +206,12 @@
   text-align: center;
   text-shadow: @carousel-text-shadow;
   & .btn {
-    text-shadow: none; // No shadow for button elements in carousel-caption
+    text-shadow: none;
+    // No shadow for button elements in carousel-caption
   }
 }
-
-
 // Scale up controls for tablets and up
 @media screen and (min-width: @screen-sm-min) {
-
   // Scale up the controls a smidge
   .carousel-control {
     .glyphicon-chevron-left,
@@ -254,14 +232,12 @@
       margin-right: -15px;
     }
   }
-
   // Show and left align the captions
   .carousel-caption {
     left: 20%;
     right: 20%;
     padding-bottom: 30px;
   }
-
   // Move up the indicators
   .carousel-indicators {
     bottom: 20px;

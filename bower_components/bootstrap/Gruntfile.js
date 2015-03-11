@@ -5,13 +5,13 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
   'use strict';
 
   // Force use of Unix newlines
   grunt.util.linefeed = '\n';
 
-  RegExp.quote = function (string) {
+  RegExp.quote = function(string) {
     return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
   };
 
@@ -20,18 +20,24 @@ module.exports = function (grunt) {
   var npmShrinkwrap = require('npm-shrinkwrap');
   var generateGlyphiconsData = require('./grunt/bs-glyphicons-data-generator.js');
   var BsLessdocParser = require('./grunt/bs-lessdoc-parser.js');
-  var getLessVarsData = function () {
+  var getLessVarsData = function() {
     var filePath = path.join(__dirname, 'less/variables.less');
-    var fileContent = fs.readFileSync(filePath, { encoding: 'utf8' });
+    var fileContent = fs.readFileSync(filePath, {
+      encoding: 'utf8'
+    });
     var parser = new BsLessdocParser(fileContent);
-    return { sections: parser.parseFile() };
+    return {
+      sections: parser.parseFile()
+    };
   };
   var generateRawFiles = require('./grunt/bs-raw-files-generator.js');
   var generateCommonJSModule = require('./grunt/bs-commonjs-generator.js');
-  var configBridge = grunt.file.readJSON('./grunt/configBridge.json', { encoding: 'utf8' });
+  var configBridge = grunt.file.readJSON('./grunt/configBridge.json', {
+    encoding: 'utf8'
+  });
 
-  Object.keys(configBridge.paths).forEach(function (key) {
-    configBridge.paths[key].forEach(function (val, i, arr) {
+  Object.keys(configBridge.paths).forEach(function(key) {
+    configBridge.paths[key].forEach(function(val, i, arr) {
       arr[i] = path.join('./docs/assets', val);
     });
   });
@@ -42,10 +48,10 @@ module.exports = function (grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-            ' * Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
-            ' */\n',
+      ' * Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+      ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+      ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+      ' */\n',
     jqueryCheck: configBridge.config.jqueryCheck.join('\n'),
     jqueryVersionCheck: configBridge.config.jqueryVersionCheck.join('\n'),
 
@@ -358,7 +364,7 @@ module.exports = function (grunt) {
 
     sed: {
       versionNumber: {
-        pattern: (function () {
+        pattern: (function() {
           var old = grunt.option('oldver');
           return old ? RegExp.quote(old) : old;
         })(),
@@ -394,14 +400,12 @@ module.exports = function (grunt) {
           level: 9,
           pretty: true
         },
-        files: [
-          {
-            expand: true,
-            cwd: 'dist/',
-            src: ['**'],
-            dest: 'bootstrap-<%= pkg.version %>-dist'
-          }
-        ]
+        files: [{
+          expand: true,
+          cwd: 'dist/',
+          src: ['**'],
+          dest: 'bootstrap-<%= pkg.version %>-dist'
+        }]
       }
     }
 
@@ -409,16 +413,18 @@ module.exports = function (grunt) {
 
 
   // These plugins provide necessary tasks.
-  require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
+  require('load-grunt-tasks')(grunt, {
+    scope: 'devDependencies'
+  });
   require('time-grunt')(grunt);
 
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['jekyll:docs', 'validation']);
 
-  var runSubset = function (subset) {
+  var runSubset = function(subset) {
     return !process.env.TWBS_TEST || process.env.TWBS_TEST === subset;
   };
-  var isUndefOrNonZero = function (val) {
+  var isUndefOrNonZero = function(val) {
     return val === undefined || val !== '0';
   };
 
@@ -426,22 +432,22 @@ module.exports = function (grunt) {
   var testSubtasks = [];
   // Skip core tests if running a different subset of the test suite
   if (runSubset('core') &&
-      // Skip core tests if this is a Savage build
-      process.env.TRAVIS_REPO_SLUG !== 'twbs-savage/bootstrap') {
+    // Skip core tests if this is a Savage build
+    process.env.TRAVIS_REPO_SLUG !== 'twbs-savage/bootstrap') {
     testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'csslint:dist', 'test-js', 'docs']);
   }
   // Skip HTML validation if running a different subset of the test suite
   if (runSubset('validate-html') &&
-      // Skip HTML5 validator on Travis when [skip validator] is in the commit message
-      isUndefOrNonZero(process.env.TWBS_DO_VALIDATOR)) {
+    // Skip HTML5 validator on Travis when [skip validator] is in the commit message
+    isUndefOrNonZero(process.env.TWBS_DO_VALIDATOR)) {
     testSubtasks.push('validate-html');
   }
   // Only run Sauce Labs tests if there's a Sauce access key
   if (typeof process.env.SAUCE_ACCESS_KEY !== 'undefined' &&
-      // Skip Sauce if running a different subset of the test suite
-      runSubset('sauce-js-unit') &&
-      // Skip Sauce on Travis when [skip sauce] is in the commit message
-      isUndefOrNonZero(process.env.TWBS_DO_SAUCE)) {
+    // Skip Sauce if running a different subset of the test suite
+    runSubset('sauce-js-unit') &&
+    // Skip Sauce on Travis when [skip sauce] is in the commit message
+    isUndefOrNonZero(process.env.TWBS_DO_SAUCE)) {
     testSubtasks.push('connect');
     testSubtasks.push('saucelabs-qunit');
   }
@@ -466,17 +472,19 @@ module.exports = function (grunt) {
   // This can be overzealous, so its changes should always be manually reviewed!
   grunt.registerTask('change-version-number', 'sed');
 
-  grunt.registerTask('build-glyphicons-data', function () { generateGlyphiconsData.call(this, grunt); });
+  grunt.registerTask('build-glyphicons-data', function() {
+    generateGlyphiconsData.call(this, grunt);
+  });
 
   // task for building customizer
   grunt.registerTask('build-customizer', ['build-customizer-html', 'build-raw-files']);
   grunt.registerTask('build-customizer-html', 'jade');
-  grunt.registerTask('build-raw-files', 'Add scripts/less files to customizer.', function () {
+  grunt.registerTask('build-raw-files', 'Add scripts/less files to customizer.', function() {
     var banner = grunt.template.process('<%= banner %>');
     generateRawFiles(grunt, banner);
   });
 
-  grunt.registerTask('commonjs', 'Generate CommonJS entrypoint module in dist dir.', function () {
+  grunt.registerTask('commonjs', 'Generate CommonJS entrypoint module in dist dir.', function() {
     var srcFiles = grunt.config.get('concat.bootstrap.src');
     var destFilepath = 'dist/js/npm.js';
     generateCommonJSModule(grunt, srcFiles, destFilepath);
@@ -494,9 +502,12 @@ module.exports = function (grunt) {
   // Task for updating the cached npm packages used by the Travis build (which are controlled by test-infra/npm-shrinkwrap.json).
   // This task should be run and the updated file should be committed whenever Bootstrap's dependencies change.
   grunt.registerTask('update-shrinkwrap', ['exec:npmUpdate', '_update-shrinkwrap']);
-  grunt.registerTask('_update-shrinkwrap', function () {
+  grunt.registerTask('_update-shrinkwrap', function() {
     var done = this.async();
-    npmShrinkwrap({ dev: true, dirname: __dirname }, function (err) {
+    npmShrinkwrap({
+      dev: true,
+      dirname: __dirname
+    }, function(err) {
       if (err) {
         grunt.fail.warn(err);
       }

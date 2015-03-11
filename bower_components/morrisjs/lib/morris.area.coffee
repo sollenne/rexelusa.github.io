@@ -1,13 +1,13 @@
 class Morris.Area extends Morris.Line
   # Initialise
   #
-  areaDefaults = 
+  areaDefaults =
     fillOpacity: 'auto'
     behaveLikeLine: false
 
   constructor: (options) ->
     return new Morris.Area(options) unless (@ instanceof Morris.Area)
-    areaOptions = $.extend {}, areaDefaults, options
+    areaOptions = $.extend {} , areaDefaults, options
 
     @cumulative = not areaOptions.behaveLikeLine
 
@@ -37,9 +37,9 @@ class Morris.Area extends Morris.Line
   drawSeries: ->
     @seriesPoints = []
     if @options.behaveLikeLine
-      range = [0..@options.ykeys.length-1]
+      range = [0..@options.ykeys.length - 1]
     else
-      range = [@options.ykeys.length-1..0]
+      range = [@options.ykeys.length - 1..0]
 
     for i in range
       @_drawFillFor i

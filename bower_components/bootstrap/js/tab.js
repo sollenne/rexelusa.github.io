@@ -7,13 +7,13 @@
  * ======================================================================== */
 
 
-+function ($) {
++ function($) {
   'use strict';
 
   // TAB CLASS DEFINITION
   // ====================
 
-  var Tab = function (element) {
+  var Tab = function(element) {
     this.element = $(element)
   }
 
@@ -21,9 +21,9 @@
 
   Tab.TRANSITION_DURATION = 150
 
-  Tab.prototype.show = function () {
-    var $this    = this.element
-    var $ul      = $this.closest('ul:not(.dropdown-menu)')
+  Tab.prototype.show = function() {
+    var $this = this.element
+    var $ul = $this.closest('ul:not(.dropdown-menu)')
     var selector = $this.data('target')
 
     if (!selector) {
@@ -49,7 +49,7 @@
     var $target = $(selector)
 
     this.activate($this.closest('li'), $ul)
-    this.activate($target, $target.parent(), function () {
+    this.activate($target, $target.parent(), function() {
       $previous.trigger({
         type: 'hidden.bs.tab',
         relatedTarget: $this[0]
@@ -61,25 +61,23 @@
     })
   }
 
-  Tab.prototype.activate = function (element, container, callback) {
-    var $active    = container.find('> .active')
-    var transition = callback
-      && $.support.transition
-      && (($active.length && $active.hasClass('fade')) || !!container.find('> .fade').length)
+  Tab.prototype.activate = function(element, container, callback) {
+    var $active = container.find('> .active')
+    var transition = callback && $.support.transition && (($active.length && $active.hasClass('fade')) || !!container.find('> .fade').length)
 
     function next() {
       $active
         .removeClass('active')
         .find('> .dropdown-menu > .active')
-          .removeClass('active')
+        .removeClass('active')
         .end()
         .find('[data-toggle="tab"]')
-          .attr('aria-expanded', false)
+        .attr('aria-expanded', false)
 
       element
         .addClass('active')
         .find('[data-toggle="tab"]')
-          .attr('aria-expanded', true)
+        .attr('aria-expanded', true)
 
       if (transition) {
         element[0].offsetWidth // reflow for transition
@@ -91,10 +89,10 @@
       if (element.parent('.dropdown-menu')) {
         element
           .closest('li.dropdown')
-            .addClass('active')
+          .addClass('active')
           .end()
           .find('[data-toggle="tab"]')
-            .attr('aria-expanded', true)
+          .attr('aria-expanded', true)
       }
 
       callback && callback()
@@ -102,8 +100,8 @@
 
     $active.length && transition ?
       $active
-        .one('bsTransitionEnd', next)
-        .emulateTransitionEnd(Tab.TRANSITION_DURATION) :
+      .one('bsTransitionEnd', next)
+      .emulateTransitionEnd(Tab.TRANSITION_DURATION) :
       next()
 
     $active.removeClass('in')
@@ -114,9 +112,9 @@
   // =====================
 
   function Plugin(option) {
-    return this.each(function () {
+    return this.each(function() {
       var $this = $(this)
-      var data  = $this.data('bs.tab')
+      var data = $this.data('bs.tab')
 
       if (!data) $this.data('bs.tab', (data = new Tab(this)))
       if (typeof option == 'string') data[option]()
@@ -125,14 +123,14 @@
 
   var old = $.fn.tab
 
-  $.fn.tab             = Plugin
+  $.fn.tab = Plugin
   $.fn.tab.Constructor = Tab
 
 
   // TAB NO CONFLICT
   // ===============
 
-  $.fn.tab.noConflict = function () {
+  $.fn.tab.noConflict = function() {
     $.fn.tab = old
     return this
   }
@@ -141,7 +139,7 @@
   // TAB DATA-API
   // ============
 
-  var clickHandler = function (e) {
+  var clickHandler = function(e) {
     e.preventDefault()
     Plugin.call($(this), 'show')
   }

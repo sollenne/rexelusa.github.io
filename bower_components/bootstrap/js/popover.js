@@ -7,19 +7,19 @@
  * ======================================================================== */
 
 
-+function ($) {
++ function($) {
   'use strict';
 
   // POPOVER PUBLIC CLASS DEFINITION
   // ===============================
 
-  var Popover = function (element, options) {
+  var Popover = function(element, options) {
     this.init('popover', element, options)
   }
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
-  Popover.VERSION  = '3.3.2'
+  Popover.VERSION = '3.3.2'
 
   Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right',
@@ -36,13 +36,13 @@
 
   Popover.prototype.constructor = Popover
 
-  Popover.prototype.getDefaults = function () {
+  Popover.prototype.getDefaults = function() {
     return Popover.DEFAULTS
   }
 
-  Popover.prototype.setContent = function () {
-    var $tip    = this.tip()
-    var title   = this.getTitle()
+  Popover.prototype.setContent = function() {
+    var $tip = this.tip()
+    var title = this.getTitle()
     var content = this.getContent()
 
     $tip.find('.popover-title')[this.options.html ? 'html' : 'text'](title)
@@ -57,25 +57,24 @@
     if (!$tip.find('.popover-title').html()) $tip.find('.popover-title').hide()
   }
 
-  Popover.prototype.hasContent = function () {
+  Popover.prototype.hasContent = function() {
     return this.getTitle() || this.getContent()
   }
 
-  Popover.prototype.getContent = function () {
+  Popover.prototype.getContent = function() {
     var $e = this.$element
-    var o  = this.options
+    var o = this.options
 
-    return $e.attr('data-content')
-      || (typeof o.content == 'function' ?
-            o.content.call($e[0]) :
-            o.content)
+    return $e.attr('data-content') || (typeof o.content == 'function' ?
+      o.content.call($e[0]) :
+      o.content)
   }
 
-  Popover.prototype.arrow = function () {
+  Popover.prototype.arrow = function() {
     return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
   }
 
-  Popover.prototype.tip = function () {
+  Popover.prototype.tip = function() {
     if (!this.$tip) this.$tip = $(this.options.template)
     return this.$tip
   }
@@ -85,9 +84,9 @@
   // =========================
 
   function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.popover')
+    return this.each(function() {
+      var $this = $(this)
+      var data = $this.data('bs.popover')
       var options = typeof option == 'object' && option
 
       if (!data && option == 'destroy') return
@@ -98,14 +97,14 @@
 
   var old = $.fn.popover
 
-  $.fn.popover             = Plugin
+  $.fn.popover = Plugin
   $.fn.popover.Constructor = Popover
 
 
   // POPOVER NO CONFLICT
   // ===================
 
-  $.fn.popover.noConflict = function () {
+  $.fn.popover.noConflict = function() {
     $.fn.popover = old
     return this
   }

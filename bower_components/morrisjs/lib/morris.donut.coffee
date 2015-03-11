@@ -22,7 +22,7 @@ class Morris.Donut extends Morris.EventEmitter
       '#052C48'
       '#042135'
     ],
-    backgroundColor: '#FFFFFF', 
+    backgroundColor: '#FFFFFF',
     labelColor: '#000000',
     formatter: Morris.commas
     resize: false
@@ -31,7 +31,7 @@ class Morris.Donut extends Morris.EventEmitter
   #
   constructor: (options) ->
     return new Morris.Donut(options) unless (@ instanceof Morris.Donut)
-    @options = $.extend {}, @defaults, options
+    @options = $.extend {} , @defaults, options
 
     if typeof options.element is 'string'
       @el = $ document.getElementById(options.element)
@@ -75,7 +75,7 @@ class Morris.Donut extends Morris.EventEmitter
     for value, i in @values
       next = last + min + C * (value / total)
       seg = new Morris.DonutSegment(
-        cx, cy, w*2, w, last, next,
+        cx, cy, w * 2, w, last, next,
         @data[i].color || @options.colors[idx % @options.colors.length],
         @options.backgroundColor, idx, @raphael)
       seg.render()
@@ -183,9 +183,9 @@ class Morris.DonutSegment extends Morris.EventEmitter
   render: ->
     @arc = @drawDonutArc(@hilight, @color)
     @seg = @drawDonutSegment(
-      @path, 
-      @color, 
-      @backgroundColor, 
+      @path,
+      @color,
+      @backgroundColor,
       => @fire('hover', @index),
       => @fire('click', @index)
     )

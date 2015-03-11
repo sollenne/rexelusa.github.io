@@ -51,7 +51,7 @@ class Morris.Line extends Morris.Grid
       row._x = @transX(row.x)
       row._y = for y in row.y
         if y? then @transY(y) else y
-      row._ymax = Math.min [@bottom].concat(y for y in row._y when y?)...
+      row._ymax = Math.min [@bottom].concat(y for y in row._y when y? )...
 
   # hit test - returns the index of the row at the given x-coordinate
   #
@@ -102,10 +102,10 @@ class Morris.Line extends Morris.Grid
     content = "<div class='morris-hover-row-label'>#{row.label}</div>"
     for y, j in row.y
       content += """
-        <div class='morris-hover-point' style='color: #{@colorFor(row, j, 'label')}'>
+         < div class = 'morris-hover-point' style='color: #{@colorFor(row, j, 'label')}' >
           #{@options.labels[j]}:
           #{@yLabelFormat(y)}
-        </div>
+        </div >
       """
     if typeof @options.hoverCallback is 'function'
       content = @options.hoverCallback(index, @options, content, row.src)
@@ -147,8 +147,8 @@ class Morris.Line extends Morris.Grid
       label.transform("r#{-@options.xLabelAngle}")
       labelBox = label.getBBox()
       label.transform("t0,#{labelBox.height / 2}...")
-      if @options.xLabelAngle != 0
-        offset = -0.5 * textBox.width *
+      if @options.xLabelAngle ! = 0
+        offset = - 0.5 * textBox.width *
           Math.cos(@options.xLabelAngle * Math.PI / 180.0)
         label.transform("t#{offset},0...")
       # try to avoid overlaps
@@ -157,7 +157,7 @@ class Morris.Line extends Morris.Grid
           prevLabelMargin >= labelBox.x + labelBox.width or
           prevAngleMargin? and prevAngleMargin >= labelBox.x) and
          labelBox.x >= 0 and (labelBox.x + labelBox.width) < @el.width()
-        if @options.xLabelAngle != 0
+        if @options.xLabelAngle ! = 0
           margin = 1.25 * @options.gridTextSize /
             Math.sin(@options.xLabelAngle * Math.PI / 180.0)
           prevAngleMargin = labelBox.x - margin
@@ -183,9 +183,9 @@ class Morris.Line extends Morris.Grid
   # @private
   drawSeries: ->
     @seriesPoints = []
-    for i in [@options.ykeys.length-1..0]
+    for i in [@options.ykeys.length - 1..0]
       @_drawLineFor i
-    for i in [@options.ykeys.length-1..0]
+    for i in [@options.ykeys.length - 1..0]
       @_drawPointFor i
 
   _drawPointFor: (index) ->
@@ -252,11 +252,11 @@ class Morris.Line extends Morris.Grid
   # @private
   hilight: (index) =>
     if @prevHilight isnt null and @prevHilight isnt index
-      for i in [0..@seriesPoints.length-1]
+      for i in [0..@seriesPoints.length - 1]
         if @seriesPoints[i][@prevHilight]
           @seriesPoints[i][@prevHilight].animate @pointShrinkSeries(i)
     if index isnt null and @prevHilight isnt index
-      for i in [0..@seriesPoints.length-1]
+      for i in [0..@seriesPoints.length - 1]
         if @seriesPoints[i][index]
           @seriesPoints[i][index].animate @pointGrowSeries(i)
     @prevHilight = index
@@ -336,11 +336,11 @@ Morris.labelSeries = (dmin, dmax, pxwidth, specName, xLabelFormat) ->
     spec = Morris.LABEL_SPECS["second"]
   # check if there's a user-defined formatting function
   if xLabelFormat
-    spec = $.extend({}, spec, {fmt: xLabelFormat})
+    spec = $.extend({} , spec, {fmt: xLabelFormat} )
   # calculate labels
   d = spec.start(d0)
   ret = []
-  while  (t = d.getTime()) <= dmax
+  while (t = d.getTime()) <= dmax
     if t >= dmin
       ret.push [spec.fmt(d), t]
     spec.incr(d)

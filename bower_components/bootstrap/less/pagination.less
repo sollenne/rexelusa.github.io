@@ -6,13 +6,14 @@
   padding-left: 0;
   margin: @line-height-computed 0;
   border-radius: @border-radius-base;
-
   > li {
-    display: inline; // Remove list-style and block-level defaults
+    display: inline;
+    // Remove list-style and block-level defaults
     > a,
     > span {
       position: relative;
-      float: left; // Collapse white-space
+      float: left;
+      // Collapse white-space
       padding: @padding-base-vertical @padding-base-horizontal;
       line-height: @line-height-base;
       text-decoration: none;
@@ -35,7 +36,6 @@
       }
     }
   }
-
   > li > a,
   > li > span {
     &:hover,
@@ -45,7 +45,6 @@
       border-color: @pagination-hover-border;
     }
   }
-
   > .active > a,
   > .active > span {
     &,
@@ -58,7 +57,6 @@
       cursor: default;
     }
   }
-
   > .disabled {
     > span,
     > span:hover,
@@ -73,15 +71,12 @@
     }
   }
 }
-
 // Sizing
 // --------------------------------------------------
-
 // Large
 .pagination-lg {
   .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @border-radius-large);
 }
-
 // Small
 .pagination-sm {
   .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @border-radius-small);
