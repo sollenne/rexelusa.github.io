@@ -1,0 +1,63 @@
+/*These are the imported styles from Sprint16*/
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/commonMaster.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/jquery.colorbox-1.3.16.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/jquery.bt-0.9.5.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/blueprint/screen.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/jquery.ui.stars-3.0.1.custom.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/jquery.ui.autocomplete-1.8.18.css";
+@import "https://www.hagemeyer-shop.de/_ui/product360view/css/box3d.css";
+@import "https://www.hagemeyer-shop.de/_ui/product360view/css/jquery.fancybox.css";
+@import "https://www.hagemeyer-shop.de/_ui/product360view/css/jquery-uiM.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/checkoutContentPanel.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/colorBox.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/quickorder.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/jobListToolTip.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/commonMaster.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/helper.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/main.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/buttons.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/forms.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/header.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/miniCart.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/siteSearch.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/navigation.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/breadcrumb.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/myjoblist.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/orderdetails.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/mycompany.css";
+
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/cartItems.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/productCompare.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/productDetails.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/facetNav.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/paginationBar.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/productGrid.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/productList.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/order.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/orderTotals.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/orderHistory.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/joblistDetails.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/footer.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/searchPOS.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/userRegister.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/userLogin.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/userGuest.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/account.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/checkoutOrderDetails.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/landingLayout2Page.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/storeDetail.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/storeFinder.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/css/company.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/changes.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/productList-change.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/productCompare.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/jquery-ui.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/addAddress.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/demo.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/Popup.css";
+/*<!--  for Menu -->*/
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/megamenu/megamenu.css" />
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/megamenu/jquerysctipttop.css" />
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/font-awesome.min.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/jquery.powertip.css";
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/brand.css";
