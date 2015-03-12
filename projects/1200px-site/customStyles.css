@@ -65,3 +65,35 @@ position: relative;
 margin-left: -2px;
 z-index: auto;
 }
+
+.navigation_search {
+    float: left;
+    width: 540px;
+}
+
+.siteSearch .control-group {
+    width: 540px;
+}
+
+.navigation_search .siteSearchInput {
+    width: 520px !important;
+    border-radius: 4px;
+    height: 36px !important;
+    margin-bottom: 0px !important;
+    margin-top: 2px;
+    border: medium none;
+}
+
+.navigation_login {
+    float: left;
+    width: 180px;
+    top: 5px;
+    position: relative;
+    left: 140px;
+}
+
+.homepage-account-detail {
+    display: block;
+    margin-bottom: 5px;
+    width: 285px;
+}
