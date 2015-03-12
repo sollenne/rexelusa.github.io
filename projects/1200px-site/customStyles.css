@@ -1,0 +1,99 @@
+#page {
+    margin: 0 auto;
+    padding: 0 5px;
+    width: 1190px;
+}
+
+.header-content {
+    float: right;
+    width: 1046px;
+}
+
+.header-content-row2 {
+    float: left;
+    height: 28px;
+    line-height: 29px;
+    margin-left: 100px;
+    padding-top: 15px;
+    position: relative;
+    top: 10px;
+}
+
+#content-inner {
+    float: left;
+    margin-top: 20px;
+    width: 1190px;
+}
+
+.logged-in {
+    background-color: #f4f4f4;
+    border-top: 5px solid #ec6500;
+    display: block;
+    float: left;
+    padding: 10px 15px;
+    width: 285px;
+}
+
+.shop-all-products {
+    border: 0 solid red;
+    float: left;
+    padding-left: 20px;
+    width: 854px;
+}
+
+
+.left.sub-title.col-1-homePage {
+    height: 100px;
+    margin-left: 20px;
+    width: 270px;
+    background-color: #F4F4F4;
+}
+
+.row div:first-child {
+  margin-left: 0 !important;
+}
+
+.row div:last-child {
+  margin-right: 0 !important;
+}
+
+#slider1 .viewport {
+float: left;
+width: 1200px;
+overflow: hidden;
+position: relative;
+margin-left: -2px;
+z-index: auto;
+}
+
+.navigation_search {
+    float: left;
+    width: 540px;
+}
+
+.siteSearch .control-group {
+    width: 540px;
+}
+
+.navigation_search .siteSearchInput {
+    width: 520px !important;
+    border-radius: 4px;
+    height: 36px !important;
+    margin-bottom: 0px !important;
+    margin-top: 2px;
+    border: medium none;
+}
+
+.navigation_login {
+    float: left;
+    width: 180px;
+    top: 5px;
+    position: relative;
+    left: 140px;
+}
+
+.homepage-account-detail {
+    display: block;
+    margin-bottom: 5px;
+    width: 285px;
+}
