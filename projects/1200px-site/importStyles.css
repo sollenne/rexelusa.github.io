@@ -56,8 +56,8 @@
 @import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/demo.css";
 @import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/Popup.css";
 /*<!--  for Menu -->*/
-@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/megamenu/megamenu.css" />
-@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/megamenu/jquerysctipttop.css" />
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/megamenu/megamenu.css"; 
+@import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/megamenu/jquerysctipttop.css";
 @import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/font-awesome.min.css";
 @import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/jquery.powertip.css";
 @import "https://www.hagemeyer-shop.de/_ui/desktop/common/css/brand.css";
