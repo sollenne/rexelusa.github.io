@@ -206,6 +206,42 @@ Product List by Category Starts Here -------------------------------------------
 .brand-cat-col.last{
   margin-right: 0;
 }
+
+.width-compare {
+  width: 486px;
+}
+
+.width-sort {
+  width: 354px;
+}
+
+.sort-select {
+  width: 195px;
+  margin-right: 10px;
+}
+
+.select-sort {
+  width: 193px;
+  background-position: 172px center;
+}
+
+.select-sort select {
+  width: 195px;
+}
+
+.col-2-compare {
+    width: 310px;
+}
+
+.col-3-compare {
+  width: 354px;
+  float: right;
+}
+
+.price-description {
+  width: 354px;
+}
+
 /*--------------
 Product List by Category Ends Here -------------------------------------------------------
 ------------------------------------------------------------------------------------*/
