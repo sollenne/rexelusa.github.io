@@ -2,26 +2,24 @@
 <html lang="de">
 
 <head>
-  <title>Product Details at 1200px</title>
+  <title>Shopping Cart at 1200px</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
-  <meta name="keywords" content="Cat 7,Cat Kabel,Datenkabel,Kupferkabel,Cat.7,Cu - Kabel" />
-  <meta name="description" content="HCAT7HS234P100M" />
   <meta name="robots" content="index,follow" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="970" />
   <meta name="viewport" content="width=970, target-densitydpi=160, maximum-scale=1.0" />
-  <!-- <link rel="stylesheet" type="text/css" href="/projects/1200px-site/importStyles.css" /> -->
   <link rel="shortcut icon" type="image/x-icon" media="all" href="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/favicon.ico" />
   <link rel="stylesheet" type="text/css" media="all" href="/projects/1200px-site/combined.css" />
   <style type="text/css" media="print">
     @IMPORT url("/_ui/desktop/common/blueprint/print.css");
   </style>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- <link type="text/css" rel="stylesheet" media="all" href="/combined.css?id=5e1df27d14c0a45_0" /> -->
   <link rel="stylesheet" type="text/css" href="/projects/1200px-site/customStyles.css" />
 </head>
 
-<body class="page-productDetails pageType-ProductPage template-pages-product-productLayout2Page  language-de">
+<body class="page-cartPage pageType-ContentPage template-pages-CartPageTemplate pageLabel-cart language-de">
   <div style="display: none;" id="cboxOverlay">
   </div>
   <div class="" id="colorbox" style="padding-bottom: 0px; padding-right: 0px; display: none;">
@@ -109,15 +107,9 @@
           <li class="hassub browse-products">
             <a class="bold" href="#">Alle Kategorien <span class="menu-arrow-browse-products">
 
-
-
 					      <img title='HAGEMEYER Webshop' alt="Rexel Cloud" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/drop-arrow.png">
 
-
-
 					  </span>
-
-
 
                   </a>
             <div style="display: none; z-index: 1009;" class="leftZero browse-products-panel">
@@ -1488,983 +1480,1441 @@
       <!-- 1785 -->
       <div class="overlayWidnow" style="display:none"></div>
       <a id="skip-to-content"></a>
-      <div id="breadcrumb" class="breadcrumb clear">
-        <ul class="clearfix ">
-          <li>
-            <a href="/">Startseite</a>
-          </li>
+      <div id="breadcrumb" class="breadcrumb">
+        <div id="breadcrumb" class="breadcrumb clear">
+          <ul class="clearfix  left">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li class="separator">&nbsp;</li>
 
-          <li class="separator">&nbsp;</li>
-          <li>
+            <li>
+              <a href="" class="">Warenkorb</a>
+            </li>
+            <li class="separator">&nbsp;</li>
+            <li class="active">
+              <a href="/cart/checkout" onclick="return false;" class="deactive">Bestellen</a>
+            </li>
+            <li class="separator-deactive">&nbsp;</li>
+            <li class="active">
+              <a href="#" onclick="return false;" class="deactive">Bestätigung</a>
+            </li>
+          </ul>
 
-            <a href="/Marke/c/brands">Marke</a>
-          </li>
+        </div>
+        <div class="right print tool-wrapper">
+          <a href="#" class="tooltipShow">
+            <img title='Druckseite' alt="Print Page" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/print.png" height="23" width="18">
+          </a>
+          <div class="toolTipContent">
+            <p>Druckseite</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="yCmsContentSlot cart-banner">
+      </div>
+      <input type='hidden' id='setUpdateNoteURL' value='/cart/summary/updateentrynote' />
 
-          <li class="separator">&nbsp;</li>
-          <li>
+      <input type='hidden' id='orderNoteURL' value="/cart/summary/updateordernote" />
 
-            <a href="/Marke/Newlec/c/brand_5411">Newlec</a>
-          </li>
-
-          <li class="separator">&nbsp;</li>
-          <li class="active">
-
-            <a href="/Marke/Newlec/HCAT7HS234P100M-Cu-Datenkabel-100m-Ring-CAT7-AWG23-4P-FRNC-PiMF-1000Mhz/p/5028996" class="last">HCAT7HS234P100M Cu-Datenkabel 100m Ring CAT7 AWG23 4P FRNC PiMF 1000Mhz</a>
-          </li>
-
-        </ul>
+      <div id="divInvalidNoteMsg" class="alert negative clear mb10 error-pos" style="display: none">
+        <p>
+          Der Bestelltext enthält ungültige Zeichen!</p>
+      </div>
+      <div id="divSuccessNoteMsg" class="alert positive clear mb10 error-pos" style="display: none">
+        <p>
+          Ihr Bestelltext wurde gespeichert</p>
+      </div>
+      <div id="divFailNoteMsg" class="alert negative clear mb10 error-pos" style="display: none">
+        <p>
+          Der Bestelltext konnte nicht gespeichert werden.</p>
       </div>
 
-      <div id="globalMessages">
-      </div>
-
-      <div class="productDetailsPanel">
-        <div class="product-details-section">
-          <!-- Below variables are used in box3d.js -->
-          <script type="text/javascript">
-            var next360 = "nächstes";
-            var prev360 = "zurück";
-            var start360 = "Start/Stop";
-            var zoom360 = "Zoom";
-            var product360ImagePath = "/_ui/product360view/images/5028996";
-          </script>
-
-          <div class="span-7 productImage">
-            <div class="productImageGallery">
-              <ul class="jcarousel-skin">
-                <li>
-                  <span class="thumb active">
-                    <img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h02/h50/8819802243102.jpg" data-primaryimagesrc="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h29/h55/8819802439710.jpg" data-galleryposition="0" alt="HCAT7HS234P100M Cu-Datenkabel 100m Ring CAT7 AWG23 4P FRNC PiMF 1000Mhz"
-                    title="HCAT7HS234P100M Cu-Datenkabel 100m Ring CAT7 AWG23 4P FRNC PiMF 1000Mhz" />
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="productImagePrimary" id="primary_image">
-
-              <a class="productImagePrimaryLink" id="imageLink" href="/Marke/Newlec/HCAT7HS234P100M-Cu-Datenkabel-100m-Ring-CAT7-AWG23-4P-FRNC-PiMF-1000Mhz/p/5028996/zoomImages" data-href="/Marke/Newlec/HCAT7HS234P100M-Cu-Datenkabel-100m-Ring-CAT7-AWG23-4P-FRNC-PiMF-1000Mhz/p/5028996/zoomImages"
-              target="_blank" title="Vergrößerte Ansicht">
-                <img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/hdd/h3e/8819802308638.jpg" alt="HCAT7HS234P100M Cu-Datenkabel 100m Ring CAT7 AWG23 4P FRNC PiMF 1000Mhz" title="HCAT7HS234P100M Cu-Datenkabel 100m Ring CAT7 AWG23 4P FRNC PiMF 1000Mhz"
-                />
-              </a>
-              <div class="zoomrotate">
-                <a style="text-decoration: none;" id="imageLink" href="/Marke/Newlec/HCAT7HS234P100M-Cu-Datenkabel-100m-Ring-CAT7-AWG23-4P-FRNC-PiMF-1000Mhz/p/5028996/zoomImages" data-href="/Marke/Newlec/HCAT7HS234P100M-Cu-Datenkabel-100m-Ring-CAT7-AWG23-4P-FRNC-PiMF-1000Mhz/p/5028996/zoomImages"
-                target="_blank" title="Vergrößerte Ansicht">
-                  <i class="fa fa-search-plus color"></i>
-                  <span class="click-to-zoom">
-                    Zum Vergrößern klicken</span>
-                </a>
-              </div>
-
-              <!-- Product 360 View Popup Start -->
-              <div class="overlayDiv"></div>
-              <div class="CartPopup-big productDetailsPopup">
-                <div class="popupCloseIcon"></div>
-              </div>
-              <!-- Product 360 View Popup End -->
-
-            </div>
-          </div>
-          <div class="span-13 productDescription last">
-            <h1>
-              HCAT7HS234P100M Cu-Datenkabel 100m Ring CAT7 AWG23 4P FRNC PiMF 1000Mhz
-              <div class="product-by-name">
-                Hersteller<a href="/search/brand/?brand=ETG-NEWLEC">
-
-
-
-								ETG-NEWLEC</a>
-              </div>
-            </h1>
-            <div class="yCmsContentSlot"></div>
-
-            <div class="product-detail-label">
-              Produkt Type:
-              <span> HCAT7HS234P100M</span>
-            </div>
-            <div class="product-detail-label">
-              HAG Nummer:
-              <span> 5028996</span>
-            </div>
-            <div class="order-message">
-              Bestellen Sie
-              <span> 20 Uhr</span>
-              für die Lieferung am nächsten Werktag.
-              <a class="tooltipShow-orderBy">
-                <i class="fa fa-question-circle" id=""></i>
-              </a>
-              <div class="toolTipContent-orderBy" style="display: none;">
-                product.product.details.order.by.tooltip</div>
-            </div>
-
-            <hr class="mt20">
-
-            <div class="product-download-links">
-
-
-
-
-
-
-              <div class="loadBeeDIV width40 left product-dtls-media text-left">
-
-                <span class="left">
-                  <a href="#">
-
-
-                  </a>
-                </span>
-
-                <input type="hidden" id="loadBeeId" value="Hgc3GdEyHDu2HEtzCcA24rPG2D9kebwM" />
-                <script type="text/javascript">
-                  loadbeeApiKey = "Hgc3GdEyHDu2HEtzCcA24rPG2D9kebwM";
-                </script>
-                <input type="hidden" id="loadBeeImg" value='/_ui/desktop/common/images/catalog-img.png'>
-                <input type="hidden" id="loadBeeLinkStr" value="Productdetails">
-                <script async type="text/javascript" src="https://button.loadbee.com/loadbee.js">
-                </script>
-                <div class="loadbeeLink" data-loadbee-manufacturer="ean" data-loadbee-product="8717511477352" data-loadbee-language="de" data-loadbee-css="default" data-loadbee-button="default" data-loadbee-template="default"> </div>
-
-
-              </div>
-            </div>
+      <div id="cartItems" class="clear checkout-body">
+        <div class="cart-headline-wrapper left width100">
+          <div class="your-cart left width60">
+            <div class="left">
+              Ihr Warenkorb</div>
           </div>
 
-          <div class="span-9 right productPrice CmsContentSlot">
-            <div class="qty">
-              <div class="pricetxt">
 
 
-                Ihr Preis
-
-                <span class="pricetxt-red">
-                  <span class="pricetxt-red" data-productid="5028996">
-
-                    49,24 €
-
-                  </span>
-                  <span class="font14 pricetxt-red">
-
-                    /Meter
-
-                  </span>
-                </span>
-              </div>
-
+          <div class="overlayDiv"></div>
+          <div class="CartPopup addOrderNotesPopup " data-ordernote="">
+            <div class="popupCloseIcon"></div>
+            <div class="bold pt20">
+              Bestelltexte</div>
+            <div>
+              <textarea class="order-textarea" id="orderNote" maxlength="200" cols="50" rows="5" placeholder=""></textarea>
+              <input type="hidden" id="orderCode" value="00065002" maxlength="200" />
             </div>
-            <div class="pt5 fetchListPriceAndDiscount" data-productid="5028996">
 
-              Brutto: 74,60 €
+            <br style="clear: both">
+            <button data-checkout-url="/cart/checkout" type="button" id="saveOrderNote" class="Save saveChangeBtn positive left mb0">
+              Speichern</button>
+            <a href="#" class="cancelActBtn">Abbrechen</a>
 
-              <span class="ml8">
+          </div>
+          <div class="right checkout-top">
+            <button class="checkoutButton" type="button" data-checkout-url="/cart/checkout">
+              Bestellen</button>
+          </div>
 
-                Rabatt: 25,36 €
+          <div class="right add-to editNotes pr10 pl10">
 
+            <div class="editnotesshow left add-to editNotes pr10">
+              <a href="#" class="orderNotes right">Bestelltext ändern</a>
+              <span class="add-pos right">
+                <img width="13" height="12" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/edit.png" alt="Rexel Cloud" title='Bestelltexte ändern'>
+              </span>
+            </div>
+            <div class="addnotesshow left add-to editNotes pr10">
+              <a href="#" class="orderNotes right">Bestelltext hinzufügen</a>
+              <span class="add-pos right">
+                <img width="10" height="10" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/plussign.png" alt="Rexel Cloud" title='Bestelltexte hinzufügen'>
               </span>
 
             </div>
-            <div class="pt10 left clear">
-
-              <div class="" data-productid="5028996">
-                <div class="left indicators ">
-                  <img height="10" width="10" alt="Rexel indicator" src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-green-indicator.png" title="Plus"></img>
-                </div>
-                <div class="left indicators-txt bold">
-
-                  23600 Lieferbar in 1 Tag(en)
-
-                </div>
-              </div>
-              <div class="" data-productid="5028996">
-                <div class="left indicators clear">
-                  <img height="10" width="10" alt="Rexel indicator" src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-green-indicator.png" title="Plus"></img>
-                </div>
-                <div class="left indicators-txt bold">
-
-                  1100 Abhollager München Ridlerstr
-
-                </div>
-              </div>
-
-            </div>
-            <div class="left clear pt20">
-              <div class="left color-darkgray bold qty-pieces">
-                Menge
-                <input type="text" value="100" class="qty ml5 qty-price" name="qtyInput" id="qtyInput_5028996" size="1" maxlength="3"> Meter
-              </div>
-              <div class="left ml20 min-qty">
-                Min:100 /Meter</div>
-            </div>
-            <div class="left clear pt8 category">
-              <div class="left  ">
-                <form method="post" action="/cart/add" class="add_to_cart_form" id="addToCartForm">
-                  <input type="hidden" value="100" class="qty" name="qty" id="qty" size="1" maxlength="3">
-                  <input type="hidden" value="5028996" name="productCodePost">
-                  <input type="hidden" name="productMultipleQuantity" value="1" />
-                  <input type="hidden" name="productMinQuantity" value="100" />
-                  <button class="AddtoPrice-button" type="submit" id="addToCartButton">
-                    In den Warenkorb</button>
-                </form>
-              </div>
-
-              <div class="left  price-link positionRelative">
-                <a href="#" class="AddJobList OpentoolTip" data-jobListUrl="/addtoJoblist/getJobList" id="Rexeltooltipbutton_5028996">Zu Favorit hinzufügen</a>
-
-                <!-- popup tooltip for add job list-->
-                <div class="addToJobListtooltip " id="Rexeltooltip_5028996" style="display: none">
-
-                  <span class="upArrow"></span>
-                  <div>
-                    <span class="right closeTooltip" id="close_5028996"></span>
-                  </div>
-                  <div class="joblistContainer">
-                    <div class="AddjobHeader">
-                      <span> zu Favorit hinzufügen</span>
-                    </div>
-                    <div class="displayJobList" id="displayJobList_5028996">
-                      <div class="successMessage" id="successMessage_5028996" style="display: none;color:green">
-
-                      </div>
-                      <div class="successMessage" id="successMessage_bulk" style="display: none;color:green">
-
-                      </div>
-
-                      <div class="failMessageAddJob" id="failMessageAddJob_5028996" style="display: none;color:red">
-
-                      </div>
-                      <div class="failMessageAddJob" id="failMessageAddJob_bulk" style="display: none;color:red">
-
-                      </div>
-                      <div class="Addjobcontent">
-                        <p> Erstellen Sie einen neuen Favoriten oder klicken Sie auf einen bestehenden, um die Artikel hinzuzufügen.</p>
-                      </div>
-
-                      <div class="joblistCreate">
-
-
-                        <div>
-                          <p>
-                            <a class="addJoblistName plus " id="addJoblistName_5028996">
 
 
 
-							Neuen Favorit anlegen</a>
-                          </p>
-                          <div id="boxscroll_5028996" class="boxscroll">
-                            <ul class="joblistUL" id="joblistUL">
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Story 1704 Create and Add JobList -->
-                    <div class="JoblistName" id="JoblistName_5028996" style="display: none">
-                      <div class="failMessageForm" id="failMessageForm_5028996" style="display: none;color:red">
 
-                      </div>
-                      <span>Favorit Name</span>
-                      <div>
-
-                        <p>
-                          <input id="joblistinput_5028996" type="text" placeholder="Bitte geben Sie einen eindeutigen Namen an">
-                        </p>
-                        <div class="createjoblistbutton">
-                          <button class="checkoutButton joblistbutton" type="button" id="createListBtn_5028996" onclick="createJobList(&#39;/addtoJoblist/create-add&#39;,&#39;5028996&#39;)">Favorit erstellen und Artikel speichern.</button>
-                        </div>
-
-                      </div>
-                      <div class="cancel cancelAddjoblistname" id="cancelAddjoblistname_5028996">
-                        <a>Abbrechen</a>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-                <!-- End popup tooltp for add job list-->
-              </div>
-              <br/>
-            </div>
           </div>
 
         </div>
-        <div class="product-description-section">
-          <div class="product-description-label">
-            Beschreibung</div>
-          <div class="product-description-text view-link pt10">
-            <div class="productDetailShortDesc">Cu-Datenkabel 100m Ring CAT7 AWG23 4P FRNC PiMF 1000Mhz</div>
-            <div class="productDetailLongDesc pt15">Cu-Datenkabel 100m Ring CAT7 AWG23 4P FRNC PiMF 1000Mhz</div>
-          </div>
-        </div>
-      </div>
-      <div class="yCmsContentSlot crossselling">
-      </div>
-      <div class="yCmsContentSlot ">
-      </div>
-      <div id="productTabs">
-        <div class="tabHead">Produktdetails</div>
-        <div class="tabBody">
-          <div class="productFeatureClasses">
-            <div class="headline">Datenkabel</div>
-            <table>
-              <tbody>
-                <tr>
-                  <td class="attrib">Mantel-Farbe</td>
 
-                  <td>
-                    orange</td>
-                </tr>
-                <tr>
-                  <td class="attrib">Aussendurchmesser ca.</td>
 
-                  <td>
-                    7mm</td>
-                </tr>
-                <tr>
-                  <td class="attrib">Kategorie</td>
 
-                  <td>
-                    7</td>
-                </tr>
-                <tr>
-                  <td class="attrib">AWG-Querschnitt</td>
 
-                  <td>
-                    23</td>
-                </tr>
-                <tr>
-                  <td class="attrib">Ader-Zahl</td>
 
-                  <td>
-                    8</td>
-                </tr>
-              </tbody>
-            </table>
+        <table class="cart pt20 clear">
 
-          </div>
-        </div>
+          <thead>
+            <tr>
+              <th colspan="2" id="header2-cart" class="cart-title">Artikel</th>
+              <th id="header3" class="cart-title">Verfügbarkeit</th>
+              <th id="header3" class="cart-title">PREIS</th>
+              <th id="header4" class="cart-title">Menge</th>
+              <th id="header6" class="cart-title">Gesamtsumme</th>
+            </tr>
+          </thead>
+          <tbody class="">
+            <!--    Configuration values  -->
 
-        <div class="tabHead">Abholung</div>
-        <div class="tabBody">
-          <table class="clear" id="compare">
-            <thead>
-              <th class="col-1" style="background:#f2f2f2"><b>Name Niederlassung</b></th>
-              <th class="col-1 text-center" style="background:#f2f2f2"><b>Abholbestand</b></th>
-            </thead>
-            <tbody>
+            <tr class="cartItem txt-box-pos" style="">
+              <td headers="header2" class="product-img pr15">
+                <a href="/Marke/Eaton/RCDILE48-RC-Schutzbeschaltung%2C-48-VAC%2C-f%C3%BCr-DILE%2C-Schraubanschluss/p/2207423">
+                  <img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h52/h86/8812849725470.jpg" alt="RCDILE48 RC-Schutzbeschaltung, 48 VAC, für DILE, Schraubanschluss" title="RCDILE48 RC-Schutzbeschaltung, 48 VAC, für DILE, Schraubanschluss" />
+                </a>
+              </td>
+              <td headers="header2" class="itemDetails-cart">
 
-              <tbody>
-                <tr class="alt">
+                <div class="item-Name">
+                  <a href="/Marke/Eaton/RCDILE48-RC-Schutzbeschaltung%2C-48-VAC%2C-f%C3%BCr-DILE%2C-Schraubanschluss/p/2207423">RCDILE48 RC-Schutzbeschaltung, 48 VAC, für DILE, Schraubanschluss</a>
+                </div>
 
-                  <td class="col-1"> STANDORT AUGSBURG</td>
-                  <td class="col-2 text-center">
-                    700</td>
-                </tr>
-                <tr>
 
-                  <td class="col-1"> STANDORT BERLIN</td>
-                  <td class="col-2 text-center">
-                    1100</td>
-                </tr>
-                <tbody>
-                  <tr class="alt">
+                <div>
+                  <span class="item-Label">HAG Artikelnr.:</span>
 
-                    <td class="col-1"> STANDORT NEU-ULM</td>
-                    <td class="col-2 text-center">
-                      500</td>
-                  </tr>
-                  <tr>
+                  2207423</div>
+                <div>
+                  <span class="item-Label">Hersteller:</span> EATON ELECTRIC GMBH</div>
+                <div>
+                  <span class="item-Label">Hersteller Nummer </span>
+                  044264</div>
+                <div class="notes-cart pb20">
+                  <span class="item-Label-cart">
+                    <form id="updateNoteForm3" action="/cart/summary/updateentrynote" method="post">Bestelltext:
+                      <input class="item-notes-box" maxlength="200" id="entryNote_3" name="entryNote" value="" type="text" size="10" maxlength="200" />
+                      <input type="hidden" name="productCode" value="2207423" />
+                      <input id="entryCode_3" type="hidden" name="code" value="3" />
+                      <input id="initialEntryNote_3" type="hidden" name="initialEntryNote" value="" />
+                      <input id="initialQuantity_3" type="hidden" name="initialQuantity" value="1" />
+                    </form>
+                  </span>
+                  <input type="hidden" id="isBackOrder" value="" />
 
-                    <td class="col-1"> STANDORT MÜHLDORF</td>
-                    <td class="col-2 text-center">
-                      0</td>
-                  </tr>
+                </div>
+
+
+
+              </td>
+              <td headers="header3" class="itemAvailability">
+                <table cellpadding="0" class="availability">
                   <tbody>
-                    <tr class="alt">
 
-                      <td class="col-1"> STANDORT MÜNCHEN</td>
-                      <td class="col-2 text-center">
-                        1100</td>
+                    <tr class="deliveryDetail">
+                      <td>
+                        <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-green-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+                      </td>
+                      <td>
+                        <div class="dark-text avail-data-width ">10&nbsp;Lieferbar in 1 Tag(en)</div>
+                        <div class="avail-data-width pb10">
+                          Bestellung bis 20Uhr - Lieferung am nächsten Werktag</div>
+                      </td>
                     </tr>
-                    <tr>
 
-                      <td class="col-1"> STANDORT BAD HERSFELD</td>
-                      <td class="col-2 text-center">
-                        700</td>
+                    <tr class="pickUpDetailBO">
+
+                      <!-- <div class="pt10"> -->
+                      <td>
+                        <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+                      </td>
+                      <!-- </div> -->
+                      <td class="p0">
+                        <div class="  dark-text avail-data-width">0&nbsp;in Kürze verfügbar</div>
+                      </td>
                     </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="yCmsContentSlot footer">
-      <div id="footerTabs">
-        <div class="tabHead">General Information</div>
-        <div class="tabBody">
-          <div class="general-information">
-            <div class="footer-col1">
-              <div class="ft-title">HAGEMEYER</div>
-              <ul>
-                <li class="yCmsComponent ">
-                  <a href="/aboutUs" title="Wir über uns">Wir über uns</a></li>
-                <li class="yCmsComponent ">
-                  <a href="/terms" title="AGB">AGB</a></li>
-                <li class="yCmsComponent ">
-                  <a href="/easyPanel" title="EasyPanel">EasyPanel</a></li>
-                <li class="yCmsComponent ">
-                  <a href="/eigenmarken" title="Eigenmarken">Eigenmarken</a></li>
-              </ul>
-            </div>
-            <div class="footer-col2">
-              <div class="ft-title">Handel & Handwerk</div>
-              <ul>
-                <li class="yCmsComponent ">
-                  <a href="/lieferanten" title="Lieferanten">Lieferanten</a></li>
-                <li class="yCmsComponent ">
-                  <a href="/eCommerce" title="eCommerce">eCommerce</a></li>
-              </ul>
-            </div>
-            <div class="footer-col3">
-              <div class="ft-title">Industrie</div>
-              <ul>
-                <li class="yCmsComponent ">
-                  <a href="/Logistik" title="Logistik">Logistik</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <div class="tabHead">International</div>
-        <div class="tabBody">
-          <div class="global-sites-section">
-            <div class="global-sites-popup">
-              <div class="sites-col1">
-                <ul>
-                  <li id="au_flag">
-                    <a href="" title="">
-                      <img title="Austrailia" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h7f/h82/8796275376158.png" alt="Austrailia" />&nbsp;Australien</a>
-                  </li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="au_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexelha.com.au/" title="Rexel Holdings Australia">Rexel Holdings Australia</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.ecopowersavers.com.au" title="EcoPowerSaver">EcoPowerSaver</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.eiw.com.au" title="EIW">EIW</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.idealelectrical.com/" title="Ideal Electrical">Ideal Electrical</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.impel.com.au/" title="Impel Australia">Impel Australia</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.inaco.com.au/" title="Inaco Automation Control">Inaco Automation Control</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.jrt.com.au/" title="J R Turk">J R Turk</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.learsmith.com.au/" title="Lear and Smith">Lear and Smith</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.pagedata.com.au/" title="Page Data">Page Data</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.com.au/" title="Rexel">Rexel</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexelenergy.com.au/" title="Rexel Energy Solutions">Rexel Energy Solutions</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="my_flag">
-                    <img title="Malaysia" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h3b/h3b/8796275933214.png" alt="Malaysia" />&nbsp;Malaysia</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="my_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproasia.com/" title="Gexpro">Gexpro</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="nl_flag">
-                    <img title="Netherlands" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h9d/h50/8796275965982.png" alt="Netherlands" />&nbsp;Netherlands</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="nl_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexelnederland.nl/" title="Rexel Nederland">Rexel Nederland</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.hagemeyer.nl/" title="Hagemeyer">Hagemeyer</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.onexis.nl/" title="Onexis">Onexis</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.nl/" title="Rexel">Rexel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="no_flag">
-                    <img title="Norway" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h8e/ha4/8796275998750.png" alt="Norway" />&nbsp;Norway</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="no_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.elektroskandia.no" title="Elektroskandia">Elektroskandia</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="pe_flag">
-                    <img title="Peru" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hd3/h29/8796276031518.png" alt="Peru" />&nbsp;Peru</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="pe_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.dirome.com/v2/Presentacion/" title="Dirome">Dirome</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.vyf.com.pe/portal/index.aspx" title="V&F Tecnologia">V&F Tecnologia</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="ph_flag">
-                    <img title="Phillipines" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h54/h99/8796276064286.png" alt="Phillipines" />&nbsp;Phillipines</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="ph_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproasia.com/" title="Gexpro">Gexpro</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="pl_flag">
-                    <img title="Poland" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hd8/h5b/8796276097054.png" alt="Poland" />&nbsp;Poland</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="pl_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.elektroskandia.pl" title="Elektroskandia">Elektroskandia</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="ru_flag">
-                    <img title="Russia" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h6f/h54/8796276129822.png" alt="Russia" />&nbsp;Russia</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="ru_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://elektroskandia.ru/" title="Elektroskandia">Elektroskandia</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                </ul>
-              </div>
-              <div class="sites-col2">
-                <ul>
-                  <li id="sg_flag">
-                    <img title="Singapore" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h88/h22/8796276162590.png" alt="Singapore" />&nbsp;Singapore</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="sg_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproasia.com/" title="Gexpro">Gexpro</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://lenninternational.com/" title="Lenn International">Lenn International</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.luxlight.sg/index.html" title="LuxLight">LuxLight</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="sk_flag">
-                    <img title="Slovakia" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hf4/hd4/8796276195358.png" alt="Slovakia" />&nbsp;Slovakia</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="sk_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.hagard.sk/" title="Hagard:HAL">Hagard:HAL</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="si_flag">
-                    <img title="Slovenia" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h19/h89/8796276228126.png" alt="Slovenia" />&nbsp;Slovenia</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="si_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.elektronabava.si/" title="Elektronabava">Elektronabava</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="es_flag">
-                    <img title="Spain" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h93/h56/8796276260894.png" alt="Spain" />&nbsp;Spain</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="es_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.abmrexel.es" title="ABM Rexel">ABM Rexel</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.erka.es/" title="Erka">Erka</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="se_flag">
-                    <img title="Sweden" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h40/hb4/8796276293662.png" alt="Sweden" />&nbsp;Sweden</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="se_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.moel.se/" title="Moel">Moel</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://rexelenergysolutions.se/" title="Rexel Energy Solutions">Rexel Energy Solutions</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.selga.se" title="Selga">Selga</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.storel.se" title="Storel">Storel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="ch_flag">
-                    <img title="Switzerland" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h4d/h12/8796276326430.png" alt="Switzerland" />&nbsp;Switzerland</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="ch_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.elektro-material.ch" title="Elektro Material AG">Elektro Material AG</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="lu_flag">
-                    <img title="Luxemburg" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h97/hcf/8796275900446.png" alt="Luxemburg" />&nbsp;Luxemburg</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="lu_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.mexel.lu" title="Rexel">Rexel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="it_flag">
-                    <img title="Italy" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h69/hc7/8796275867678.png" alt="Italy" />&nbsp;Italy</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="it_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproservices.com" title="Gexpro Services">Gexpro Services</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.it" title="Rexel">Rexel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                </ul>
-              </div>
-              <div class="sites-col3">
-                <ul>
-                  <li id="ie_flag">
-                    <img title="Ireland" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h91/h06/8796275834910.png" alt="Ireland" />&nbsp;Ireland</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="ie_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.kellihers.com/" title="Kellihers">Kellihers</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.co.uk/hii.php" title="Rexel Industrial supply solutions">Rexel Industrial supply solutions</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="at_flag">
-                    <img title="Austria" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hc7/h2d/8796275408926.png" alt="Austria" />&nbsp;Austria</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="at_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.at/" title="Rexel">Rexel</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.regro.at" title="Regro">Regro</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.schaecke.at/" title="Schäcke">Schäcke</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="be_flag">
-                    <img title="Belgium" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h1f/h04/8796275441694.png" alt="Belgium" />&nbsp;Belgium</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="be_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.be/" title="Rexel">Rexel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="br_flag">
-                    <img title="Brazil" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h4b/hf9/8796275474462.png" alt="Brazil" />&nbsp;Brazil</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="br_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.etil.com.br/" title="Etil">Etil</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.nortel.com.br/" title="Nortel">Nortel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="ca_flag">
-                    <img title="Canada" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hc1/h64/8796275507230.png" alt="Canada" />&nbsp;Canada</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="ca_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.ca" title="Rexel Canada">Rexel Canada</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.liteco.ca" title="Liteco">Liteco</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.nedco.ca" title="Nedco">Nedco</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.westburne.ca" title="Westburne">Westburne</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="cl_flag">
-                    <img title="Chile" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hd3/h77/8796275539998.png" alt="Chile" />&nbsp;Chile</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="cl_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.fyk.cl/" title="Flores y Kersting">Flores y Kersting</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.cl" title="Rexel">Rexel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="cn_flag">
-                    <img title="China" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h98/h8d/8796275572766.png" alt="China" />&nbsp;China</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="cn_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.com.cn/en" title="Rexel China">Rexel China</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://bjzh.com.cn/" title="Beijing Zhongheng">Beijing Zhongheng</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproasia.com/services_support" title="Gexpro Services">Gexpro Services</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.huazhangautomation.com/en/" title="Huazhang Automation">Huazhang Automation</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.lkw-zn.com/" title="Luckywell">Luckywell</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexelelectric.com.cn/en/" title="Rexel">Rexel</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.sz-xd.net/en/" title="Suzhou Xidian">Suzhou Xidian</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="cu_flag">
-                    <img title="Czech Republic" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h5a/h14/8796275605534.png" alt="Czech Republic" />&nbsp;Czech Republic</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="cu_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.cz/" title="Rexel">Rexel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                </ul>
-              </div>
-              <div class="sites-col4">
-                <ul>
-                  <li id="ee_flag">
-                    <img title="Estonia" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h79/hf6/8796275638302.png" alt="Estonia" />&nbsp;Estonia</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="ee_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.elektroskandia.ee/" title="Elektroskandia">Elektroskandia</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="in_flag">
-                    <img title="India" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h7b/h56/8796275802142.png" alt="India" />&nbsp;India</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="in_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.adelectronics.co.in/" title="AD Electronics">AD Electronics</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproasia.com/" title="Gexpro">Gexpro</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.yantraautomation.com" title="Yantra automation">Yantra automation</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="hu_flag">
-                    <img title="Hungary" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h7a/hbf/8796275769374.png" alt="Hungary" />&nbsp;Hungary</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="hu_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproservices.com" title="Gexpro Services">Gexpro Services</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="de_flag">
-                    <img title="Germany" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h5d/h7d/8796275736606.png" alt="Germany" />&nbsp;Germany</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="de_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.hagemeyerce.com" title="Hagemeyer">Hagemeyer</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="fi_flag">
-                    <img title="Finland" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h75/h8d/8796275703838.png" alt="Finland" />&nbsp;Finland</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="fi_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.fi/" title="Rexel">Rexel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="fr_flag">
-                    <img title="France" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h92/hc4/8796275671070.png" alt="France" />&nbsp;France</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="fr_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.coaxel.fr" title="Coaxel">Coaxel</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.fr" title="Rexel">Rexel</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="th_flag">
-                    <img title="Thailand" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h25/hd3/8796276359198.png" alt="Thailand" />&nbsp;Thailand</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="th_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproasia.com/" title="Gexpro">Gexpro</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexelqt.com/" title="Quality Trading">Quality Trading</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="ae_flag">
-                    <img title="United Arab Emirates" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h24/h3b/8796276391966.png" alt="United Arab Emirates" />&nbsp;United Arab Emirates</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="ae_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexel.com" title="Redco">Redco</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                </ul>
-              </div>
-              <div class="sites-col5">
-                <ul>
-                  <li id="gb_flag">
-                    <img title="United Kingdom" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hce/h66/8796276424734.png" alt="United Kingdom" />&nbsp;Vereinigtes Königreich</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="gb_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.neweysonline.co.uk" title="Newey & Eyre" target="_blank">Newey & Eyre</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.allaboutelectrics.co.uk/" title="All About Electrics" target="_blank">All About Electrics</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://http://www.wilts.co.uk/" title="Wilts" target="_blank">Wilts</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.parker-direct.com" title="Parker Merchanting" target="_blank">Parker Merchanting</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.naturalsparx.co.uk" title="Natural Sparx" target="_blank">Natural Sparx</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="us_flag">
-                    <img title="United States" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h05/ha4/8796276457502.png" alt="United States" />&nbsp;United States</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="us_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexelholdingsusa.com/" title="Rexel Holdings USA">Rexel Holdings USA</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.capitollight.com/" title="Capitol Light">Capitol Light</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexpro.com" title="Gexpro">Gexpro</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproservices.com" title="Gexpro Services">Gexpro Services</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.partssupercenter.com" title="Parts Super Center">Parts Super Center</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.platt.com" title="Platt">Platt</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexelusa.com" title="Rexel">Rexel</a></li>
-                      <li class="yCmsComponent ">
-                        <a href="http://www.rexelenergysolutionsusa.com/" title="Rexel Energy Solutions">Rexel Energy Solutions</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <li id="vn_flag">
-                    <img title="Vietnam" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h1e/h72/8796276490270.png" alt="Vietnam" />&nbsp;Vietnam</li>
-                  <div style="display: none;">
-                    <ul class="sites-list" id="vn_flag_links">
-                      <li class="yCmsComponent ">
-                        <a href="http://www.gexproasia.com/" title="Gexpro">Gexpro</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+                  </tbody>
+                </table>
+
+              </td>
+              <td headers="header3" class="itemPrice">
+                <!-- <div class="dark-text">$61.20 / each</div> -->
+                <div>
+                  <span class="dark-text"> </span>
+                </div> Min.1&nbsp;Stück
+                <br> Intervall:1&nbsp;Stück
+                <br> Brutto 13,20 €
+                <br> Rabatt 3,43 €
+                <br>
+
+                <!-- <div>excl. surcharge
+							  <a class="tooltipShow-big"><img width="14" height="13" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/que.png" alt="Rexel Cloud"></a><div>
+							  <div class="toolTipContent-big" style="display: none;">
+								<div>Copper:  <span class="pl20">$1.71/100 meters</span></div>
+								<div>Coil Insert:  <span class="pl20">$1.14/100 meters</span></div>
+							  </div>
+                        </div></div> -->
+              </td>
+              <td headers="header4" class="quantity">
+
+                <div class="table-link text-left">
+                  <form id="updateCartForm3" action="/cart/update" method="post">
+                    <input type="hidden" name="entryNumber" value="3" />
+                    <input type="hidden" name="entryProductCode" value="2207423" />
+                    <input type="hidden" name="initialQuantity" value="1" />
+                    <input type="hidden" name="productMultipleQuantity" value="1" />
+                    <input type="hidden" name="productMinQuantity" value="1" />
+                    <input id="cartEntryNote_3" type="hidden" name="entryNote" value="" />
+                    <label class="skip" for="quantity2">Menge</label>
+                    <input id="quantity3" name="quantity" value="1" class="qty" type="text" value="1" size="1" />
+                    <!-- <input type="text" size="1" value="2" class="qty" name="quantity" id="quantity2"> -->
+                    <a href="#" id="QuantityProduct_3" class="updateQuantityProduct pt10">Aktualisierung</a>
+                    <input type="hidden" name="actionType" id="actionType_3" />
+
+
+                    <div class="txt-notes">
+                      <!-- 									</div> -->
+                    </div>
+                  </form><a href="#" id="RemoveProduct_3" class="submitRemoveProduct ">Löschen</a>
+                </div>
+              </td>
+              <td headers="header6" class="total relposition">
+                <div class="dark-text">
+
+
+                </div>
+              </td>
+            </tr>
+            <tr class="cartItem txt-box-pos" style="">
+              <td headers="header2" class="product-img pr15">
+                <a href="/Hagemeyer/Industriekomponenten/Sch%C3%BCtze-%26-Relais/%C3%9Cberspannungsbegrenzer/RV-BC6-60-Varistorl%C3%B6schglied-24-60V-DC/p/2122002">
+                  <img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h24/h26/8813787152414.jpg" alt="RV-BC6/60 Varistorlöschglied 24-60V DC" title="RV-BC6/60 Varistorlöschglied 24-60V DC" />
+                </a>
+              </td>
+              <td headers="header2" class="itemDetails-cart">
+
+                <div class="item-Name">
+                  <a href="/Hagemeyer/Industriekomponenten/Sch%C3%BCtze-%26-Relais/%C3%9Cberspannungsbegrenzer/RV-BC6-60-Varistorl%C3%B6schglied-24-60V-DC/p/2122002">RV-BC6/60 Varistorlöschglied 24-60V DC</a>
+                </div>
+
+
+                <div>
+                  <span class="item-Label">HAG Artikelnr.:</span>
+
+                  2122002</div>
+                <div>
+                  <span class="item-Label">Hersteller:</span> ABB ASJ GMBH</div>
+                <div>
+                  <span class="item-Label">Hersteller Nummer </span>
+                  GHV2501902R0002</div>
+                <div class="notes-cart pb20">
+                  <span class="item-Label-cart">
+                    <form id="updateNoteForm2" action="/cart/summary/updateentrynote" method="post">Bestelltext:
+                      <input class="item-notes-box" maxlength="200" id="entryNote_2" name="entryNote" value="" type="text" size="10" maxlength="200" />
+                      <input type="hidden" name="productCode" value="2122002" />
+                      <input id="entryCode_2" type="hidden" name="code" value="2" />
+                      <input id="initialEntryNote_2" type="hidden" name="initialEntryNote" value="" />
+                      <input id="initialQuantity_2" type="hidden" name="initialQuantity" value="1" />
+                    </form>
+                  </span>
+                  <input type="hidden" id="isBackOrder" value="" />
+
+                </div>
+
+
+
+              </td>
+              <td headers="header3" class="itemAvailability">
+                <table cellpadding="0" class="availability">
+                  <tbody>
+
+                    <tr class="deliveryDetail">
+                      <td>
+                        <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+                      </td>
+                      <td>
+                        <div class="dark-text avail-data-width ">0&nbsp;Lieferung in Kürze</div>
+                        <div class="avail-data-width pb10">
+                          Bestellung bis 20Uhr - Lieferung am nächsten Werktag</div>
+                      </td>
+                    </tr>
+
+                    <tr class="pickUpDetailBO">
+
+                      <!-- <div class="pt10"> -->
+                      <td>
+                        <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+                      </td>
+                      <!-- </div> -->
+                      <td class="p0">
+                        <div class="  dark-text avail-data-width">0&nbsp;in Kürze verfügbar</div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </td>
+              <td headers="header3" class="itemPrice">
+                <!-- <div class="dark-text">$61.20 / each</div> -->
+                <div>
+                  <span class="dark-text"> </span>
+                </div> Min.1&nbsp;Stück
+                <br> Intervall:1&nbsp;Stück
+                <br> Brutto 10,30 €
+                <br> Rabatt 2,27 €
+                <br>
+
+                <!-- <div>excl. surcharge
+							  <a class="tooltipShow-big"><img width="14" height="13" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/que.png" alt="Rexel Cloud"></a><div>
+							  <div class="toolTipContent-big" style="display: none;">
+								<div>Copper:  <span class="pl20">$1.71/100 meters</span></div>
+								<div>Coil Insert:  <span class="pl20">$1.14/100 meters</span></div>
+							  </div>
+                        </div></div> -->
+              </td>
+              <td headers="header4" class="quantity">
+
+                <div class="table-link text-left">
+                  <form id="updateCartForm2" action="/cart/update" method="post">
+                    <input type="hidden" name="entryNumber" value="2" />
+                    <input type="hidden" name="entryProductCode" value="2122002" />
+                    <input type="hidden" name="initialQuantity" value="1" />
+                    <input type="hidden" name="productMultipleQuantity" value="1" />
+                    <input type="hidden" name="productMinQuantity" value="1" />
+                    <input id="cartEntryNote_2" type="hidden" name="entryNote" value="" />
+                    <label class="skip" for="quantity2">Menge</label>
+                    <input id="quantity2" name="quantity" value="1" class="qty" type="text" value="1" size="1" />
+                    <!-- <input type="text" size="1" value="2" class="qty" name="quantity" id="quantity2"> -->
+                    <a href="#" id="QuantityProduct_2" class="updateQuantityProduct pt10">Aktualisierung</a>
+                    <input type="hidden" name="actionType" id="actionType_2" />
+
+
+                    <div class="txt-notes">
+                      <!-- 									</div> -->
+                    </div>
+                  </form><a href="#" id="RemoveProduct_2" class="submitRemoveProduct ">Löschen</a>
+                </div>
+              </td>
+              <td headers="header6" class="total relposition">
+                <div class="dark-text">
+
+
+                </div>
+              </td>
+            </tr>
+            <tr class="cartItem txt-box-pos" style="">
+              <td headers="header2" class="product-img pr15">
+                <a href="/Hagemeyer/Werkzeuge/Arbeitsschutz-%26-Kleidung/Arbeitsweste/APG-10-St%C3%B6rlichtbogengepr%C3%BCfte-Schutzhandschuhe-Gr%C3%B6%C3%9Fe-10/p/2887408">
+                  <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/missing-product-96x96.jpg" alt="APG 10 Störlichtbogengeprüfte Schutzhandschuhe Größe 10" title="APG 10 Störlichtbogengeprüfte Schutzhandschuhe Größe 10" width="" height="" class="" />
+                </a>
+              </td>
+              <td headers="header2" class="itemDetails-cart">
+
+                <div class="item-Name">
+                  <a href="/Hagemeyer/Werkzeuge/Arbeitsschutz-%26-Kleidung/Arbeitsweste/APG-10-St%C3%B6rlichtbogengepr%C3%BCfte-Schutzhandschuhe-Gr%C3%B6%C3%9Fe-10/p/2887408">APG 10 Störlichtbogengeprüfte Schutzhandschuhe Größe 10</a>
+                </div>
+
+
+                <div>
+                  <span class="item-Label">HAG Artikelnr.:</span>
+
+                  2887408</div>
+                <div>
+                  <span class="item-Label">Hersteller:</span> DEHN + SOEHNE GMBH & CO. KG</div>
+                <div>
+                  <span class="item-Label">Hersteller Nummer </span>
+                  785798</div>
+                <div class="notes-cart pb20">
+                  <span class="item-Label-cart">
+                    <form id="updateNoteForm1" action="/cart/summary/updateentrynote" method="post">Bestelltext:
+                      <input class="item-notes-box" maxlength="200" id="entryNote_1" name="entryNote" value="" type="text" size="10" maxlength="200" />
+                      <input type="hidden" name="productCode" value="2887408" />
+                      <input id="entryCode_1" type="hidden" name="code" value="1" />
+                      <input id="initialEntryNote_1" type="hidden" name="initialEntryNote" value="" />
+                      <input id="initialQuantity_1" type="hidden" name="initialQuantity" value="1" />
+                    </form>
+                  </span>
+                  <input type="hidden" id="isBackOrder" value="" />
+
+                </div>
+
+
+
+              </td>
+              <td headers="header3" class="itemAvailability">
+                <table cellpadding="0" class="availability">
+                  <tbody>
+
+                    <tr class="deliveryDetail">
+                      <td>
+                        <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-green-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+                      </td>
+                      <td>
+                        <div class="dark-text avail-data-width ">14&nbsp;Lieferbar in 1 Tag(en)</div>
+                        <div class="avail-data-width pb10">
+                          Bestellung bis 20Uhr - Lieferung am nächsten Werktag</div>
+                      </td>
+                    </tr>
+
+                    <tr class="pickUpDetailBO">
+
+                      <!-- <div class="pt10"> -->
+                      <td>
+                        <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+                      </td>
+                      <!-- </div> -->
+                      <td class="p0">
+                        <div class="  dark-text avail-data-width">0&nbsp;in Kürze verfügbar</div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </td>
+              <td headers="header3" class="itemPrice">
+                <!-- <div class="dark-text">$61.20 / each</div> -->
+                <div>
+                  <span class="dark-text"> </span>
+                </div> Min.1&nbsp;Paar
+                <br> Intervall:1&nbsp;Paar
+                <br> Brutto 89,00 €
+                <br> Rabatt 19,58 €
+                <br>
+
+                <!-- <div>excl. surcharge
+							  <a class="tooltipShow-big"><img width="14" height="13" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/que.png" alt="Rexel Cloud"></a><div>
+							  <div class="toolTipContent-big" style="display: none;">
+								<div>Copper:  <span class="pl20">$1.71/100 meters</span></div>
+								<div>Coil Insert:  <span class="pl20">$1.14/100 meters</span></div>
+							  </div>
+                        </div></div> -->
+              </td>
+              <td headers="header4" class="quantity">
+
+                <div class="table-link text-left">
+                  <form id="updateCartForm1" action="/cart/update" method="post">
+                    <input type="hidden" name="entryNumber" value="1" />
+                    <input type="hidden" name="entryProductCode" value="2887408" />
+                    <input type="hidden" name="initialQuantity" value="1" />
+                    <input type="hidden" name="productMultipleQuantity" value="1" />
+                    <input type="hidden" name="productMinQuantity" value="1" />
+                    <input id="cartEntryNote_1" type="hidden" name="entryNote" value="" />
+                    <label class="skip" for="quantity2">Menge</label>
+                    <input id="quantity1" name="quantity" value="1" class="qty" type="text" value="1" size="1" />
+                    <!-- <input type="text" size="1" value="2" class="qty" name="quantity" id="quantity2"> -->
+                    <a href="#" id="QuantityProduct_1" class="updateQuantityProduct pt10">Aktualisierung</a>
+                    <input type="hidden" name="actionType" id="actionType_1" />
+
+
+                    <div class="txt-notes">
+                      <!-- 									</div> -->
+                    </div>
+                  </form><a href="#" id="RemoveProduct_1" class="submitRemoveProduct ">Löschen</a>
+                </div>
+              </td>
+              <td headers="header6" class="total relposition">
+                <div class="dark-text">
+
+
+                </div>
+              </td>
+            </tr>
+            <tr class="cartItem txt-box-pos" style="">
+              <td headers="header2" class="product-img pr15">
+                <a href="/Hagemeyer/Werkzeuge/Arbeitsschutz-%26-Kleidung/Arbeitsweste/KFP-25-M12-Kugelfestpunkt-D-25mm-gerade-m-Innengewinde-M12/p/2118708">
+                  <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/missing-product-96x96.jpg" alt="KFP 25 M12 Kugelfestpunkt D 25mm gerade m. Innengewinde M12" title="KFP 25 M12 Kugelfestpunkt D 25mm gerade m. Innengewinde M12" width="" height="" class="" />
+                </a>
+              </td>
+              <td headers="header2" class="itemDetails-cart">
+
+                <div class="item-Name">
+                  <a href="/Hagemeyer/Werkzeuge/Arbeitsschutz-%26-Kleidung/Arbeitsweste/KFP-25-M12-Kugelfestpunkt-D-25mm-gerade-m-Innengewinde-M12/p/2118708">KFP 25 M12 Kugelfestpunkt D 25mm gerade m. Innengewinde M12</a>
+                </div>
+
+
+                <div>
+                  <span class="item-Label">HAG Artikelnr.:</span>
+
+                  2118708</div>
+                <div>
+                  <span class="item-Label">Hersteller:</span> DEHN + SOEHNE GMBH & CO. KG</div>
+                <div>
+                  <span class="item-Label">Hersteller Nummer </span>
+                  755200</div>
+                <div class="notes-cart pb20">
+                  <span class="item-Label-cart">
+                    <form id="updateNoteForm0" action="/cart/summary/updateentrynote" method="post">Bestelltext:
+                      <input class="item-notes-box" maxlength="200" id="entryNote_0" name="entryNote" value="" type="text" size="10" maxlength="200" />
+                      <input type="hidden" name="productCode" value="2118708" />
+                      <input id="entryCode_0" type="hidden" name="code" value="0" />
+                      <input id="initialEntryNote_0" type="hidden" name="initialEntryNote" value="" />
+                      <input id="initialQuantity_0" type="hidden" name="initialQuantity" value="1" />
+                    </form>
+                  </span>
+                  <input type="hidden" id="isBackOrder" value="" />
+
+                </div>
+
+
+
+              </td>
+              <td headers="header3" class="itemAvailability">
+                <table cellpadding="0" class="availability">
+                  <tbody>
+
+                    <tr class="deliveryDetail">
+                      <td>
+                        <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+                      </td>
+                      <td>
+                        <div class="dark-text avail-data-width ">0&nbsp;Lieferung in Kürze</div>
+                        <div class="avail-data-width pb10">
+                          Bestellung bis 20Uhr - Lieferung am nächsten Werktag</div>
+                      </td>
+                    </tr>
+
+                    <tr class="pickUpDetailBO">
+
+                      <!-- <div class="pt10"> -->
+                      <td>
+                        <img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+                      </td>
+                      <!-- </div> -->
+                      <td class="p0">
+                        <div class="  dark-text avail-data-width">0&nbsp;in Kürze verfügbar</div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </td>
+              <td headers="header3" class="itemPrice">
+                <!-- <div class="dark-text">$61.20 / each</div> -->
+                <div>
+                  <span class="dark-text"> 15,44 € / Stück</span>
+                </div> Min.1&nbsp;Stück
+                <br> Intervall:1&nbsp;Stück
+                <br> Brutto 19,80 €
+                <br> Rabatt 4,36 €
+                <br>
+
+                <!-- <div>excl. surcharge
+							  <a class="tooltipShow-big"><img width="14" height="13" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/que.png" alt="Rexel Cloud"></a><div>
+							  <div class="toolTipContent-big" style="display: none;">
+								<div>Copper:  <span class="pl20">$1.71/100 meters</span></div>
+								<div>Coil Insert:  <span class="pl20">$1.14/100 meters</span></div>
+							  </div>
+                        </div></div> -->
+              </td>
+              <td headers="header4" class="quantity">
+
+                <div class="table-link text-left">
+                  <form id="updateCartForm0" action="/cart/update" method="post">
+                    <input type="hidden" name="entryNumber" value="0" />
+                    <input type="hidden" name="entryProductCode" value="2118708" />
+                    <input type="hidden" name="initialQuantity" value="1" />
+                    <input type="hidden" name="productMultipleQuantity" value="1" />
+                    <input type="hidden" name="productMinQuantity" value="1" />
+                    <input id="cartEntryNote_0" type="hidden" name="entryNote" value="" />
+                    <label class="skip" for="quantity2">Menge</label>
+                    <input id="quantity0" name="quantity" value="1" class="qty" type="text" value="1" size="1" />
+                    <!-- <input type="text" size="1" value="2" class="qty" name="quantity" id="quantity2"> -->
+                    <a href="#" id="QuantityProduct_0" class="updateQuantityProduct pt10">Aktualisierung</a>
+                    <input type="hidden" name="actionType" id="actionType_0" />
+
+
+                    <div class="txt-notes">
+                      <!-- 									</div> -->
+                    </div>
+                  </form><a href="#" id="RemoveProduct_0" class="submitRemoveProduct ">Löschen</a>
+                </div>
+              </td>
+              <td headers="header6" class="total relposition">
+                <div class="dark-text">
+
+
+                  15,44 €</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div id="bottom-footer">
-        <div id="footer-logo">
-          <p>Ein Unternehmen der RexelGruppe</p>
-          <img src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/rexel-footer-logo.png" />
-        </div>
-      </div>
-    </div>
-  </div>
+      <div class="clearfix">
+        <div class="span-16 width650">
 
-  <form name="accessiblityForm">
-    <input type="hidden" id="accesibility_refreshScreenReaderBufferField" name="accesibility_refreshScreenReaderBufferField" value="" />
-  </form>
-  <div id="ariaStatusMsg" class="skip" role="status" aria-relevant="text" aria-live="polite"></div>
-  <script src="/projects/1200px-site/combined.js"></script>
+          &nbsp;
+        </div>
+        <div class="span-8 last orderTotals-bg">
+          <table id="orderTotals">
+            <thead>
+              <tr>
+                <td>Bestellsumme</td>
+                <td></td>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td class="dark-text uppercase">Gesamtsumme:</td>
+                <td class="dark-text">
+                  <!-- [IGATE] -->
+                  102,66 €</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td class="order-labels">Zwischensumme:</td>
+                <td class="order-labels dark-text">102,66 €</td>
+
+              </tr>
+              <tr>
+                <td colspan="2">
+
+                  <div id="events-example" class="example">
+                    <h3 aria-expanded="false" data-collapse-summary="" class="section-header open-link">
+                      <a href="#" class=""> MwSt<span
+
+									class="right dark-text">
+
+							  	    0,00 €</span></a>
+                    </h3>
+                    <div aria-hidden="true" style="display: none; padding-top: 0">
+                      <table width="100%" border="0" " class="order-sub ">
+
+									<tbody>
+
+										</tbody>
+
+								</table>
+
+							</div>
+
+						</div>
+
+					</td>
+
+				</tr>
+
+
+
+			</tbody>
+
+</table>
+
+
+
+<div class="width100 left ">
+
+	<div class="width50 float-l clear continue-link text-right pr10 ">
+
+		<a href="/ ">Weiter Einkaufen</a>
+
+	</div>
+
+	<div class="right mb10 ">
+
+		<button class="checkoutButton " type="button "
+
+			data-checkout-url="/cart/checkout ">
+
+			Bestellen</button>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+				</div>
+
+
+
+			<div class="yCmsContentSlot span-24 ">
+
+</div><div class="yCmsContentSlot span-24 ">
+
+</div></div>
+
+			<div class="yCmsContentSlot footer ">
+
+<div id="footerTabs ">
+
+	<div class="tabHead ">General Information</div>
+
+	<div class="tabBody ">
+
+		<div class="general-information ">
+
+			<div class="footer-col1 ">
+
+						<div class="ft-title ">HAGEMEYER</div>
+
+						<ul>
+
+							<li class="yCmsComponent ">
+
+<a href="/aboutUs " title="Wir über uns ">Wir über uns</a></li><li class="yCmsComponent ">
+
+<a href="/terms " title="AGB ">AGB</a></li><li class="yCmsComponent ">
+
+<a href="/easyPanel " title="EasyPanel ">EasyPanel</a></li><li class="yCmsComponent ">
+
+<a href="/eigenmarken " title="Eigenmarken ">Eigenmarken</a></li></ul>
+
+					</div>
+
+				<div class="footer-col2 ">
+
+						<div class="ft-title ">Handel & Handwerk</div>
+
+						<ul>
+
+							<li class="yCmsComponent ">
+
+<a href="/lieferanten " title="Lieferanten ">Lieferanten</a></li><li class="yCmsComponent ">
+
+<a href="/eCommerce " title="eCommerce ">eCommerce</a></li></ul>
+
+					</div>
+
+				<div class="footer-col3 ">
+
+						<div class="ft-title ">Industrie</div>
+
+						<ul>
+
+							<li class="yCmsComponent ">
+
+<a href="/Logistik " title="Logistik ">Logistik</a></li></ul>
+
+					</div>
+
+				</div>
+
+	</div>
+
+
+
+	<div class="tabHead ">International</div>
+
+	<div class="tabBody ">
+
+		<div class="global-sites-section ">
+
+			<div class="global-sites-popup ">
+
+				<div class="sites-col1 ">
+
+						<ul>
+
+							<li id="au_flag "><a href=" " title=" " >
+
+	<img title="Austrailia " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h7f/h82/8796275376158.png " alt="Austrailia "/>&nbsp;Australien</a></li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="au_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexelha.com.au/ " title="Rexel Holdings Australia ">Rexel Holdings Australia</a></li><li class="yCmsComponent ">
+
+<a href="http://www.ecopowersavers.com.au " title="EcoPowerSaver ">EcoPowerSaver</a></li><li class="yCmsComponent ">
+
+<a href="http://www.eiw.com.au " title="EIW ">EIW</a></li><li class="yCmsComponent ">
+
+<a href="http://www.idealelectrical.com/ " title="Ideal Electrical ">Ideal Electrical</a></li><li class="yCmsComponent ">
+
+<a href="http://www.impel.com.au/ " title="Impel Australia ">Impel Australia</a></li><li class="yCmsComponent ">
+
+<a href="http://www.inaco.com.au/ " title="Inaco Automation Control ">Inaco Automation Control</a></li><li class="yCmsComponent ">
+
+<a href="http://www.jrt.com.au/ " title="J R Turk ">J R Turk</a></li><li class="yCmsComponent ">
+
+<a href="http://www.learsmith.com.au/ " title="Lear and Smith ">Lear and Smith</a></li><li class="yCmsComponent ">
+
+<a href="http://www.pagedata.com.au/ " title="Page Data ">Page Data</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexel.com.au/ " title="Rexel ">Rexel</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexelenergy.com.au/ " title="Rexel Energy Solutions ">Rexel Energy Solutions</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="my_flag "><img title="Malaysia " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h3b/h3b/8796275933214.png " alt="Malaysia "/>&nbsp;Malaysia</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="my_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.gexproasia.com/ " title="Gexpro ">Gexpro</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="nl_flag "><img title="Netherlands " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h9d/h50/8796275965982.png " alt="Netherlands "/>&nbsp;Netherlands</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="nl_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexelnederland.nl/ " title="Rexel Nederland ">Rexel Nederland</a></li><li class="yCmsComponent ">
+
+<a href="http://www.hagemeyer.nl/ " title="Hagemeyer ">Hagemeyer</a></li><li class="yCmsComponent ">
+
+<a href="http://www.onexis.nl/ " title="Onexis ">Onexis</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexel.nl/ " title="Rexel ">Rexel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="no_flag "><img title="Norway " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h8e/ha4/8796275998750.png " alt="Norway "/>&nbsp;Norway</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="no_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.elektroskandia.no " title="Elektroskandia ">Elektroskandia</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="pe_flag "><img title="Peru " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hd3/h29/8796276031518.png " alt="Peru "/>&nbsp;Peru</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="pe_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.dirome.com/v2/Presentacion/ " title="Dirome ">Dirome</a></li><li class="yCmsComponent ">
+
+<a href="http://www.vyf.com.pe/portal/index.aspx " title="V&F Tecnologia ">V&F Tecnologia</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="ph_flag "><img title="Phillipines " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h54/h99/8796276064286.png " alt="Phillipines "/>&nbsp;Phillipines</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="ph_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.gexproasia.com/ " title="Gexpro ">Gexpro</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="pl_flag "><img title="Poland " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hd8/h5b/8796276097054.png " alt="Poland "/>&nbsp;Poland</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="pl_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.elektroskandia.pl " title="Elektroskandia ">Elektroskandia</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="ru_flag "><img title="Russia " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h6f/h54/8796276129822.png " alt="Russia "/>&nbsp;Russia</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="ru_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://elektroskandia.ru/ " title="Elektroskandia ">Elektroskandia</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+</ul>
+
+					</div>
+
+					<div class="sites-col2 ">
+
+						<ul>
+
+							<li id="sg_flag "><img title="Singapore " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h88/h22/8796276162590.png " alt="Singapore "/>&nbsp;Singapore</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="sg_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.gexproasia.com/ " title="Gexpro ">Gexpro</a></li><li class="yCmsComponent ">
+
+<a href="http://lenninternational.com/ " title="Lenn International ">Lenn International</a></li><li class="yCmsComponent ">
+
+<a href="http://www.luxlight.sg/index.html " title="LuxLight ">LuxLight</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="sk_flag "><img title="Slovakia " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hf4/hd4/8796276195358.png " alt="Slovakia "/>&nbsp;Slovakia</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="sk_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.hagard.sk/ " title="Hagard:HAL ">Hagard:HAL</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="si_flag "><img title="Slovenia " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h19/h89/8796276228126.png " alt="Slovenia "/>&nbsp;Slovenia</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="si_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.elektronabava.si/ " title="Elektronabava ">Elektronabava</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="es_flag "><img title="Spain " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h93/h56/8796276260894.png " alt="Spain "/>&nbsp;Spain</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="es_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.abmrexel.es " title="ABM Rexel ">ABM Rexel</a></li><li class="yCmsComponent ">
+
+<a href="http://www.erka.es/ " title="Erka ">Erka</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="se_flag "><img title="Sweden " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h40/hb4/8796276293662.png " alt="Sweden "/>&nbsp;Sweden</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="se_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.moel.se/ " title="Moel ">Moel</a></li><li class="yCmsComponent ">
+
+<a href="http://rexelenergysolutions.se/ " title="Rexel Energy Solutions ">Rexel Energy Solutions</a></li><li class="yCmsComponent ">
+
+<a href="http://www.selga.se " title="Selga ">Selga</a></li><li class="yCmsComponent ">
+
+<a href="http://www.storel.se " title="Storel ">Storel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="ch_flag "><img title="Switzerland " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h4d/h12/8796276326430.png " alt="Switzerland "/>&nbsp;Switzerland</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="ch_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.elektro-material.ch " title="Elektro Material AG ">Elektro Material AG</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="lu_flag "><img title="Luxemburg " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h97/hcf/8796275900446.png " alt="Luxemburg "/>&nbsp;Luxemburg</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="lu_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.mexel.lu " title="Rexel ">Rexel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="it_flag "><img title="Italy " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h69/hc7/8796275867678.png " alt="Italy "/>&nbsp;Italy</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="it_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.gexproservices.com " title="Gexpro Services ">Gexpro Services</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexel.it " title="Rexel ">Rexel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+</ul>
+
+					</div>
+
+					<div class="sites-col3 ">
+
+						<ul>
+
+							<li id="ie_flag "><img title="Ireland " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h91/h06/8796275834910.png " alt="Ireland "/>&nbsp;Ireland</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="ie_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.kellihers.com/ " title="Kellihers ">Kellihers</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexel.co.uk/hii.php " title="Rexel Industrial supply solutions ">Rexel Industrial supply solutions</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="at_flag "><img title="Austria " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hc7/h2d/8796275408926.png " alt="Austria "/>&nbsp;Austria</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="at_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexel.at/ " title="Rexel ">Rexel</a></li><li class="yCmsComponent ">
+
+<a href="http://www.regro.at " title="Regro ">Regro</a></li><li class="yCmsComponent ">
+
+<a href="http://www.schaecke.at/ " title="Schäcke ">Schäcke</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="be_flag "><img title="Belgium " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h1f/h04/8796275441694.png " alt="Belgium "/>&nbsp;Belgium</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="be_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexel.be/ " title="Rexel ">Rexel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="br_flag "><img title="Brazil " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h4b/hf9/8796275474462.png " alt="Brazil "/>&nbsp;Brazil</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="br_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.etil.com.br/ " title="Etil ">Etil</a></li><li class="yCmsComponent ">
+
+<a href="http://www.nortel.com.br/ " title="Nortel ">Nortel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="ca_flag "><img title="Canada " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hc1/h64/8796275507230.png " alt="Canada "/>&nbsp;Canada</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="ca_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexel.ca " title="Rexel Canada ">Rexel Canada</a></li><li class="yCmsComponent ">
+
+<a href="http://www.liteco.ca " title="Liteco ">Liteco</a></li><li class="yCmsComponent ">
+
+<a href="http://www.nedco.ca " title="Nedco ">Nedco</a></li><li class="yCmsComponent ">
+
+<a href="http://www.westburne.ca " title="Westburne ">Westburne</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="cl_flag "><img title="Chile " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hd3/h77/8796275539998.png " alt="Chile "/>&nbsp;Chile</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="cl_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.fyk.cl/ " title="Flores y Kersting ">Flores y Kersting</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexel.cl " title="Rexel ">Rexel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="cn_flag "><img title="China " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h98/h8d/8796275572766.png " alt="China "/>&nbsp;China</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="cn_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexel.com.cn/en " title="Rexel China ">Rexel China</a></li><li class="yCmsComponent ">
+
+<a href="http://bjzh.com.cn/ " title="Beijing Zhongheng ">Beijing Zhongheng</a></li><li class="yCmsComponent ">
+
+<a href="http://www.gexproasia.com/services_support " title="Gexpro Services ">Gexpro Services</a></li><li class="yCmsComponent ">
+
+<a href="http://www.huazhangautomation.com/en/ " title="Huazhang Automation ">Huazhang Automation</a></li><li class="yCmsComponent ">
+
+<a href="http://www.lkw-zn.com/ " title="Luckywell ">Luckywell</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexelelectric.com.cn/en/ " title="Rexel ">Rexel</a></li><li class="yCmsComponent ">
+
+<a href="http://www.sz-xd.net/en/ " title="Suzhou Xidian ">Suzhou Xidian</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="cu_flag "><img title="Czech Republic " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h5a/h14/8796275605534.png " alt="Czech Republic "/>&nbsp;Czech Republic</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="cu_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexel.cz/ " title="Rexel ">Rexel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+</ul>
+
+					</div>
+
+					<div class="sites-col4 ">
+
+						<ul>
+
+							<li id="ee_flag "><img title="Estonia " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h79/hf6/8796275638302.png " alt="Estonia "/>&nbsp;Estonia</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="ee_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.elektroskandia.ee/ " title="Elektroskandia ">Elektroskandia</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="in_flag "><img title="India " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h7b/h56/8796275802142.png " alt="India "/>&nbsp;India</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="in_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.adelectronics.co.in/ " title="AD Electronics ">AD Electronics</a></li><li class="yCmsComponent ">
+
+<a href="http://www.gexproasia.com/ " title="Gexpro ">Gexpro</a></li><li class="yCmsComponent ">
+
+<a href="http://www.yantraautomation.com " title="Yantra automation ">Yantra automation</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="hu_flag "><img title="Hungary " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h7a/hbf/8796275769374.png " alt="Hungary "/>&nbsp;Hungary</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="hu_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.gexproservices.com " title="Gexpro Services ">Gexpro Services</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="de_flag "><img title="Germany " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h5d/h7d/8796275736606.png " alt="Germany "/>&nbsp;Germany</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="de_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.hagemeyerce.com " title="Hagemeyer ">Hagemeyer</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="fi_flag "><img title="Finland " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h75/h8d/8796275703838.png " alt="Finland "/>&nbsp;Finland</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="fi_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexel.fi/ " title="Rexel ">Rexel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="fr_flag "><img title="France " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h92/hc4/8796275671070.png " alt="France "/>&nbsp;France</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="fr_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.coaxel.fr " title="Coaxel ">Coaxel</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexel.fr " title="Rexel ">Rexel</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="th_flag "><img title="Thailand " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h25/hd3/8796276359198.png " alt="Thailand "/>&nbsp;Thailand</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="th_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.gexproasia.com/ " title="Gexpro ">Gexpro</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexelqt.com/ " title="Quality Trading ">Quality Trading</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="ae_flag "><img title="United Arab Emirates " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h24/h3b/8796276391966.png " alt="United Arab Emirates "/>&nbsp;United Arab Emirates</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="ae_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexel.com " title="Redco ">Redco</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+</ul>
+
+					</div>
+
+					<div class="sites-col5 ">
+
+						<ul>
+
+							<li id="gb_flag "><img title="United Kingdom " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hce/h66/8796276424734.png " alt="United Kingdom "/>&nbsp;Vereinigtes Königreich</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="gb_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.neweysonline.co.uk " title="Newey & Eyre " target="_blank ">Newey & Eyre</a></li><li class="yCmsComponent ">
+
+<a href="http://www.allaboutelectrics.co.uk/ " title="All About Electrics " target="_blank ">All About Electrics</a></li><li class="yCmsComponent ">
+
+<a href="http://http://www.wilts.co.uk/ " title="Wilts " target="_blank ">Wilts</a></li><li class="yCmsComponent ">
+
+<a href="http://www.parker-direct.com " title="Parker Merchanting " target="_blank ">Parker Merchanting</a></li><li class="yCmsComponent ">
+
+<a href="http://www.naturalsparx.co.uk " title="Natural Sparx " target="_blank ">Natural Sparx</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="us_flag "><img title="United States " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h05/ha4/8796276457502.png " alt="United States "/>&nbsp;United States</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="us_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.rexelholdingsusa.com/ " title="Rexel Holdings USA ">Rexel Holdings USA</a></li><li class="yCmsComponent ">
+
+<a href="http://www.capitollight.com/ " title="Capitol Light ">Capitol Light</a></li><li class="yCmsComponent ">
+
+<a href="http://www.gexpro.com " title="Gexpro ">Gexpro</a></li><li class="yCmsComponent ">
+
+<a href="http://www.gexproservices.com " title="Gexpro Services ">Gexpro Services</a></li><li class="yCmsComponent ">
+
+<a href="http://www.partssupercenter.com " title="Parts Super Center ">Parts Super Center</a></li><li class="yCmsComponent ">
+
+<a href="http://www.platt.com " title="Platt ">Platt</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexelusa.com " title="Rexel ">Rexel</a></li><li class="yCmsComponent ">
+
+<a href="http://www.rexelenergysolutionsusa.com/ " title="Rexel Energy Solutions ">Rexel Energy Solutions</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+<li id="vn_flag "><img title="Vietnam " src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h1e/h72/8796276490270.png " alt="Vietnam "/>&nbsp;Vietnam</li>
+
+<div style="display: none; ">
+
+	<ul class="sites-list " id="vn_flag_links ">
+
+		<li class="yCmsComponent ">
+
+<a href="http://www.gexproasia.com/ " title="Gexpro ">Gexpro</a></li></ul>
+
+	<br><br><br>
+
+</div>
+
+</ul>
+
+					</div>
+
+					</div>
+
+		</div>
+
+		</div>
+
+</div>
+
+
+
+<div id="bottom-footer ">
+
+	<div id="footer-logo ">
+
+		<p>Ein Unternehmen der RexelGruppe</p>
+
+		<img src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/rexel-footer-logo.png "/>
+
+	</div>
+
+</div>
+
+</div></div>
+
+
+
+	<form name="accessiblityForm ">
+
+		<input type="hidden " id="accesibility_refreshScreenReaderBufferField " name="accesibility_refreshScreenReaderBufferField " value=" "/>
+
+	</form>
+
+	<div id="ariaStatusMsg " class="skip " role="status " aria-relevant="text " aria-live="polite "></div>
+
+<script src="/projects/1200px-site/combined.js"></script>
+
 </body>
 
 </html>
