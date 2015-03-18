@@ -272,7 +272,14 @@ Product Details Ends Here ------------------------------------------------------
 Shopping Cart Starts Here -------------------------------------------------------
 --------------*/
 
+.itemDetails-cart {
+  padding-right: 50px !important;
+}
 
+.orderTotals-bg {
+    float: right !important;
+    margin-right: 0 !important;
+}
 
 
 
