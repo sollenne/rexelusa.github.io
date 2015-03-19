@@ -1,23 +1,21 @@
-<!-- ----------TEST 1200px Wide Homepage------------------------------------ -->
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<title>Homepage at 1200px</title>
+<title>Shopping Cart at 1200px</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
 <meta name="robots" content="index,follow" />
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="970" />
 <meta name="viewport" content="width=970, target-densitydpi=160, maximum-scale=1.0" />
-<link rel="stylesheet" type="text/css" href="/projects/1200px-site/importStyles.css"/>
 <link rel="shortcut icon" type="image/x-icon" media="all" href="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/favicon.ico" />
-<link type="text/css" rel="stylesheet" media="all" href="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/css/themes-specific.css"  />
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/projects/1200px-site/customStyles.css"/>
-</head>
-<body class="page-homepage pageType-ContentPage template-pages-layout-RexelHomePageLayout pageLabel-homepage language-de">
+<link rel="stylesheet" type="text/css" media="all" href="/projects/1200px-site/combined.css" />
 
+<style type="text/css" media="print">@IMPORT url("/_ui/desktop/common/blueprint/print.css");</style>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/projects/1200px-site/customStyles.css" />
+</head>
+<body class="page-cartPage pageType-ContentPage template-pages-CartPageTemplate pageLabel-cart language-de">
 <div style="display: none;" id="cboxOverlay">
     </div>
     <div class="" id="colorbox" style="padding-bottom: 0px; padding-right: 0px; display: none;">
@@ -241,7 +239,6 @@
 								    	<div class="ccol">
 												<ul>
 										<li><a  href="/search/brand?brand=3 M - DEUTSCHLAND">3 M - DEUTSCHLAND</a></li>
-										<li><a  href="/search/brand?brand=3M Deutschland GmbH">3M Deutschland GmbH</a></li>
 										</ul>
 											</div>
 										</div> <div id="alphaDiv_2" class="cat-row hide-alpha pt10 alpha-b">
@@ -1438,806 +1435,681 @@
 			<!-- 1785 -->
 			<div class="overlayWidnow" style="display:none"></div>
 			<a id="skip-to-content"></a>
-				<div id="content" class="clear">
-		<div class="content-top-inner">
-			<div id="content-inner" class="clearfix">
-				<div class="mid-wrapper">
-					<!-- Left container Start-->
-					<!-- login start-->
-					<!-- login End-->
-					<!-- logged in start-->
-					<div class="logged-in clear" style="height: 508px">
-	<div class="title-big brd-btm pb10">
-	Willkommen<br> <div id="namefields" >Boris&nbsp;Mendez</div>
+				<div id="breadcrumb" class="breadcrumb">
+		<div id="breadcrumb" class="breadcrumb clear">
+               <ul class="clearfix  left">
+                  <li>
+                     <a href="/">Home</a>
+                  </li>
+                  <li class="separator">&nbsp;</li>
+
+                  <li>
+                     <a href="" class="">Warenkorb</a>
+                  </li>
+				  <li class="separator">&nbsp;</li>
+				  <li class="active">
+                     <a href="/cart/checkout" onclick="return false;" class="deactive">Bestellen</a>
+                  </li>
+				  <li class="separator-deactive">&nbsp;</li>
+				  <li class="active">
+                     <a href="#" onclick="return false;" class="deactive">Bestätigung</a>
+                  </li>
+               </ul>
+
+           </div>
+		<div class="right print tool-wrapper">
+			<a href="#" class="tooltipShow"><img title='Druckseite'
+				alt="Print Page" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/print.png" height="23" width="18"></a>
+			<div class="toolTipContent">
+				<p>Druckseite</p>
+			</div>
+		</div>
 	</div>
-	<div class="pb10-account left">
-		<div class="homepage-account-detail">
-			<i class="fa fa-building-o homepage-account-icon"></i>
-			<div class="account-desc">
-				<label>Meine Firma</label>
-				<p>Moc test (de)</p>
-			</div>
-		</div>
-		<div class="homepage-account-detail">
-			<i class="fa fa-map-marker homepage-account-icon"></i>
-			<div class="account-desc">
-				<label>Niederlassung</label>
-				<p>
-				   STANDORT MÜNCHEN<br>
-				   RIDLERSTR<br>
-					71<br>
-					MÜNCHEN<br>
-					80331089/500660</p>
-			</div>
-		</div>
-		<div class="homepage-account-detail">
-			<i class="fa fa-user homepage-account-icon"></i>
+	<div class="clearfix"></div>
+	<div class="yCmsContentSlot cart-banner">
+</div><input type='hidden' id='setUpdateNoteURL' value='/cart/summary/updateentrynote' />
 
-			<div class="manager-account-desc">
-			<label>  Außendienst</label> <br/>
-				<label> Benjamin Goi</label>
-				<p>
-	01795555555<br>  	moc@hagemeyerce.com</p>
-			</div>
+<input type='hidden' id='orderNoteURL' value="/cart/summary/updateordernote" />
 
-		</div>
-		<div class="homepage-account-detail quick-links">
-			<i class="fa fa-link fa-flip-horizontal homepage-account-icon"></i>
-			<div class="account-desc">
-				<label>Nützliche Links</label>
-
-				<ul>
-			<li><a href="/my-company" title="Meine Firma">Meine Firma</a></li>
-				<li><a href="/my-account" title="Mein Konto">Mein Konto</a></li>
-				<li><a href="/my-account/joblist-view" title="Meine Favoriten">Meine Favoriten</a></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li><a href="/logout" title="Abmelden">Abmelden</a></li>
-				</ul>
-
+<div id="divInvalidNoteMsg" class="alert negative clear mb10 error-pos"
+	style="display: none">
+	<p>
+		Der Bestelltext enthält ungültige Zeichen!</p>
 </div>
-	</div>
-		</div>
+<div id="divSuccessNoteMsg" class="alert positive clear mb10 error-pos"
+	style="display: none">
+	<p>
+		Ihr Bestelltext wurde gespeichert</p>
 </div>
-<!-- logged in End-->
-				</div>
-				<!-- login End-->
-				<!-- Left container End-->
+<div id="divFailNoteMsg" class="alert negative clear mb10 error-pos"
+	style="display: none">
+	<p>
+		Der Bestelltext konnte nicht gespeichert werden.</p>
+</div>
 
-				<!-- Right container Start-->
-				<div class="mid-wrapper">
-				<div class="shop-all-products ">
-					<div class="mid-section clear">
-						<!-- CATEGORY SECTION START-->
-
-
-
-
-<!--START- defect 1931 fix -->
-	<div class="row" style="width: 100%;height: 110px;float: left">
-	<!--END- defect 1931 fix -->
+<div id="cartItems" class="clear checkout-body">
+	<div class="cart-headline-wrapper left width100">
+		<div class="your-cart left width60">
+			<div class="left">
+				Ihr Warenkorb</div>
+		</div>
 
 
 
+		<div class="overlayDiv"></div>
+		<div class="CartPopup addOrderNotesPopup " data-ordernote="">
+			<div class="popupCloseIcon"></div>
+			<div class="bold pt20">
+				Bestelltexte</div>
+			<div>
+				<textarea class="order-textarea" id="orderNote" maxlength="200"
+					cols="50" rows="5" placeholder=""></textarea>
+				<input type="hidden" id="orderCode" value="00065002"
+					maxlength="200" />
+			</div>
 
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Schalter-%26-Steckdosen/c/HGEHK0050">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h58/ha9/8824885837854.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
+			<br style="clear: both">
+			<button data-checkout-url="/cart/checkout" type="button"
+				id="saveOrderNote" class="Save saveChangeBtn positive left mb0">
+				Speichern</button>
+			<a href="#" class="cancelActBtn">Abbrechen</a>
 
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Schalter-%26-Steckdosen/c/HGEHK0050">Schalter & Steckdosen</a></span><br>
-							<div class="pro-decs">
+		</div>
+		<div class="right checkout-top">
+			<button class="checkoutButton" type="button"
+				data-checkout-url="/cart/checkout">
+				Bestellen</button>
+		</div>
 
-									<ul>
+		<div class="right add-to editNotes pr10 pl10">
 
+			<div class="editnotesshow left add-to editNotes pr10">
+				<a href="#" class="orderNotes right">Bestelltext ändern</a> <span
+					class="add-pos right"><img width="13" height="12"
+					src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/edit.png" alt="Rexel Cloud"
+					title='Bestelltexte ändern'></span>
+			</div>
+			<div class="addnotesshow left add-to editNotes pr10">
+				<a href="#" class="orderNotes right">Bestelltext hinzufügen</a> <span
+					class="add-pos right"><img width="10" height="10"
+					src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/plussign.png" alt="Rexel Cloud"
+					title='Bestelltexte hinzufügen'></span>
 
-											<li><a href="/Hagemeyer/Schalter-%26-Steckdosen/Melden/c/HGEUK1280"> Melden</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Schalter-%26-Steckdosen/Schalter-%26-Steckvorrichtungen/c/HGEUK1270"> Schalter & Steckvorrichtungen</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
-
-
-
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Installation/c/HGEHK0010">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h47/h29/8824933023774.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Installation/c/HGEHK0010">Installation</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/Installation/Anschliessen-%26-Verbinden/c/HGEUK0010"> Anschliessen & Verbinden</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Industriekomponenten/Befestigen/c/HGEUK0030"> Befestigen</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Installation/Brandschutz/c/HGEUK0040"> Brandschutz</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
+			</div>
 
 
 
 
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Kabel-%26-Leitungen/c/HGEHK0020">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h62/hf2/8824799592478.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Kabel-%26-Leitungen/c/HGEHK0020">Kabel & Leitungen</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/Installation/Kabelverschraubungen/c/HGEUK1265"> Kabelverschraubungen</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Kabel-%26-Leitungen/Aderleitungen/c/HGEUK0130"> Aderleitungen</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Kabel-%26-Leitungen/Ausgleichs-%26-Thermoleitungen/c/HGEUK0140"> Ausgleichs & Thermoleitungen</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
+		</div>
 
 	</div>
 
 
-<!--START- defect 1931 fix -->
-	<div class="row" style="width: 100%;height: 110px;float: left">
-	<!--END- defect 1931 fix -->
 
 
 
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Lichttechnik/c/HGEHK0070">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h46/h8b/8824871157790.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Lichttechnik/c/HGEHK0070">Lichttechnik</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/Lichttechnik/Allgebrauchslampen/c/HGEUK0320"> Allgebrauchslampen</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Lichttechnik/Aussenleuchten/c/HGEUK0330"> Aussenleuchten</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Lichttechnik/Betriebsger%C3%A4te/c/HGEUK0340"> Betriebsgeräte</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
-
-
-
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Geb%C3%A4udetechnik/c/HGEHK0060">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/hdd/ha1/8824923848734.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Geb%C3%A4udetechnik/c/HGEHK0060">Gebäudetechnik</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/Geb%C3%A4udetechnik/19-Zoll-Schr%C3%A4nke/c/HGEUK0460"> 19 Zoll Schränke</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Geb%C3%A4udetechnik/19-Zoll-Zubeh%C3%B6r/c/HGEUK0470"> 19 Zoll Zubehör</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Geb%C3%A4udetechnik/Aktive-Komponenten/c/HGEUK0480"> Aktive Komponenten</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
-
-
-
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Haustechnik/c/HGEHK0130">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h05/h8c/8824811782174.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Haustechnik/c/HGEHK0130">Haustechnik</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/Haustechnik/L%C3%BCftungstechnik/c/HGEUK1300"> Lüftungstechnik</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
-
-	</div>
-
-
-<!--START- defect 1931 fix -->
-	<div class="row" style="width: 100%;height: 110px;float: left">
-	<!--END- defect 1931 fix -->
-
-
-
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Industriekomponenten/c/HGEHK0080">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/hd1/h62/8824858312734.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Industriekomponenten/c/HGEHK0080">Industriekomponenten</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/Industriekomponenten/Befestigen/c/HGEUK0030"> Befestigen</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Schalter-%26-Steckdosen/Schalter-%26-Steckvorrichtungen/c/HGEUK1270"> Schalter & Steckvorrichtungen</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Industriekomponenten/Befehls-%26-Meldeger%C3%A4te/c/HGEUK0630"> Befehls & Meldegeräte</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
-
-
-
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Werkzeuge/c/HGEHK0090">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/haf/h45/8824847171614.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Werkzeuge/c/HGEHK0090">Werkzeuge</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/Werkzeuge/Arbeitsschutz-%26-Kleidung/c/HGEUK0710"> Arbeitsschutz & Kleidung</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Werkzeuge/Kabeleinziehtechnik/c/HGEUK0720"> Kabeleinziehtechnik</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Werkzeuge/Elektrowerkzeuge-%26-Zubeh%C3%B6r/c/HGEUK0730"> Elektrowerkzeuge & Zubehör</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
-
-
-
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Hausger%C3%A4te/c/HGEHK0100">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/hca/h6c/8824879415326.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Hausger%C3%A4te/c/HGEHK0100">Hausgeräte</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/Hausger%C3%A4te/Bodenpflege/c/HGEUK0830"> Bodenpflege</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Hausger%C3%A4te/B%C3%BCgeln/c/HGEUK0840"> Bügeln</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Hausger%C3%A4te/Gefrieren/c/HGEUK0850"> Gefrieren</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
-
-	</div>
-
-
-<!--START- defect 1931 fix -->
-	<div class="row" style="width: 100%;height: 110px;float: left">
-	<!--END- defect 1931 fix -->
-
-
-
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/SAT%2C-DNT%2C-Telefonie/c/HGEHK0110">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h95/hb7/8824747556894.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/SAT%2C-DNT%2C-Telefonie/c/HGEHK0110">SAT, DNT, Telefonie</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/SAT%2C-DNT%2C-Telefonie/Antennen---Zubeh%C3%B6r/c/HGEUK0990"> Antennen - Zubehör</a></li>
-
-
-
-											<li><a href="/Hagemeyer/SAT%2C-DNT%2C-Telefonie/Antennentechnik/c/HGEUK1000"> Antennentechnik</a></li>
-
-
-
-											<li><a href="/Hagemeyer/SAT%2C-DNT%2C-Telefonie/Audio/c/HGEUK1010"> Audio</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
-
-
-
-
-				<div class="left sub-title col-1-homePage"><!-- UAT defect CLOUD-2021 -->
-					<ul>
-						<li>
-								<a href="/Hagemeyer/Verteiler/c/HGEHK0030">
-									<img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/hfb/h3a/8824728289310.jpg" height="45" width="45"
-										alt=""
-										title="">
-								</a>
-
-							</li>
-						<li class="pro-details1"><span class="pro-heading"> <a
-								href="/Hagemeyer/Verteiler/c/HGEHK0030">Verteiler</a></span><br>
-							<div class="pro-decs">
-
-									<ul>
-
-
-											<li><a href="/Hagemeyer/Verteiler/Einbaumessger%C3%A4te/c/HGEUK1120"> Einbaumessgeräte</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Verteiler/Klemmen/c/HGEUK1130"> Klemmen</a></li>
-
-
-
-											<li><a href="/Hagemeyer/Verteiler/Reiheneinbauger%C3%A4te/c/HGEUK1140"> Reiheneinbaugeräte</a></li>
-
-
-									</ul>
-
-
-							</div></li>
-					</ul>
-				</div>
-
-
-
-
-	</div>
-
-<!-- CATEGORY SECTION START-->
+	<table class="cart pt20 clear">
+
+		<thead>
+			<tr>
+				<th colspan="2" id="header2-cart" class="cart-title">Artikel</th>
+				<th id="header3" class="cart-title">Verfügbarkeit</th>
+				<th id="header3" class="cart-title">PREIS</th>
+				<th id="header4" class="cart-title">Menge</th>
+				<th id="header6" class="cart-title">Gesamtsumme</th>
+			</tr>
+		</thead>
+		<tbody class="">
+			<!--    Configuration values  -->
+
+			<tr class="cartItem txt-box-pos" style="">
+					<td headers="header2" class="product-img pr15"><a
+						href="/Marke/Eaton/RCDILE48-RC-Schutzbeschaltung%2C-48-VAC%2C-f%C3%BCr-DILE%2C-Schraubanschluss/p/2207423"><img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h52/h86/8812849725470.jpg" alt="RCDILE48 RC-Schutzbeschaltung, 48 VAC, für DILE, Schraubanschluss" title="RCDILE48 RC-Schutzbeschaltung, 48 VAC, für DILE, Schraubanschluss"/>
+             </a></td>
+					<td headers="header2" class="itemDetails-cart">
+
+						<div class="item-Name">
+							<a href="/Marke/Eaton/RCDILE48-RC-Schutzbeschaltung%2C-48-VAC%2C-f%C3%BCr-DILE%2C-Schraubanschluss/p/2207423">RCDILE48 RC-Schutzbeschaltung, 48 VAC, für DILE, Schraubanschluss</a>
+						</div>
+
+
+						<div>
+							<span class="item-Label">HAG Artikelnr.:</span>
+
+							2207423</div>
+						<div>
+							<span class="item-Label">Hersteller:</span> EATON ELECTRIC GMBH</div> <div>
+								<span class="item-Label">Hersteller Nummer	</span>
+								044264</div>
+						<div class="notes-cart pb20">
+							<span class="item-Label-cart"><form id="updateNoteForm3" action="/cart/summary/updateentrynote" method="post">Bestelltext: <input class="item-notes-box" maxlength="200"
+										id="entryNote_3" name="entryNote"
+										value="" type="text" size="10"
+										maxlength="200" />
+									<input type="hidden" name="productCode"
+										value="2207423" />
+									<input id="entryCode_3" type="hidden"
+										name="code" value="3" />
+									<input id="initialEntryNote_3" type="hidden"
+										name="initialEntryNote" value="" />
+									<input id="initialQuantity_3" type="hidden"
+										name="initialQuantity" value="1" />
+								</form></span> <input type="hidden" id="isBackOrder" value="" />
+
+						</div>
+
+
+
+					</td>
+					<td headers="header3" class="itemAvailability">
+						<table cellpadding="0" class="availability">
+							<tbody>
+
+								<tr class="deliveryDetail">
+											<td><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-green-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+</td>
+											<td>
+												<div class="dark-text avail-data-width ">10&nbsp;Lieferbar in 1 Tag(en)</div>
+												<div class="avail-data-width pb10">
+													Bestellung bis 20Uhr - Lieferung am nächsten Werktag</div> </td>
+										</tr>
+
+										<tr class="pickUpDetailBO">
+
+											<!-- <div class="pt10"> -->
+												<td><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+</td>
+												<!-- </div> -->
+											<td class="p0"><div class="  dark-text avail-data-width">0&nbsp;in Kürze verfügbar</div></td>
+										</tr>
+
+									</tbody>
+						</table>
+
+					</td>
+					<td headers="header3" class="itemPrice"><!-- <div class="dark-text">$61.20 / each</div> -->
+						<div>
+							<span class="dark-text"> </span>
+						</div> Min.1&nbsp;Stück<br>
+						Intervall:1&nbsp;Stück<br>
+
+
+						Brutto 13,20 €<br>
+							Rabatt 3,43 €<br>
+
+							<!-- <div>excl. surcharge
+							  <a class="tooltipShow-big"><img width="14" height="13" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/que.png" alt="Rexel Cloud"></a><div>
+							  <div class="toolTipContent-big" style="display: none;">
+								<div>Copper:  <span class="pl20">$1.71/100 meters</span></div>
+								<div>Coil Insert:  <span class="pl20">$1.14/100 meters</span></div>
+							  </div>
+                        </div></div> --></td>
+					<td headers="header4" class="quantity">
+
+						<div class="table-link text-left">
+							<form id="updateCartForm3" action="/cart/update" method="post"><input type="hidden" name="entryNumber"
+									value="3" />
+								<input type="hidden" name="entryProductCode"
+									value="2207423" />
+								<input type="hidden" name="initialQuantity"
+									value="1" />
+								<input type="hidden" name="productMultipleQuantity"
+									value="1" />
+								<input type="hidden" name="productMinQuantity"
+									value="1" />
+								<input id="cartEntryNote_3" type="hidden"
+									name="entryNote" value="" />
+								<label class="skip" for="quantity2">Menge</label>
+								<input id="quantity3" name="quantity" value="1" class="qty" type="text" value="1" size="1"/><!-- <input type="text" size="1" value="2" class="qty" name="quantity" id="quantity2"> -->
+								<a href="#" id="QuantityProduct_3"
+									class="updateQuantityProduct pt10">Aktualisierung</a>
+								<input type="hidden" name="actionType"
+									id="actionType_3" />
+
+
+								<div class="txt-notes">
+									<!-- 									</div> -->
+								</div>
+							</form><a href="#" id="RemoveProduct_3"
+										class="submitRemoveProduct ">Löschen</a>
+								</div>
+					</td>
+					<td headers="header6" class="total relposition">
+						<div class="dark-text">
+
+
+							</div>
+					</td>
+				</tr>
+			<tr class="cartItem txt-box-pos" style="">
+					<td headers="header2" class="product-img pr15"><a
+						href="/Hagemeyer/Industriekomponenten/Sch%C3%BCtze-%26-Relais/%C3%9Cberspannungsbegrenzer/RV-BC6-60-Varistorl%C3%B6schglied-24-60V-DC/p/2122002"><img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h24/h26/8813787152414.jpg" alt="RV-BC6/60 Varistorlöschglied 24-60V DC" title="RV-BC6/60 Varistorlöschglied 24-60V DC"/>
+             </a></td>
+					<td headers="header2" class="itemDetails-cart">
+
+						<div class="item-Name">
+							<a href="/Hagemeyer/Industriekomponenten/Sch%C3%BCtze-%26-Relais/%C3%9Cberspannungsbegrenzer/RV-BC6-60-Varistorl%C3%B6schglied-24-60V-DC/p/2122002">RV-BC6/60 Varistorlöschglied 24-60V DC</a>
+						</div>
+
+
+						<div>
+							<span class="item-Label">HAG Artikelnr.:</span>
+
+							2122002</div>
+						<div>
+							<span class="item-Label">Hersteller:</span> ABB ASJ GMBH</div> <div>
+								<span class="item-Label">Hersteller Nummer	</span>
+								GHV2501902R0002</div>
+						<div class="notes-cart pb20">
+							<span class="item-Label-cart"><form id="updateNoteForm2" action="/cart/summary/updateentrynote" method="post">Bestelltext: <input class="item-notes-box" maxlength="200"
+										id="entryNote_2" name="entryNote"
+										value="" type="text" size="10"
+										maxlength="200" />
+									<input type="hidden" name="productCode"
+										value="2122002" />
+									<input id="entryCode_2" type="hidden"
+										name="code" value="2" />
+									<input id="initialEntryNote_2" type="hidden"
+										name="initialEntryNote" value="" />
+									<input id="initialQuantity_2" type="hidden"
+										name="initialQuantity" value="1" />
+								</form></span> <input type="hidden" id="isBackOrder" value="" />
+
+						</div>
+
+
+
+					</td>
+					<td headers="header3" class="itemAvailability">
+						<table cellpadding="0" class="availability">
+							<tbody>
+
+								<tr class="deliveryDetail">
+											<td><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+</td>
+											<td>
+												<div class="dark-text avail-data-width ">0&nbsp;Lieferung in Kürze</div>
+												<div class="avail-data-width pb10">
+													Bestellung bis 20Uhr - Lieferung am nächsten Werktag</div> </td>
+										</tr>
+
+										<tr class="pickUpDetailBO">
+
+											<!-- <div class="pt10"> -->
+												<td><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+</td>
+												<!-- </div> -->
+											<td class="p0"><div class="  dark-text avail-data-width">0&nbsp;in Kürze verfügbar</div></td>
+										</tr>
+
+									</tbody>
+						</table>
+
+					</td>
+					<td headers="header3" class="itemPrice"><!-- <div class="dark-text">$61.20 / each</div> -->
+						<div>
+							<span class="dark-text"> </span>
+						</div> Min.1&nbsp;Stück<br>
+						Intervall:1&nbsp;Stück<br>
+
+
+						Brutto 10,30 €<br>
+							Rabatt 2,27 €<br>
+
+							<!-- <div>excl. surcharge
+							  <a class="tooltipShow-big"><img width="14" height="13" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/que.png" alt="Rexel Cloud"></a><div>
+							  <div class="toolTipContent-big" style="display: none;">
+								<div>Copper:  <span class="pl20">$1.71/100 meters</span></div>
+								<div>Coil Insert:  <span class="pl20">$1.14/100 meters</span></div>
+							  </div>
+                        </div></div> --></td>
+					<td headers="header4" class="quantity">
+
+						<div class="table-link text-left">
+							<form id="updateCartForm2" action="/cart/update" method="post"><input type="hidden" name="entryNumber"
+									value="2" />
+								<input type="hidden" name="entryProductCode"
+									value="2122002" />
+								<input type="hidden" name="initialQuantity"
+									value="1" />
+								<input type="hidden" name="productMultipleQuantity"
+									value="1" />
+								<input type="hidden" name="productMinQuantity"
+									value="1" />
+								<input id="cartEntryNote_2" type="hidden"
+									name="entryNote" value="" />
+								<label class="skip" for="quantity2">Menge</label>
+								<input id="quantity2" name="quantity" value="1" class="qty" type="text" value="1" size="1"/><!-- <input type="text" size="1" value="2" class="qty" name="quantity" id="quantity2"> -->
+								<a href="#" id="QuantityProduct_2"
+									class="updateQuantityProduct pt10">Aktualisierung</a>
+								<input type="hidden" name="actionType"
+									id="actionType_2" />
+
+
+								<div class="txt-notes">
+									<!-- 									</div> -->
+								</div>
+							</form><a href="#" id="RemoveProduct_2"
+										class="submitRemoveProduct ">Löschen</a>
+								</div>
+					</td>
+					<td headers="header6" class="total relposition">
+						<div class="dark-text">
+
+
+							</div>
+					</td>
+				</tr>
+			<tr class="cartItem txt-box-pos" style="">
+					<td headers="header2" class="product-img pr15"><a
+						href="/Hagemeyer/Werkzeuge/Arbeitsschutz-%26-Kleidung/Arbeitsweste/APG-10-St%C3%B6rlichtbogengepr%C3%BCfte-Schutzhandschuhe-Gr%C3%B6%C3%9Fe-10/p/2887408"><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/missing-product-96x96.jpg" alt="APG 10 Störlichtbogengeprüfte Schutzhandschuhe Größe 10" title="APG 10 Störlichtbogengeprüfte Schutzhandschuhe Größe 10" width="" height="" class="" />
+</a></td>
+					<td headers="header2" class="itemDetails-cart">
+
+						<div class="item-Name">
+							<a href="/Hagemeyer/Werkzeuge/Arbeitsschutz-%26-Kleidung/Arbeitsweste/APG-10-St%C3%B6rlichtbogengepr%C3%BCfte-Schutzhandschuhe-Gr%C3%B6%C3%9Fe-10/p/2887408">APG 10 Störlichtbogengeprüfte Schutzhandschuhe Größe 10</a>
+						</div>
+
+
+						<div>
+							<span class="item-Label">HAG Artikelnr.:</span>
+
+							2887408</div>
+						<div>
+							<span class="item-Label">Hersteller:</span> DEHN + SOEHNE GMBH & CO. KG</div> <div>
+								<span class="item-Label">Hersteller Nummer	</span>
+								785798</div>
+						<div class="notes-cart pb20">
+							<span class="item-Label-cart"><form id="updateNoteForm1" action="/cart/summary/updateentrynote" method="post">Bestelltext: <input class="item-notes-box" maxlength="200"
+										id="entryNote_1" name="entryNote"
+										value="" type="text" size="10"
+										maxlength="200" />
+									<input type="hidden" name="productCode"
+										value="2887408" />
+									<input id="entryCode_1" type="hidden"
+										name="code" value="1" />
+									<input id="initialEntryNote_1" type="hidden"
+										name="initialEntryNote" value="" />
+									<input id="initialQuantity_1" type="hidden"
+										name="initialQuantity" value="1" />
+								</form></span> <input type="hidden" id="isBackOrder" value="" />
+
+						</div>
+
+
+
+					</td>
+					<td headers="header3" class="itemAvailability">
+						<table cellpadding="0" class="availability">
+							<tbody>
+
+								<tr class="deliveryDetail">
+											<td><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-green-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+</td>
+											<td>
+												<div class="dark-text avail-data-width ">14&nbsp;Lieferbar in 1 Tag(en)</div>
+												<div class="avail-data-width pb10">
+													Bestellung bis 20Uhr - Lieferung am nächsten Werktag</div> </td>
+										</tr>
+
+										<tr class="pickUpDetailBO">
+
+											<!-- <div class="pt10"> -->
+												<td><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+</td>
+												<!-- </div> -->
+											<td class="p0"><div class="  dark-text avail-data-width">0&nbsp;in Kürze verfügbar</div></td>
+										</tr>
+
+									</tbody>
+						</table>
+
+					</td>
+					<td headers="header3" class="itemPrice"><!-- <div class="dark-text">$61.20 / each</div> -->
+						<div>
+							<span class="dark-text"> </span>
+						</div> Min.1&nbsp;Paar<br>
+						Intervall:1&nbsp;Paar<br>
+
+
+						Brutto 89,00 €<br>
+							Rabatt 19,58 €<br>
+
+							<!-- <div>excl. surcharge
+							  <a class="tooltipShow-big"><img width="14" height="13" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/que.png" alt="Rexel Cloud"></a><div>
+							  <div class="toolTipContent-big" style="display: none;">
+								<div>Copper:  <span class="pl20">$1.71/100 meters</span></div>
+								<div>Coil Insert:  <span class="pl20">$1.14/100 meters</span></div>
+							  </div>
+                        </div></div> --></td>
+					<td headers="header4" class="quantity">
+
+						<div class="table-link text-left">
+							<form id="updateCartForm1" action="/cart/update" method="post"><input type="hidden" name="entryNumber"
+									value="1" />
+								<input type="hidden" name="entryProductCode"
+									value="2887408" />
+								<input type="hidden" name="initialQuantity"
+									value="1" />
+								<input type="hidden" name="productMultipleQuantity"
+									value="1" />
+								<input type="hidden" name="productMinQuantity"
+									value="1" />
+								<input id="cartEntryNote_1" type="hidden"
+									name="entryNote" value="" />
+								<label class="skip" for="quantity2">Menge</label>
+								<input id="quantity1" name="quantity" value="1" class="qty" type="text" value="1" size="1"/><!-- <input type="text" size="1" value="2" class="qty" name="quantity" id="quantity2"> -->
+								<a href="#" id="QuantityProduct_1"
+									class="updateQuantityProduct pt10">Aktualisierung</a>
+								<input type="hidden" name="actionType"
+									id="actionType_1" />
+
+
+								<div class="txt-notes">
+									<!-- 									</div> -->
+								</div>
+							</form><a href="#" id="RemoveProduct_1"
+										class="submitRemoveProduct ">Löschen</a>
+								</div>
+					</td>
+					<td headers="header6" class="total relposition">
+						<div class="dark-text">
+
+
+							</div>
+					</td>
+				</tr>
+			<tr class="cartItem txt-box-pos" style="">
+					<td headers="header2" class="product-img pr15"><a
+						href="/Hagemeyer/Werkzeuge/Arbeitsschutz-%26-Kleidung/Arbeitsweste/KFP-25-M12-Kugelfestpunkt-D-25mm-gerade-m-Innengewinde-M12/p/2118708"><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/missing-product-96x96.jpg" alt="KFP 25 M12 Kugelfestpunkt D 25mm gerade m. Innengewinde M12" title="KFP 25 M12 Kugelfestpunkt D 25mm gerade m. Innengewinde M12" width="" height="" class="" />
+</a></td>
+					<td headers="header2" class="itemDetails-cart">
+
+						<div class="item-Name">
+							<a href="/Hagemeyer/Werkzeuge/Arbeitsschutz-%26-Kleidung/Arbeitsweste/KFP-25-M12-Kugelfestpunkt-D-25mm-gerade-m-Innengewinde-M12/p/2118708">KFP 25 M12 Kugelfestpunkt D 25mm gerade m. Innengewinde M12</a>
+						</div>
+
+
+						<div>
+							<span class="item-Label">HAG Artikelnr.:</span>
+
+							2118708</div>
+						<div>
+							<span class="item-Label">Hersteller:</span> DEHN + SOEHNE GMBH & CO. KG</div> <div>
+								<span class="item-Label">Hersteller Nummer	</span>
+								755200</div>
+						<div class="notes-cart pb20">
+							<span class="item-Label-cart"><form id="updateNoteForm0" action="/cart/summary/updateentrynote" method="post">Bestelltext: <input class="item-notes-box" maxlength="200"
+										id="entryNote_0" name="entryNote"
+										value="" type="text" size="10"
+										maxlength="200" />
+									<input type="hidden" name="productCode"
+										value="2118708" />
+									<input id="entryCode_0" type="hidden"
+										name="code" value="0" />
+									<input id="initialEntryNote_0" type="hidden"
+										name="initialEntryNote" value="" />
+									<input id="initialQuantity_0" type="hidden"
+										name="initialQuantity" value="1" />
+								</form></span> <input type="hidden" id="isBackOrder" value="" />
+
+						</div>
+
+
+
+					</td>
+					<td headers="header3" class="itemAvailability">
+						<table cellpadding="0" class="availability">
+							<tbody>
+
+								<tr class="deliveryDetail">
+											<td><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+</td>
+											<td>
+												<div class="dark-text avail-data-width ">0&nbsp;Lieferung in Kürze</div>
+												<div class="avail-data-width pb10">
+													Bestellung bis 20Uhr - Lieferung am nächsten Werktag</div> </td>
+										</tr>
+
+										<tr class="pickUpDetailBO">
+
+											<!-- <div class="pt10"> -->
+												<td><img src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/images/powertools-red-indicator.png" alt="Rexel indicator" title="Hagemeyer" width="10" height="10" class="tbl-img" />
+</td>
+												<!-- </div> -->
+											<td class="p0"><div class="  dark-text avail-data-width">0&nbsp;in Kürze verfügbar</div></td>
+										</tr>
+
+									</tbody>
+						</table>
+
+					</td>
+					<td headers="header3" class="itemPrice"><!-- <div class="dark-text">$61.20 / each</div> -->
+						<div>
+							<span class="dark-text"> 15,44 € / Stück</span>
+						</div> Min.1&nbsp;Stück<br>
+						Intervall:1&nbsp;Stück<br>
+
+
+						Brutto 19,80 €<br>
+							Rabatt 4,36 €<br>
+
+							<!-- <div>excl. surcharge
+							  <a class="tooltipShow-big"><img width="14" height="13" src="https://www.hagemeyer-shop.de/_ui/desktop/common/images/que.png" alt="Rexel Cloud"></a><div>
+							  <div class="toolTipContent-big" style="display: none;">
+								<div>Copper:  <span class="pl20">$1.71/100 meters</span></div>
+								<div>Coil Insert:  <span class="pl20">$1.14/100 meters</span></div>
+							  </div>
+                        </div></div> --></td>
+					<td headers="header4" class="quantity">
+
+						<div class="table-link text-left">
+							<form id="updateCartForm0" action="/cart/update" method="post"><input type="hidden" name="entryNumber"
+									value="0" />
+								<input type="hidden" name="entryProductCode"
+									value="2118708" />
+								<input type="hidden" name="initialQuantity"
+									value="1" />
+								<input type="hidden" name="productMultipleQuantity"
+									value="1" />
+								<input type="hidden" name="productMinQuantity"
+									value="1" />
+								<input id="cartEntryNote_0" type="hidden"
+									name="entryNote" value="" />
+								<label class="skip" for="quantity2">Menge</label>
+								<input id="quantity0" name="quantity" value="1" class="qty" type="text" value="1" size="1"/><!-- <input type="text" size="1" value="2" class="qty" name="quantity" id="quantity2"> -->
+								<a href="#" id="QuantityProduct_0"
+									class="updateQuantityProduct pt10">Aktualisierung</a>
+								<input type="hidden" name="actionType"
+									id="actionType_0" />
+
+
+								<div class="txt-notes">
+									<!-- 									</div> -->
+								</div>
+							</form><a href="#" id="RemoveProduct_0"
+										class="submitRemoveProduct ">Löschen</a>
+								</div>
+					</td>
+					<td headers="header6" class="total relposition">
+						<div class="dark-text">
+
+
+							15,44 €</div>
+					</td>
+				</tr>
+			</tbody>
+	</table>
+</div>
+
+<div class="clearfix">
+					<div class="span-20 width810">
+
+					&nbsp;
 					</div>
+					<div class="span-9 last orderTotals-bg">
+						<table id="orderTotals">
+	<thead>
+		<tr>
+			<td>Bestellsumme</td>
+			<td></td>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td class="dark-text uppercase">Gesamtsumme:</td>
+			<td class="dark-text"><!-- [IGATE] -->
+					102,66 €</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td class="order-labels">Zwischensumme:</td>
+			<td class="order-labels dark-text">102,66 €</td>
+
+		</tr>
+		<tr>
+					<td colspan="2">
+
+						<div id="events-example" class="example">
+							<h3 aria-expanded="false" data-collapse-summary=""
+								class="section-header open-link">
+								<a href="#" class=""> MwSt<span
+									class="right dark-text">
+							  	    0,00 €</span></a>
+							</h3>
+							<div aria-hidden="true" style="display: none; padding-top: 0">
+								<table width="100%" border="0" " class="order-sub">
+									<tbody>
+										</tbody>
+								</table>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</tbody>
+</table>
+
+<div class="width100 left">
+	<div class="width50 float-l clear continue-link  text-right pr10">
+		<a href="/Hagemeyer/Geb&auml;udetechnik/Datenkabel/c/HGEUK0510">Weiter Einkaufen</a>
+	</div>
+	<div class="right mb10">
+		<button class="checkoutButton" type="button"
+			data-checkout-url="/cart/checkout">
+			Bestellen</button>
+	</div>
+</div>
+
+
+
+</div>
 				</div>
-				</div>
-				<!-- Right container End-->
-			</div>
 
-			<!-- Four-col container Start-->
-			<div class="title-big ptb10 left clear row items-viewed">Zuletzt gesehene Artikel</div>
-
-			<div class="content"><html>
-                <head>
-                                <style>
-                                                .yCmsComponent.left {
-                                                width:219px;
-                                                }
-
-                                                .yCmsComponent.left.widthrelateditems20 {
-                                                padding-right: 20px;
-                                                }
-                                </style>
-                </head>
-</html>
-</div><div class="four-col ptb10 clear row related-items mt5">
-	<!-- AD SECTION START-->
-	<div class="row">
-	<div class="yCmsComponent left widthrelateditems20">
-  <div class="text-left">
-    <a href="/p/3003098">
-      <img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h95/h3c/8828771926046.jpg" height="128" width="202" alt="Rexel Cloud" title="Rexel Cloud">
-  </div>
-<div class="sub-title pt10">
-	HCDXL 30.2030.1 WEISS MULTI DOWNLIGHT AD=224/DA=195 LED 3000K 230VAC REFL.HOCHGL.<br>3003098</div>
-</a>
-<div class="price-red">
-	172,80 €</div>
-
-
-</div><div class="yCmsComponent left widthrelateditems20">
-<div class="text-left">
-	<a href="/p/4033403"> <img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h90/h7e/8828772089886.jpg"
-		height="128" width="202" alt="Rexel Cloud" title="Rexel Cloud">
-</div>
-<div class="sub-title pt10">
-	BIZ 790511 Werkzeugkoffer MASTER inkl. 24 Werkzeugen<br>4033403</div>
-</a>
-<div class="price-red">
-	364,63 €</div>
-
-
-</div><div class="yCmsComponent left widthrelateditems20">
-<div class="text-left">
-	<a href="/p/2029266"> <img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/hb9/h86/8828772253726.jpg"
-		height="128" width="202" alt="Rexel Cloud" title="Rexel Cloud">
-</div>
-<div class="sub-title pt10">
-	20 EUC-214 Reflex SI, SCHUKO® Steckdosen, Steckdosen-Einsatz, alpinweiß<br>2029266</div>
-</a>
-<div class="price-red">
-	4,70 €</div>
-
-</div><div class="yCmsComponent left widthrelateditems20">
-<div class="text-left">
-	<a href="/p/4033403"> <img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h90/h7e/8828772089886.jpg"
-		height="128" width="202" alt="Rexel Cloud" title="Rexel Cloud">
-</div>
-<div class="sub-title pt10">
-	BIZ 790511 Werkzeugkoffer MASTER inkl. 24 Werkzeugen<br>4033403</div>
-</a>
-<div class="price-red">
-	364,63 €</div>
-
-</div><div class="yCmsComponent left">
-<div class="text-left">
-	<a href="/p/2850842"> <img src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h8c/h1c/8828775170078.jpg"
-		height="128" width="202" alt="Rexel Cloud" title="Rexel Cloud">
-</div>
-<div class="sub-title pt10">
-	ADS916D FI-LS 1P plus N 6kA B-16A 30mA Typ A QC<br>2850842</div>
-</a>
-<div class="price-red">
-	88,80 €</div>
-
-
+			<div class="yCmsContentSlot span-24">
+</div><div class="yCmsContentSlot span-24">
 </div></div>
-	<!-- AD SECTION END-->
-</div>
-
-
-<!-- Three-col container Start-->
-			<div id="bannerCount" style="display: none;">5</div>
-			<div class="title-big ptb10 left clear row items-viewed">Unsere Top Partner</div>
-			<div id="slider1">
-					<div class="viewport">
-						<ul class="overview">
-							<li>
-
-<div class="disp-img slideWide pb58">
-	<a href="/search/?text=gira+t%C3%BCrstation+kamera">
-				<div class="thumb">
-				<img title="Gira - Türkommunikation" alt="" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h00/hcb/8823586357278.jpg">
-				</div>
-				<div style="background: #f4f4f4;height: 160px;width:225px">
-				<div class="title pl10 pr10">
-					<br/>
-					<label>Gira - Türkommunikation</label>
-				</div>
-				<div class="details pl10 pr10">
-					<p>Moderne Türkommunikation aus deutscher Produktion</p>
-				</div>
-				<div class="action">
-				</div>
-				</div>
-			</a>
-		</div>
-</li><li>
-
-<div class="disp-img slideWide pb58">
-	<a href="/c/brand_7043402">
-				<div class="thumb">
-				<img title="Licht-Revolution eröffnet riesige Potentiale" alt="" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h44/hbf/8823585865758.jpg">
-				</div>
-				<div style="background: #f4f4f4;height: 160px;width:225px">
-				<div class="title pl10 pr10">
-					<br/>
-					<label>Licht-Revolution eröffnet riesige Potentiale</label>
-				</div>
-				<div class="details pl10 pr10">
-					<p>Das kabellose Lichtsteuerungssystem Lightify Home von OSRAM verbindet maximale Flexibilit&auml;t mit minimalem Installationsaufwand.</p>
-				</div>
-				<div class="action">
-				</div>
-				</div>
-			</a>
-		</div>
-</li><li>
-
-<div class="disp-img slideWide pb58">
-	<a href="/search/?text=gira+t%C3%BCrstation+kamera">
-				<div class="thumb">
-				<img title="Gira - Türkommunikation" alt="" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h00/hcb/8823586357278.jpg">
-				</div>
-				<div style="background: #f4f4f4;height: 160px;width:225px">
-				<div class="title pl10 pr10">
-					<br/>
-					<label>Gira - Türkommunikation</label>
-				</div>
-				<div class="details pl10 pr10">
-					<p>Moderne Türkommunikation aus deutscher Produktion</p>
-				</div>
-				<div class="action">
-				</div>
-				</div>
-			</a>
-		</div>
-</li><li>
-
-<div class="disp-img slideWide pb58">
-	<a href="/search/?text=free@home">
-				<div class="thumb">
-				<img title="B&J - free@home" alt="" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h6a/h7b/8823586029598.jpg">
-				</div>
-				<div style="background: #f4f4f4;height: 160px;width:225px">
-				<div class="title pl10 pr10">
-					<br/>
-					<label>B&J - free@home</label>
-				</div>
-				<div class="details pl10 pr10">
-					<p>Haussteuerung so einfach wie nie mit Busch-free@home&reg;.<br />Mit free@home verwandeln Sie Ihr Haus oder die Wohung in ein intelligentes Zuhause.&nbsp; </p>
-				</div>
-				<div class="action">
-				</div>
-				</div>
-			</a>
-		</div>
-</li><li>
-
-<div class="disp-img slideWide pb58">
-	<a href="/search/?text=philips+led">
-				<div class="thumb">
-				<img title="Philips Future Lighting" alt="" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h19/hdd/8823586193438.jpg">
-				</div>
-				<div style="background: #f4f4f4;height: 160px;width:225px">
-				<div class="title pl10 pr10">
-					<br/>
-					<label>Philips Future Lighting</label>
-				</div>
-				<div class="details pl10 pr10">
-					<p>&quot;Future Ready Lighting - Zukunftssichere Beleuchtung&quot; - Philips hat mit seinen LED-Produkten das Ziel Haushalte zu &quot;sanieren&quot;.</p>
-				</div>
-				<div class="action">
-				</div>
-				</div>
-			</a>
-		</div>
-</li><li>
-
-<div class="disp-img slideWide pb58">
-	<a href="/search/?text=gira+t%C3%BCrstation+kamera">
-				<div class="thumb">
-				<img title="Gira - Türkommunikation" alt="" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h00/hcb/8823586357278.jpg">
-				</div>
-				<div style="background: #f4f4f4;height: 160px;width:225px">
-				<div class="title pl10 pr10">
-					<br/>
-					<label>Gira - Türkommunikation</label>
-				</div>
-				<div class="details pl10 pr10">
-					<p>Moderne Türkommunikation aus deutscher Produktion</p>
-				</div>
-				<div class="action">
-				</div>
-				</div>
-			</a>
-		</div>
-</li><li>
-
-<div class="disp-img slideWide pb58">
-	<a href="/search/?text=gira+t%C3%BCrstation+kamera">
-				<div class="thumb">
-				<img title="Gira - Türkommunikation" alt="" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/root/h00/hcb/8823586357278.jpg">
-				</div>
-				<div style="background: #f4f4f4;height: 160px;width:225px">
-				<div class="title pl10 pr10">
-					<br/>
-					<label>Gira - Türkommunikation</label>
-				</div>
-				<div class="details pl10 pr10">
-					<p>Moderne Türkommunikation aus deutscher Produktion</p>
-				</div>
-				<div class="action">
-				</div>
-				</div>
-			</a>
-		</div>
-</li><li>
-
-<div class="disp-img slideWide pb58">
-	<a href="/search/?text=logo!">
-				<div class="thumb">
-				<img title="Test" alt="Siemens_225x160.jpg" src="https://www.hagemeyer-shop.de/medias/sys_Hagemeyerce/images/images/h67/h76/8828771631134.jpg">
-				</div>
-				<div style="background: #f4f4f4;height: 160px;width:225px">
-				<div class="title pl10 pr10">
-					<br/>
-					<label>Test</label>
-				</div>
-				<div class="details pl10 pr10">
-					<p>Test</p>
-				</div>
-				<div class="action">
-				</div>
-				</div>
-			</a>
-		</div>
-</li></ul>
-					</div>
-					<div class="slider-btn">
-						<div class="slider-prev">
-							<i class="fa fa-chevron-circle-left fa-3x prev"></i>
-						</div>
-						<div class="slider-next">
-							<i class="fa fa-chevron-circle-right fa-3x next"></i>
-						</div>
-					</div>
-					<ul class="bullets">
-                        <li><a href="#" class="bullet" data-slide="0"><i class="fa fa-circle"></i></a></li>
-                        <li><a href="#" class="bullet" data-slide="4"><i class="fa fa-circle"></i></a></li>
-                        <li><a href="#" class="bullet" data-slide="8"><i class="fa fa-circle"></i></a></li>
-                    </ul>
-                    </div>
-			<!-- Three-col container End-->
-		</div>
-	</div>
-</div>
 			<div class="yCmsContentSlot footer">
 <div id="footerTabs">
 	<div class="tabHead">General Information</div>
@@ -2605,129 +2477,19 @@
 		<input type="hidden" id="accesibility_refreshScreenReaderBufferField" name="accesibility_refreshScreenReaderBufferField" value=""/>
 	</form>
 	<div id="ariaStatusMsg" class="skip" role="status" aria-relevant="text" aria-live="polite"></div>
-	<script type="text/javascript">
-
-var defaultLabelForStock="in Kürze verfügbar";
-var defaultSymbolForDiscount="€";
-var pricesectionlistprice="Brutto: ";
-var pricesectiondiscount="Rabatt: ";
-var missingImageThumbnailUrl="/_ui/desktop/theme-germany/images/missing-product-96x96.jpg";
-var itemsLabel="Artikel";
-</script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript">
-		/*<![CDATA[*/
 
 
-		var ACC = { config: {} };
-			ACC.config.contextPath = "";
-			ACC.config.commonResourcePath = "/_ui/desktop/common";
-			ACC.config.themeResourcePath = "/_ui/desktop/theme-germany";
-			ACC.config.siteResourcePath = "/_ui/desktop/site-gyw";
-			ACC.config.language = "";
-			ACC.config.rootPath = "/_ui/desktop";
-			ACC.pwdStrengthVeryWeak = 'Sehr schwach';
-			ACC.pwdStrengthWeak = 'Schwach';
-			ACC.pwdStrengthMedium = 'Mittel';
-			ACC.pwdStrengthStrong = 'Sicher';
-			ACC.pwdStrengthVeryStrong = 'Sehr sicher';
-			ACC.pwdStrengthUnsafePwd = 'password.strength.unsafepwd';
-			ACC.pwdStrengthTooShortPwd = 'Zu kurz';
-			ACC.pwdStrengthMinCharText = 'Mindestlänge %d Zeichen';
-			ACC.accessibilityLoading = 'aria.pickupinstore.loading';
-			ACC.accessibilityStoresLoaded = 'aria.pickupinstore.storesloaded';
 
-			ACC.erpPriceUrl = '/erp/getPrice.json' ;
-			ACC.erpCollectStockMessage = 'productdetail.perso.collect.stock.message' ;
-			ACC.erpDeliveryStockMessage = 'productdetail.perso.delivery.stock.message' ;
-			ACC.isB2BUser = false ;
-			homePageBannercount  = 0 ;
-
-		/*]]>*/
-	</script>
 <!-- TKE : erp price calls -->
-<script type="text/javascript">
-	ACC.isB2BUser = true;
-</script>
-<!-- TKE : erp price calls --><script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/waypoints.min.js"></script>
 
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.powertip.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.jscrollpane.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/SelectBox.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.tinycarousel.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.query-2.1.7.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery-ui-1.8.18.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.ui.datepicker-de.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.ui.datepicker-en.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.jcarousel-0.2.8.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.tmpl-1.0.0pre.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.blockUI-2.39.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.colorbox.custom-1.3.16.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.slideviewer.custom.1.2.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.waitforimages.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.ui.stars-3.0.1.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.form-3.09.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.bgiframe-2.1.2.min.js"></script>
+<!-- TKE : erp price calls -->
 <!--[if IE]><script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/excanvas-r3.compiled.js"></script>-->
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.bt-0.9.5-rc1.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.pstrength.custom-1.2.0.js"></script>
 
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/megamenu/megamenu.js"></script>
+
+
+
 <!-- <script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery-ui_calender.js"></script>-->
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.placeholder.js"></script>
 
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.userlocation.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/product360view/js/box3d.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/product360view/js/jquery.fancybox.pack.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.nicescroll.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.jobListToolTip.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.track.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.common.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.cms.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.product.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.refinements.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.storefinder.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.carousel.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.autocomplete.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.pstrength.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.password.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.minicart.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.userlocation.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.langcurrencyselector.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.paginationsort.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.checkout.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.cartremoveitem.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.approval.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.quote.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.negotiatequote.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.paymentmethod.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.placeorder.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.address.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.refresh.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.stars.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.forgotpassword.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.accessible-tabs-1.9.7.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.productDetail.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.producttabs.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.footertabs.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/js/jquery.currencies.min.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/js/jquery.validate.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/js/jquery.treeview.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/js/acc.mycompany.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/js/acc.futurelink.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/theme-germany/js/acc.search.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.productorderform.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.checkoutB2B.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.quickorder.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.orderHistoryPage.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.joblist.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/common.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/Popup.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/jquery.collapse.js"></script>
-
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.skiplinks.js"></script>
-<script type="text/javascript" src="https://www.hagemeyer-shop.de/_ui/desktop/common/js/acc.erp.js"></script>
+<script src="/projects/1200px-site/combined.js"></script>
 </body>
 </html>

@@ -100,7 +100,7 @@ Common and Homepage Start Here -------------------------------------------------
 .left.sub-title.col-1-homePage {
     height: 100px;
     margin-left: 20px;
-    width: 270px;
+    width: 271px;
     background-color: #F4F4F4;
 }
 
@@ -119,6 +119,10 @@ overflow: hidden;
 position: relative;
 margin-left: -2px;
 z-index: auto;
+}
+
+.disp-img.slideWide {
+  margin-left: 0 !important;
 }
 
 .navigation_search {
@@ -206,6 +210,110 @@ Product List by Category Starts Here -------------------------------------------
 .brand-cat-col.last{
   margin-right: 0;
 }
+
+.width-compare {
+  width: 486px;
+}
+
+.width-sort {
+  width: 354px;
+}
+
+.sort-select {
+  width: 195px;
+  margin-right: 10px;
+}
+
+.select-sort {
+  width: 193px;
+  background-position: 172px center;
+}
+
+.select-sort select {
+  width: 195px;
+}
+
+.col-2-compare {
+    width: 310px;
+}
+
+.col-3-compare {
+  width: 354px;
+  float: right;
+}
+
+.price-description {
+  width: 354px;
+}
+
+
 /*--------------
 Product List by Category Ends Here -------------------------------------------------------
+------------------------------------------------------------------------------------*/
+
+
+
+/*--------------
+Product Details Starts Here -------------------------------------------------------
+--------------*/
+
+.productDescription {
+    width: 470px !important;
+}
+
+.productPrice {
+  width: 345px !important;
+}
+
+
+/*--------------
+Product Details Ends Here -------------------------------------------------------
+------------------------------------------------------------------------------------*/
+
+
+
+/*--------------
+Shopping Cart Starts Here -------------------------------------------------------
+--------------*/
+
+.itemDetails-cart {
+  padding-right: 50px !important;
+}
+
+.orderTotals-bg {
+    float: right !important;
+    margin-right: 0 !important;
+}
+
+
+/*--------------
+Shopping Cart Ends Here -------------------------------------------------------
+------------------------------------------------------------------------------------*/
+
+
+
+/*--------------
+Checkout Starts Here -------------------------------------------------------
+--------------*/
+.top-section1 {
+    width: 326px;
+}
+
+.top-section2 {
+    width: 301px;
+}
+
+.top-section3 {
+    width: 276px;
+}
+
+.top-section4 {
+    width: 287px;
+}
+
+.span20.width810 {
+  width: 810px !important;
+}
+/*--------------
+Checkout Ends Here -------------------------------------------------------
 ------------------------------------------------------------------------------------*/
