@@ -47,273 +47,288 @@ input.span-30, textarea.span-30 {width:1178px;}
 /*Expand 960px grid to 1200px grid------------------------------------------------------
 Grid Expansion ENDS HERE -----------------------------------------------------------*/
 
-
-
-/*--------------
-Common and Homepage Start Here -------------------------------------------------------
---------------*/
-
-#page {
-    margin: 0 auto;
-    padding: 0 5px;
-    width: 1190px;
-}
-
-.header-content {
-    float: right;
-    width: 1046px;
-}
-
-.header-content-row2 {
-    float: left;
-    height: 28px;
-    line-height: 29px;
-    margin-left: 100px;
-    padding-top: 15px;
-    position: relative;
-    top: 10px;
-}
-
-#content-inner {
-    float: left;
-    margin-top: 20px;
-    width: 1190px;
-}
-
-.logged-in {
-    background-color: #f4f4f4;
-    border-top: 5px solid #ec6500;
-    display: block;
-    float: left;
-    padding: 10px 15px;
-    width: 285px;
-}
-
-.shop-all-products {
-    border: 0 solid red;
-    float: left;
-    padding-left: 20px;
-    width: 854px;
+.addMarketingItems {display: none;}
+#spanProdDesc {margin-right: 0 !important;}
+#spanTotals {margin-right: 0;}
+#spanTotals.span8 {
+  width: 268px !important;
 }
 
 
-.left.sub-title.col-1-homePage {
-    height: 100px;
-    margin-left: 20px;
-    width: 271px;
-    background-color: #F4F4F4;
-}
-
-.row div:first-child {
-  margin-left: 0 !important;
-}
-
-.row div:last-child {
-  margin-right: 0 !important;
-}
-
-#slider1 .viewport {
-float: left;
-width: 1200px;
-overflow: hidden;
-position: relative;
-margin-left: -2px;
-z-index: auto;
-}
-
-.disp-img.slideWide {
-  margin-left: 0 !important;
-}
-
-.navigation_search {
-    float: left;
-    width: 540px;
-}
-
-.siteSearch .control-group {
-    width: 540px;
-}
-
-.navigation_search .siteSearchInput {
-    width: 520px !important;
-    border-radius: 4px;
-    height: 36px !important;
-    margin-bottom: 0px !important;
-    margin-top: 2px;
-    border: medium none;
-}
-
-.navigation_login {
-    float: left;
-    width: 180px;
-    top: 5px;
-    position: relative;
-    left: 140px;
-}
-
-.homepage-account-detail {
-    display: block;
-    margin-bottom: 5px;
-    width: 285px;
-}
+/*RESPONSIVE START LARGE DESKTOP*/
+@media screen and (min-width: 1224px)  {
 
 
-/*--------------
-Common and Homepage Ends Here -------------------------------------------------------
-------------------------------------------------------------------------------------*/
+  /*--------------
+  Common and Homepage Start Here -------------------------------------------------------
+  --------------*/
+
+  #page {
+      margin: 0 auto;
+      padding: 0 5px;
+      width: 1190px;
+  }
+
+  .header-content {
+      float: right;
+      width: 1046px;
+  }
+
+  .header-content-row2 {
+      float: left;
+      height: 28px;
+      line-height: 29px;
+      margin-left: 100px;
+      padding-top: 15px;
+      position: relative;
+      top: 10px;
+  }
+
+  #content-inner {
+      float: left;
+      margin-top: 20px;
+      width: 1190px;
+  }
+
+  .logged-in {
+      background-color: #f4f4f4;
+      border-top: 5px solid #ec6500;
+      display: block;
+      float: left;
+      padding: 10px 15px;
+      width: 285px;
+  }
+
+  .shop-all-products {
+      border: 0 solid red;
+      float: left;
+      padding-left: 20px;
+      width: 854px;
+  }
 
 
+  .left.sub-title.col-1-homePage {
+      height: 100px;
+      margin-left: 20px;
+      width: 271px;
+      background-color: #F4F4F4;
+  }
 
-/*--------------
-Product List by Category Starts Here -------------------------------------------------------
---------------*/
+  .row div:first-child {
+    margin-left: 0 !important;
+  }
 
-.disp-img {
-  width: 840px;
-  margin-left: 340px;
-}
-.disp-img img {
-  border: 1px solid black;
-}
-
-.action img {
-  border: none;
-}
-
-.left-panel.facetNavigation {
-    width: 285px;
-}
-
-.searchInput {
-  width: 250px;
-  background-position: 224px 3px;
-}
-
-.facetNavigation .facet .facetHead .refinementToggle.close {
-  background-position: right 9px;
-}
-
-.right-panel {
-  width: 840px;
-}
-
-.brand-cat-col {
-  background-color: #f4f4f4;
-  margin: 10px 10px;
-  width: 31.746%;
-}
-
-.brand-cat-col.first{
-  margin-left: 0;
-}
-
-.brand-cat-col.last{
-  margin-right: 0;
-}
-
-.width-compare {
-  width: 486px;
-}
-
-.width-sort {
-  width: 354px;
-}
-
-.sort-select {
-  width: 195px;
-  margin-right: 10px;
-}
-
-.select-sort {
-  width: 193px;
-  background-position: 172px center;
-}
-
-.select-sort select {
-  width: 195px;
-}
-
-.col-2-compare {
-    width: 310px;
-}
-
-.col-3-compare {
-  width: 354px;
-  float: right;
-}
-
-.price-description {
-  width: 354px;
-}
-
-
-/*--------------
-Product List by Category Ends Here -------------------------------------------------------
-------------------------------------------------------------------------------------*/
-
-
-
-/*--------------
-Product Details Starts Here -------------------------------------------------------
---------------*/
-
-.productDescription {
-    width: 470px !important;
-}
-
-.productPrice {
-  width: 345px !important;
-}
-
-
-/*--------------
-Product Details Ends Here -------------------------------------------------------
-------------------------------------------------------------------------------------*/
-
-
-
-/*--------------
-Shopping Cart Starts Here -------------------------------------------------------
---------------*/
-
-.itemDetails-cart {
-  padding-right: 50px !important;
-}
-
-.orderTotals-bg {
-    float: right !important;
+  .row div:last-child {
     margin-right: 0 !important;
+  }
+
+  #slider1 .viewport {
+  float: left;
+  width: 1200px;
+  overflow: hidden;
+  position: relative;
+  margin-left: -2px;
+  z-index: auto;
+  }
+
+  .disp-img.slideWide {
+    margin-left: 0 !important;
+  }
+
+  .navigation_search {
+      float: left;
+      width: 540px;
+  }
+
+  .siteSearch .control-group {
+      width: 540px;
+  }
+
+  .navigation_search .siteSearchInput {
+      width: 520px !important;
+      border-radius: 4px;
+      height: 36px !important;
+      margin-bottom: 0px !important;
+      margin-top: 2px;
+      border: medium none;
+  }
+
+  .navigation_login {
+      float: left;
+      width: 180px;
+      top: 5px;
+      position: relative;
+      left: 140px;
+  }
+
+  .homepage-account-detail {
+      display: block;
+      margin-bottom: 5px;
+      width: 285px;
+  }
+
+  .addMarketingItems {display: block;}
+
+
+  /*--------------
+  Common and Homepage Ends Here -------------------------------------------------------
+  ------------------------------------------------------------------------------------*/
+
+
+
+  /*--------------
+  Product List by Category Starts Here -------------------------------------------------------
+  --------------*/
+
+  .disp-img {
+    width: 840px;
+    margin-left: 340px;
+  }
+  .disp-img img {
+    border: 1px solid black;
+  }
+
+  .action img {
+    border: none;
+  }
+
+  .left-panel.facetNavigation {
+      width: 285px;
+  }
+
+  .searchInput {
+    width: 250px;
+    background-position: 224px 3px;
+  }
+
+  .facetNavigation .facet .facetHead .refinementToggle.close {
+    background-position: right 9px;
+  }
+
+  .right-panel {
+    width: 840px;
+  }
+
+  .brand-cat-col {
+    background-color: #f4f4f4;
+    margin: 10px 10px;
+    width: 31.746%;
+  }
+
+  .brand-cat-col.first{
+    margin-left: 0;
+  }
+
+  .brand-cat-col.last{
+    margin-right: 0;
+  }
+
+  .width-compare {
+    width: 486px;
+  }
+
+  .width-sort {
+    width: 354px;
+  }
+
+  .sort-select {
+    width: 195px;
+    margin-right: 10px;
+  }
+
+  .select-sort {
+    width: 193px;
+    background-position: 172px center;
+  }
+
+  .select-sort select {
+    width: 195px;
+  }
+
+  .col-2-compare {
+      width: 310px;
+  }
+
+  .col-3-compare {
+    width: 354px;
+    float: right;
+  }
+
+  .price-description {
+    width: 354px;
+  }
+
+
+  /*--------------
+  Product List by Category Ends Here -------------------------------------------------------
+  ------------------------------------------------------------------------------------*/
+
+
+
+  /*--------------
+  Product Details Starts Here -------------------------------------------------------
+  --------------*/
+
+  .productDescription {
+      width: 470px !important;
+  }
+
+  .productPrice {
+    width: 345px !important;
+  }
+
+
+  /*--------------
+  Product Details Ends Here -------------------------------------------------------
+  ------------------------------------------------------------------------------------*/
+
+
+
+  /*--------------
+  Shopping Cart Starts Here -------------------------------------------------------
+  --------------*/
+
+  .itemDetails-cart {
+    padding-right: 50px !important;
+  }
+
+  .orderTotals-bg {
+      float: right !important;
+      margin-right: 0 !important;
+  }
+
+
+  /*--------------
+  Shopping Cart Ends Here -------------------------------------------------------
+  ------------------------------------------------------------------------------------*/
+
+
+
+  /*--------------
+  Checkout Starts Here -------------------------------------------------------
+  --------------*/
+  .top-section1 {
+      width: 326px;
+  }
+
+  .top-section2 {
+      width: 301px;
+  }
+
+  .top-section3 {
+      width: 276px;
+  }
+
+  .top-section4 {
+      width: 287px;
+  }
+
+  .span20.width810 {
+    width: 810px !important;
+  }
+
+  /*--------------
+  Checkout Ends Here -------------------------------------------------------
+  ------------------------------------------------------------------------------------*/
 }
-
-
-/*--------------
-Shopping Cart Ends Here -------------------------------------------------------
-------------------------------------------------------------------------------------*/
-
-
-
-/*--------------
-Checkout Starts Here -------------------------------------------------------
---------------*/
-.top-section1 {
-    width: 326px;
-}
-
-.top-section2 {
-    width: 301px;
-}
-
-.top-section3 {
-    width: 276px;
-}
-
-.top-section4 {
-    width: 287px;
-}
-
-.span20.width810 {
-  width: 810px !important;
-}
-/*--------------
-Checkout Ends Here -------------------------------------------------------
-------------------------------------------------------------------------------------*/
+/*RESPONSIVE END LARGE DESKTOP*/
