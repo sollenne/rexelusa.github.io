@@ -9,10 +9,38 @@ body {
   background: #f7f7f7;
   height: 28px;
   line-height: 28px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   position: fixed;
   width: 100%; }
+  .utility-bar ul.navbar-left {
+    list-style-type: none;
+    padding: 0; }
+    .utility-bar ul.navbar-left li {
+      display: inline-block;
+      margin-right: 15px; }
+      .utility-bar ul.navbar-left li a {
+        color: #58585a;
+        text-decoration: none; }
+  .utility-bar ul.navbar-right {
+    list-style-type: none;
+    padding: 0; }
+    .utility-bar ul.navbar-right li {
+      display: inline-block;
+      margin-left: 15px;
+      vertical-align: top; }
+      .utility-bar ul.navbar-right li a {
+        color: #58585a;
+        text-decoration: none; }
+
+.utility-bar-shipto {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /** IE6+, Firefox 7+, Opera 11+, Chrome, Safari **/
+  -o-text-overflow: ellipsis;
+  /** Opera 9 & 10 **/ }
 
 .header {
   position: fixed;
@@ -26,8 +54,9 @@ body {
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   transition: height 0.3s;
-  text-align: center;
   line-height: 160px; }
+  .header ul.logobar-nav {
+    line-height: normal; }
 
 .header.shrink {
   height: 100px;
@@ -38,18 +67,25 @@ body {
   font-weight: normal;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  background: url("/projects/header/img/Rexel_logo.svg") no-repeat left center;
+  background-size: contain;
+  height: 100px;
+  width: 265px; }
 
 .header.shrink h1 {
   font-size: 24px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  height: 60px;
+  width: 165px; }
 
 .content {
   height: 2000px;
   /*just to get the page to scroll*/ }
 
-.hero {
-  background: url("https://ununsplash.imgix.net/uploads/1413387158190559d80f7/6108b580?q=75&fm=jpg&s=d1c3df390a81d3371d05730a396ca390") no-repeat center center;
-  height: 600px; }
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
