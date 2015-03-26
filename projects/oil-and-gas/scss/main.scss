@@ -141,18 +141,57 @@
 	}
 
 	.content-inner {
-		min-height:500px;
+		min-height:1000px;
 		border-bottom:1px solid #ccc;
 		margin-bottom:50px;
 
 		section {
 			display:none;
 			position:absolute;
+			
+			.upper-row {
+				border-bottom:1px solid #ccc;
+			}
+			p {
+				padding: 10px 0;
+			}
+
+			.pic img {
+				width:100%;
+				margin-bottom:10px;
+			}
+
+			.pic img.max200 {
+				height:200px;
+			}
+
+			.quote {
+				font-weight:600;
+				font-style: italic;
+			}
 		}
 		
 		.overview {
 			display:block;
+		
 		}
 	}
 
+}
+
+.pic-caption {
+	font-size:12px;
+}
+
+.section-title {
+	margin-bottom:15px;
+}
+
+.row2{
+	margin:20px 0;
+	padding:0;
+}
+
+.industry-row {
+	padding-bottom:20px;
 }
