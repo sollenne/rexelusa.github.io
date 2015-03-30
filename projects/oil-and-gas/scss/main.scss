@@ -15,9 +15,7 @@
 }
 
 .header, .footer {
-	text-align:center;
-	color:red;
-	font-size:5em;
+	opacity:0.4;
 }
 
 .col-xs-15,
@@ -54,15 +52,19 @@
 }
 
 .container, .container-fluid {
-		max-width:990px;
+		width:990px !important;
 		padding: 0;
 	}
 
 .wrapper{
-	max-width:990px;
-	font-family: 'Lato', sans-serif;
+	width:990px;
+	
+	font-family: 'Open Sans', sans-serif;
 	color: #58585a;
-
+	
+	h1 {
+		font-family: 'Lato', sans-serif;
+	}
 	.hero {
 		height:350px;
 		margin: 10px 0;
@@ -74,7 +76,8 @@
 		.hero-left{
 			background:#032041;
 			color:#fff;
-
+			font-family: 'Lato', sans-serif;
+			
 			img {
 				margin-top:15px;
 			}
@@ -99,6 +102,9 @@
 					margin-bottom:10px;
 					display:inline-block;
 				}
+				p {
+					font-weight:300;
+				}
 			}
 		}
 
@@ -114,7 +120,7 @@
 	.tabs {
 		margin:50px 0 0;
 		text-align:center;
-		
+		font-family: 'Lato', sans-serif;
 		font-weight:700;
 		font-size:13px;
 		height:50px;
@@ -198,10 +204,12 @@
 .pic-caption {
 	font-size:12px;
 	margin: 10px 0;
+	font-family: 'Lato', sans-serif;
 }
 
 .section-title {
 	margin-bottom:15px;
+	font-family: 'Lato', sans-serif;
 }
 
 .row2{
@@ -236,6 +244,7 @@
 .pagination {
 	span {
 		margin-left:10px;
+		cursor:pointer;
 	}
 }
 
@@ -271,6 +280,7 @@
 .contact {
 	.contact-title {
 		text-transform:uppercase;
+		font-family: 'Lato', sans-serif;
 	}
 
 	.contact-img {
@@ -292,7 +302,7 @@
 		ul {
 			li {
 				margin:0;
-				font-weight:bold;
+				font-weight:600;
 				font-size:0.85em;
 			}
 		}
@@ -303,9 +313,9 @@
 			background:#efefef;
 			color: #cbcbcb;
 			text-transform:uppercase;
-			font-weight: bold;
 			padding:15px;
 			margin:15px 0;
+
 			
 			.top {
 				height:50px;
@@ -318,6 +328,7 @@
 				width:20%;
 				position:relative;
 				top:4px;
+				font-weight:600;
 			}
 			input, textarea {
 				width:75%;
@@ -342,6 +353,7 @@
 				color:#a1a1a1;
 				text-transform:uppercase;
 				padding: 2px 20px;
+				min-width:20%;
 			}
 		}
 

@@ -2,7 +2,6 @@ $(document).ready(function() {
 	$('.tabs > div').click(function() {
 		var $currentTabIndex = $(this).index();
 		var $innerHeight = $('.content-inner').find('section').eq($currentTabIndex).height();
-		console.log($innerHeight);
 		$('.content-inner').stop().animate({'height': $innerHeight + 50}, 200);
 		$('.content-inner').find('section').eq($currentTabIndex).stop().fadeIn().siblings().fadeOut();
 		$(this).addClass('active').siblings().removeClass('active');
