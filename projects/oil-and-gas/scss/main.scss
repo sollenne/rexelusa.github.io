@@ -1,8 +1,17 @@
 .header {
-	margin-top:50px;
+	background: url(/projects/oil-and-gas/img/og-header.png) center center no-repeat;
+	background-size:contain;
+	-webkit-background-size:contain;
+	-moz-background-size:contain;
+	height:150px;
 }
 .footer {
-	margin-bottom:50px;
+	background: url(/projects/oil-and-gas/img/og-footer.png) center center no-repeat;
+	background-size:contain;
+	-webkit-background-size:contain;
+	-moz-background-size:contain;
+	height:460px;
+	margin-bottom:200px;
 }
 
 .col-xs-15,
@@ -46,10 +55,11 @@
 .wrapper{
 	max-width:990px;
 	font-family: 'Lato', sans-serif;
+	color: #58585a;
 
 	.hero {
 		height:350px;
-		margin: 50px 0;
+		margin: 10px 0;
 		
 		.hero-left, .hero-right {
 			height:100%;
@@ -141,7 +151,7 @@
 	}
 
 	.content-inner {
-		min-height:1300px;
+		height:1003px;
 		border-bottom:1px solid #ccc;
 		margin-bottom:50px;
 
@@ -220,5 +230,117 @@
 .pagination {
 	span {
 		margin-left:10px;
+	}
+}
+
+.products {
+	ul {
+		list-style-type:none;
+
+		li {
+			margin:10px 0;
+		}
+	}
+
+	.statement {
+		.line1 {
+			font-size:3em;	
+			text-transform:uppercase;
+			font-weight:700;
+		}
+		.line2 {
+			font-size:2em;
+			line-height:0.5em;
+			margin-bottom:10px;
+			text-transform:uppercase;
+			font-weight:700;
+		}
+	}
+
+	.pic {
+		padding:0;
+	}
+}
+
+.contact {
+	.contact-title {
+		text-transform:uppercase;
+	}
+
+	.contact-img {
+		padding-left:0;
+	}
+
+	ul {
+		list-style-type:none;
+		padding-left:0;
+
+		li {
+			margin: 15px 0;
+			display:block;
+		}
+	}
+
+	.contact-info {
+		text-transform:uppercase;
+		ul {
+			li {
+				margin:0;
+				font-weight:bold;
+				font-size:0.85em;
+			}
+		}
+	}
+
+	.contact-form {
+		.form {
+			background:#efefef;
+			color: #cbcbcb;
+			text-transform:uppercase;
+			font-weight: bold;
+			padding:15px;
+			margin:15px 0;
+			
+			.top {
+				height:50px;
+				background: #cbcbcb;
+
+			}
+
+			label {
+				text-align:right;
+				width:20%;
+				position:relative;
+				top:4px;
+			}
+			input, textarea {
+				width:75%;
+				border:none;
+				background: #cbcbcb;
+				float: right;
+			}
+
+			label, input, textarea {
+				margin-top:15px;
+				color: #a1a1a1;
+			}
+
+			input {
+				padding:5px;
+			}
+
+			button {
+				margin-top:15px;
+				background: #cbcbcb;
+				border:none;
+				color:#a1a1a1;
+				text-transform:uppercase;
+				padding: 2px 20px;
+			}
+		}
+
+		hr {
+			margin: 35px 0;
+		}
 	}
 }

@@ -6916,6 +6916,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/projects\/oil-and-gas\/img\/og-header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 154546,
+		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/og-header.png",
+		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/og-header.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/projects\/oil-and-gas\/img\/og-heroDrill.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -6967,6 +6978,28 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic11.png",
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic11.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/projects\/oil-and-gas\/img\/pic12.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 341417,
+		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic12.png",
+		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic12.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/projects\/oil-and-gas\/img\/pic13.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 313285,
+		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic13.png",
+		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic13.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
