@@ -6949,6 +6949,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/projects\/oil-and-gas\/img\/pic10.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 432495,
+		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic10.png",
+		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic10.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/projects\/oil-and-gas\/img\/pic11.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic11.png",
+		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic11.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/projects\/oil-and-gas\/img\/pic2.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -7000,6 +7022,39 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic6.png",
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic6.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/projects\/oil-and-gas\/img\/pic7.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic7.png",
+		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic7.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/projects\/oil-and-gas\/img\/pic8.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 379445,
+		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic8.png",
+		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic8.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/projects\/oil-and-gas\/img\/pic9.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 363625,
+		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic9.png",
+		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic9.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -7061,88 +7116,6 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
-		},
-	"\/projects\/style-guide\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projects\/style-guide\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/projects\/style-guide\/js\/app.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projects\/style-guide\/js\/app.js",
-		"outputAbbreviatedPath": "\/projects\/style-guide\/js\/min\/app-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/projects\/style-guide\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projects\/style-guide\/README.md",
-		"outputAbbreviatedPath": "\/projects\/style-guide\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/projects\/style-guide\/scss\/_settings.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projects\/style-guide\/scss\/_settings.scss",
-		"outputAbbreviatedPath": "\/projects\/style-guide\/css\/_settings.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/projects\/style-guide\/scss\/app.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projects\/style-guide\/scss\/app.scss",
-		"outputAbbreviatedPath": "\/projects\/style-guide\/css\/app.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/projects\/style-guide\/stylesheets\/app.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projects\/style-guide\/stylesheets\/app.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/projects\/styleguide\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projects\/styleguide\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/projects\/styles.css": {
 		"fileType": 16,

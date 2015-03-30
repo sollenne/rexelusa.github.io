@@ -141,7 +141,7 @@
 	}
 
 	.content-inner {
-		min-height:1000px;
+		min-height:1300px;
 		border-bottom:1px solid #ccc;
 		margin-bottom:50px;
 
@@ -181,6 +181,7 @@
 
 .pic-caption {
 	font-size:12px;
+	margin: 10px 0;
 }
 
 .section-title {
@@ -199,4 +200,25 @@
 .partners-row .col-md-3 {
 	height:100px;
 	padding: 0 20px;
+	margin:0 auto;
+}
+
+.resources.container {
+	.colwrap3 {
+		width: 75%;
+		margin:0 auto;
+		
+		img {width:100%;}
+		.pic-caption {
+			width:100%;
+			margin:10px 0;
+		}
+	}
+} 
+
+
+.pagination {
+	span {
+		margin-left:10px;
+	}
 }
