@@ -2383,7 +2383,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/bootstrap\/images\/sort_asc.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/bootstrap\/images\/sort_asc_disabled.png": {
 		"fileType": 32768,
@@ -2394,7 +2394,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/bootstrap\/images\/sort_asc_disabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/bootstrap\/images\/sort_both.png": {
 		"fileType": 32768,
@@ -2405,7 +2405,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/bootstrap\/images\/sort_both.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/bootstrap\/images\/sort_desc.png": {
 		"fileType": 32768,
@@ -2416,7 +2416,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/bootstrap\/images\/sort_desc.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/bootstrap\/images\/sort_desc_disabled.png": {
 		"fileType": 32768,
@@ -2427,7 +2427,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/bootstrap\/images\/sort_desc_disabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/font-awesome\/bootstrap.html": {
 		"fileType": 8192,
@@ -2505,7 +2505,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/foundation\/images\/sort_asc.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/foundation\/images\/sort_asc_disabled.png": {
 		"fileType": 32768,
@@ -2516,7 +2516,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/foundation\/images\/sort_asc_disabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/foundation\/images\/sort_both.png": {
 		"fileType": 32768,
@@ -2527,7 +2527,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/foundation\/images\/sort_both.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/foundation\/images\/sort_desc.png": {
 		"fileType": 32768,
@@ -2538,7 +2538,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/foundation\/images\/sort_desc.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/foundation\/images\/sort_desc_disabled.png": {
 		"fileType": 32768,
@@ -2549,7 +2549,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables-plugins\/integration\/foundation\/images\/sort_desc_disabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables-plugins\/integration\/foundation\/index.html": {
 		"fileType": 8192,
@@ -3246,7 +3246,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/back_disabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/back_enabled.png": {
 		"fileType": 32768,
@@ -3257,7 +3257,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/back_enabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/back_enabled_hover.png": {
 		"fileType": 32768,
@@ -3268,7 +3268,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/back_enabled_hover.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/forward_disabled.png": {
 		"fileType": 32768,
@@ -3279,7 +3279,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/forward_disabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/forward_enabled.png": {
 		"fileType": 32768,
@@ -3290,7 +3290,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/forward_enabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/forward_enabled_hover.png": {
 		"fileType": 32768,
@@ -3301,7 +3301,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/forward_enabled_hover.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/sort_asc.png": {
 		"fileType": 32768,
@@ -3312,7 +3312,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/sort_asc.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/sort_asc_disabled.png": {
 		"fileType": 32768,
@@ -3323,7 +3323,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/sort_asc_disabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/sort_both.png": {
 		"fileType": 32768,
@@ -3334,7 +3334,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/sort_both.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/sort_desc.png": {
 		"fileType": 32768,
@@ -3345,7 +3345,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/sort_desc.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/images\/sort_desc_disabled.png": {
 		"fileType": 32768,
@@ -3356,7 +3356,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/datatables\/media\/images\/sort_desc_disabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/datatables\/media\/js\/jquery.dataTables.js": {
 		"fileType": 64,
@@ -3556,7 +3556,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/flot\/examples\/background.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/flot\/examples\/basic-options\/index.html": {
 		"fileType": 8192,
@@ -3612,7 +3612,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/flot\/examples\/image\/hs-2004-27-a-large-web.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/flot\/examples\/image\/index.html": {
 		"fileType": 8192,
@@ -4651,7 +4651,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/holderjs\/test\/image.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/holderjs\/test\/index.html": {
 		"fileType": 8192,
@@ -6372,7 +6372,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/morrisjs\/spec\/viz\/exemplary\/area0.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/morrisjs\/spec\/viz\/exemplary\/bar0.png": {
 		"fileType": 32768,
@@ -6383,7 +6383,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/morrisjs\/spec\/viz\/exemplary\/bar0.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/morrisjs\/spec\/viz\/exemplary\/line0.png": {
 		"fileType": 32768,
@@ -6394,7 +6394,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/morrisjs\/spec\/viz\/exemplary\/line0.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/morrisjs\/spec\/viz\/exemplary\/stacked_bar0.png": {
 		"fileType": 32768,
@@ -6405,7 +6405,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/morrisjs\/spec\/viz\/exemplary\/stacked_bar0.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/morrisjs\/spec\/viz\/test.html": {
 		"fileType": 8192,
@@ -6840,7 +6840,7 @@
 		"outputAbbreviatedPath": "\/projects\/header\/img\/Rexel_Logo-Vector-Image.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/header\/index.html": {
 		"fileType": 8192,
@@ -6916,6 +6916,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/projects\/oil-and-gas\/img\/og-footer.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 222416,
+		"inputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/og-footer.png",
+		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/og-footer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/projects\/oil-and-gas\/img\/og-header.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -6925,7 +6936,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/og-header.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/og-heroDrill.png": {
 		"fileType": 32768,
@@ -6936,7 +6947,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/og-heroDrill.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/og-title.png": {
 		"fileType": 32768,
@@ -6947,7 +6958,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/og-title.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic1.png": {
 		"fileType": 32768,
@@ -6958,7 +6969,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic10.png": {
 		"fileType": 32768,
@@ -6969,7 +6980,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic11.png": {
 		"fileType": 32768,
@@ -6980,7 +6991,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic11.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic12.png": {
 		"fileType": 32768,
@@ -6991,7 +7002,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic12.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic13.png": {
 		"fileType": 32768,
@@ -7002,7 +7013,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic13.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic2.png": {
 		"fileType": 32768,
@@ -7013,7 +7024,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic3.png": {
 		"fileType": 32768,
@@ -7024,7 +7035,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic4.png": {
 		"fileType": 32768,
@@ -7035,7 +7046,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic4.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic5.png": {
 		"fileType": 32768,
@@ -7046,7 +7057,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic6.png": {
 		"fileType": 32768,
@@ -7057,7 +7068,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic6.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic7.png": {
 		"fileType": 32768,
@@ -7068,7 +7079,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic7.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic8.png": {
 		"fileType": 32768,
@@ -7079,7 +7090,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic8.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/img\/pic9.png": {
 		"fileType": 32768,
@@ -7090,7 +7101,7 @@
 		"outputAbbreviatedPath": "\/projects\/oil-and-gas\/img\/pic9.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/projects\/oil-and-gas\/index.html": {
 		"fileType": 8192,
