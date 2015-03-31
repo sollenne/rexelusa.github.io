@@ -24,8 +24,8 @@
 .col-lg-15 {
     position: relative;
     min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .col-xs-15 {
@@ -163,17 +163,11 @@
 	}
 
 	.content-inner {
-		height:1003px;
-		border-bottom:1px solid #ccc;
-		margin-bottom:50px;
-
+		height:1052px;
 		section {
 			display:none;
 			position:absolute;
 			
-			.upper-row {
-				border-bottom:1px solid #ccc;
-			}
 			p {
 				padding: 10px 0;
 			}
@@ -195,6 +189,27 @@
 		
 		.overview {
 			display:block;
+
+			
+
+			.upper-row {
+				.pic {
+				padding-right: 15px;
+				}
+
+				p {
+					padding:0 0 15px 15px;
+				}
+			}
+
+			.bottom-row {
+				.pic {
+					padding-left: 15px;
+				}
+				p {
+					padding-right:15px;
+				}
+			}
 		
 		}
 	}
@@ -203,22 +218,20 @@
 
 .pic-caption {
 	font-size:12px;
-	margin: 10px 0;
+	margin: 10px 0 25px;
 	font-family: 'Lato', sans-serif;
 }
 
 .section-title {
 	margin-bottom:15px;
 	font-family: 'Lato', sans-serif;
+	padding-right:0;
+	padding-left:0;
 }
 
 .row2{
 	margin:20px 0;
 	padding:0;
-}
-
-.industry-row {
-	padding-bottom:20px;
 }
 
 .partners-row .col-md-3 {
@@ -356,9 +369,32 @@
 				min-width:20%;
 			}
 		}
+	}
+}
+
+.slide-row {
+	position:relative;
+	height:301px;
+	width:100%;
+	overflow:hidden;
+
+	.slide-row-p {
+		position:absolute;
+		height:301px;
+		width:100%;
+	}
+	.slide-row-p2, .slide-row-p3 {
+		left:100%;
+		opacity:0;
+	}
+}
+
 
 		hr {
 			margin: 35px 0;
+			border-top: 1px solid #ccc;
 		}
-	}
-}
+
+		.row {
+			margin:0;
+		}
