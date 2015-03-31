@@ -6,6 +6,9 @@ $(window).resize(function(){
          $('#spanProdPrice').removeClass('span-7').addClass('span-9');
          $('#spanEmptyLeft').removeClass('span-16 width650').addClass('span-20 width810');
          $('#spanTotals').removeClass('span-8').addClass('span-9');
+         $('#accountOptionsContainer').removeClass('span-20').addClass('span-24');
+         $('#acctProfCont').removeClass('span-24').addClass('span-30');
+
 
      }
      else{
@@ -13,6 +16,8 @@ $(window).resize(function(){
          $('#spanProdPrice').removeClass('span-9').addClass('span-7');
          $('#spanEmptyLeft').removeClass('span-20 width810').addClass('span-16 width650');
          $('#spanTotals').removeClass('span-9').addClass('span-8');
+         $('#accountOptionsContainer').removeClass('span-24').addClass('span-20');
+         $('#acctProfCont').removeClass('span-29').addClass('span-30');
      }
   })
   .resize();//trigger the resize event on page load.
