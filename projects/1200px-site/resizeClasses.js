@@ -8,6 +8,8 @@ $(window).resize(function(){
          $('#spanTotals').removeClass('span-8').addClass('span-9');
          $('#accountOptionsContainer').removeClass('span-20').addClass('span-24');
          $('#acctProfCont').removeClass('span-24').addClass('span-30');
+         $('#myQuotesCont').removeClass('span-20').addClass('span-24');
+         $('#MyJoblistCont').removeClass('span-24').addClass('span-30');
 
 
      }
@@ -18,6 +20,8 @@ $(window).resize(function(){
          $('#spanTotals').removeClass('span-9').addClass('span-8');
          $('#accountOptionsContainer').removeClass('span-24').addClass('span-20');
          $('#acctProfCont').removeClass('span-29').addClass('span-30');
+         $('#myQuotesCont').removeClass('span-24').addClass('span-20');
+         $('#MyJoblistCont').removeClass('span-30').addClass('span-24');
      }
   })
   .resize();//trigger the resize event on page load.

@@ -381,13 +381,80 @@ Grid Expansion ENDS HERE -------------------------------------------------------
   --------------*/
 
 .accountContentPane {
-  width: 925px;
+  width: 930px;
 }
 
 
   /*--------------
   Download Area Ends Here -------------------------------------------------------
   ------------------------------------------------------------------------------------*/
+
+  /*--------------
+  Order History Starts Here -------------------------------------------------------
+  --------------*/
+
+.OrderHistory .Order-rightpanel {
+  width: 955px;
+}
+
+.OrderHistory .orderInformation td:first-child {
+  width: 321px;
+}
+
+.OrderHistory .orderInformation .com-col-1 {
+  width: 169px;
+}
+
+.OrderHistory .orderInformation .com-col-2 {
+  width: 215px;
+}
+
+.OrderHistory .orderInformation .com-col-3 {
+  width: 175px;
+}
+
+.OrderHistory .orderInformation .com-col-4 {
+  width: 70px;
+}
+
+
+  /*--------------
+  Order History Ends Here -------------------------------------------------------
+  ------------------------------------------------------------------------------------*/
+
+
+  /*--------------
+  My Favorites Starts Here -------------------------------------------------------
+  --------------*/
+
+  .Myjoblist .Joblist-rightpanel {
+    width: 960px;
+  }
+
+  .Myjoblist .joblistInformation td:first-child {
+    width: 240px;
+  }
+
+  .Myjoblist .joblistInformation .com-col-1 {
+    width: 261px;
+  }
+
+  .Myjoblist .joblistInformation .com-col-2 {
+    width: 131px;
+  }
+
+  .Myjoblist .joblistInformation .com-col-3 {
+    width: 123px;
+  }
+
+  .Myjoblist .joblistInformation .com-col-4 {
+    width: 155px;
+  }
+
+  /*--------------
+  My Favorites Ends Here -------------------------------------------------------
+  ------------------------------------------------------------------------------------*/
+
 
 
 }
