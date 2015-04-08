@@ -58,17 +58,17 @@
 
 .wrapper{
 	width:990px;
-	
+
 	font-family: 'Open Sans', sans-serif;
 	color: #58585a;
-	
+
 	h1 {
 		font-family: 'Lato', sans-serif;
 	}
 	.hero {
 		height:350px;
 		margin: 10px 0;
-		
+
 		.hero-left, .hero-right {
 			height:100%;
 		}
@@ -77,11 +77,11 @@
 			background:#032041;
 			color:#fff;
 			font-family: 'Lato', sans-serif;
-			
+
 			img {
 				margin-top:15px;
 			}
-			
+
 			.statement {
 				margin-left:15px;
 				max-width:85%;
@@ -128,8 +128,8 @@
 		border-bottom:1px solid #ccc;
 		position:relative;
 		z-index: 1;
-		
-		 
+
+
 		> div {
 			cursor:pointer;
 			position:relative;
@@ -167,7 +167,7 @@
 		section {
 			display:none;
 			position:absolute;
-			
+
 			p {
 				padding: 10px 0;
 			}
@@ -186,11 +186,11 @@
 				font-style: italic;
 			}
 		}
-		
+
 		.overview {
 			display:block;
 
-			
+
 
 			.upper-row {
 				.pic {
@@ -210,7 +210,7 @@
 					padding-right:15px;
 				}
 			}
-		
+
 		}
 	}
 
@@ -244,14 +244,14 @@
 	.colwrap3 {
 		width: 75%;
 		margin:0 auto;
-		
+
 		img {width:100%;}
 		.pic-caption {
 			width:100%;
 			margin:10px 0;
 		}
 	}
-} 
+}
 
 
 .pagination {
@@ -272,7 +272,7 @@
 
 	.statement {
 		.line1 {
-			font-size:3em;	
+			font-size:3em;
 			text-transform:uppercase;
 			font-weight:700;
 		}
@@ -329,7 +329,7 @@
 			padding:15px;
 			margin:15px 0;
 
-			
+
 			.top {
 				height:50px;
 				background: #cbcbcb;
