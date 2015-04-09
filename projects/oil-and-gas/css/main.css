@@ -265,11 +265,9 @@ hr {
 h4.first-top {
   margin-top: 10px !important; }
 
-.category {
-  width: 100%; }
-  .category h4 {
-    font-weight: bold;
-    margin-top: 30px; }
+.category h4 {
+  font-weight: bold;
+  margin-top: 30px; }
 
 .listCol2 {
   -moz-column-count: 2;
@@ -282,5 +280,8 @@ h4.first-top {
     padding: 0 0 0 20px; }
   .listCol2 li {
     margin: 0 0 10px 0 !important; }
+
+#productsIntro {
+  margin-bottom: 30px; }
 
 /*# sourceMappingURL=main.css.map */
