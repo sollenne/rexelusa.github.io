@@ -176,10 +176,8 @@
   margin-left: 10px;
   cursor: pointer; }
 
-.products ul {
-  list-style-type: none; }
-  .products ul li {
-    margin: 10px 0; }
+.products ul li {
+  margin: 10px 0; }
 .products .statement .line1 {
   font-size: 3em;
   text-transform: uppercase;
@@ -263,5 +261,26 @@ hr {
 
 .row {
   margin: 0; }
+
+h4.first-top {
+  margin-top: 10px !important; }
+
+.category {
+  width: 100%; }
+  .category h4 {
+    font-weight: bold;
+    margin-top: 30px; }
+
+.listCol2 {
+  -moz-column-count: 2;
+  -moz-column-gap: 30px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 30px;
+  column-count: 2;
+  column-gap: 30px; }
+  .listCol2 ul {
+    padding: 0 0 0 20px; }
+  .listCol2 li {
+    margin: 0 0 10px 0 !important; }
 
 /*# sourceMappingURL=main.css.map */
