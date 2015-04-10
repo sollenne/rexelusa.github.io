@@ -1,0 +1,16 @@
+.col-xs-15.col-sm-3 {
+  width: 20% !important; }
+
+.header {
+  background: url(/projects/oil-and-gas/img/og-header_ie8.png) center center no-repeat; }
+
+.footer {
+  background: url(/projects/oil-and-gas/img/og-footer_ie8.png) center center no-repeat; }
+
+.header, .footer {
+  filter: alpha(opacity=40); }
+
+.wrapper .hero .hero-right {
+  background: url(/projects/oil-and-gas/img/og-heroDrill_ie8.png) no-repeat center center; }
+
+/*# sourceMappingURL=mediaFixie8.css.map */
