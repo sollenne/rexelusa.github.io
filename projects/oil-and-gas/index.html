@@ -427,21 +427,19 @@
             <div class="contact-form form">
               <div class="top"></div>
               <form action="submit">
-                <label for="name">name</label>
-                <input id="name" type="text" name="name" />
-                <span class="clearfix"></span>
-                <label for="email">email</label>
-                <input id="email" type="email" name="email">
-                <span class="clearfix"></span>
-                <label for="message">message</label>
                 <fieldset>
-                  <textarea id="message" name="message" rows="5"></textarea>
+                  <label for="name">name</label>
+                  <input id="name" type="text" name="name" required="required" />
+                  <span class="clearfix"></span>
+                  <label for="email">email</label>
+                  <input id="email" type="email" name="email" required="required">
+                  <span class="clearfix"></span>
+                  <label for="message">message</label>
+                  <textarea id="message" name="message" rows="5" required="required"></textarea>
+                  <span class="clearfix"></span>
+                  <input type="submit" class="pull-right" value="submit"/>
+                  <span class="clearfix"></span>
                 </fieldset>
-                <span class="clearfix"></span>
-                <fieldset>
-                  <button class="pull-right">submit</button>
-                </fieldset>
-                <span class="clearfix"></span>
               </form>
             </div>
           </div>
@@ -459,7 +457,7 @@
       <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js" charset="utf-8" type="text/javascript"></script> -->
       <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" charset="utf-8" type="text/javascript"></script> -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-      <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/min/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
       <script src="/projects/oil-and-gas/js/main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
