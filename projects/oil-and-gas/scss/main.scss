@@ -171,7 +171,8 @@
 	}
 
 	.content-inner {
-		height:1052px;
+		// height:1052px;
+		height:585px;
 		section {
 			display:none;
 			position:absolute;
@@ -197,8 +198,6 @@
 
 		.overview {
 			display:block;
-
-
 
 			.upper-row {
 				.pic {
@@ -340,7 +339,6 @@
 			text-transform:uppercase;
 			padding:15px;
 			margin:15px 0;
-
 
 			.top {
 				height:50px;
