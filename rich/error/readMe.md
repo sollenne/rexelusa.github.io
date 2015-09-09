@@ -2,8 +2,8 @@
 
 ##In this Directory
 There are two pages in this directory;
-  * 404.html  : when page is not found.
-  * down.html : when site is unavailable or down for maintinence. 
+  * [404.html  : when page is not found.](http://rexelusa.github.io/rich/error/404.html) 
+  * [down.html : when site is unavailable or down for maintinence.](http://rexelusa.github.io/rich/error/down.html)
 
 ##Both pages call outside dependencies
   * CSS
