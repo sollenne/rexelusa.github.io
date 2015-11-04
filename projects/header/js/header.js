@@ -13,3 +13,9 @@ function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;
     }
 });
+
+$(document).ready(function(){
+  $('#nav-icon3').click(function(){
+    $(this).toggleClass('open');
+  });
+});

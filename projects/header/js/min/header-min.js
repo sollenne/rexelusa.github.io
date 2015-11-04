@@ -1,1 +1,1 @@
-$(function(){function n(){return window.pageYOffset||document.documentElement.scrollTop}var e=200;$(window).scroll(function(){var o=n();o>=e?$(".header").addClass("shrink"):$(".header").removeClass("shrink")})});
+$(function(){function n(){return window.pageYOffset||document.documentElement.scrollTop}var e=200;$(window).scroll(function(){var o=n();o>=e?$(".header").addClass("shrink"):$(".header").removeClass("shrink")})}),$(document).ready(function(){$("#nav-icon3").click(function(){$(this).toggleClass("open")})});
