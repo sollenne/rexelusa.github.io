@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-	  
+	 
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Rexel-header</title>
     
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" media="screen" />
-    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="/projects/header/css/header.css" type="text/css" media="screen" />
     
   </head>
@@ -15,8 +15,9 @@
   <body class="loading">
 	  
 	  
-<div class="header navbar navbar-default">
+<header class="header navbar navbar-default nav-down">
 
+	<!-- UTILITY BAR. DESKTOP ONLY -->
 	<div class="utility-bar hidden-xs hidden-sm">
 		<div class="container">
 			<ul class="navbar-left">
@@ -29,18 +30,31 @@
 				<li><a href="#">Customer Name</a></li>
 			</ul>
 		</div>
-
 	</div>
 	<div class="clearfix"></div>
 
 
+	<!-- THIS IS THE REST OF THE HEADER SANS THE UTILITY BAR -->
 	<div class="container">
 		<div class="row">
 
-			<div class="col-xs-3 logo-row">
+			<!-- HAMBURGER... ONLY VISIBLE ON MOBILE. OPENS OFF-CANVAS MENU -->
+			<div class="col-xs-3 visible-xs-block">
+			<a class="hamburgerIcon-m" href="#">
+					<div class="nav-icon nav-icon-mobile">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
+				</a>
+			</div>
+
+			<!-- CONTAINS HAMBURGER (TABLET UP ONLY), LOGO, PRODUCTS BUTTON (TABLET UP ONLY) -->
+			<div class="col-md-3 col-sm-12 col-xs-6 logo-row">
 				<div class="row">
-					<a class="hamburgerIcon" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-						<div id="nav-icon3">
+					<a class="hamburgerIcon hidden-xs" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+						<div class="nav-icon nav-icon-tabletUp">
 						  <span></span>
 						  <span></span>
 						  <span></span>
@@ -50,13 +64,16 @@
 
 					<h1 class="text-hide">REXEL</h1>	
 				</div>
-				<div class="row prodbtn-row">
-					<a href="#" class="btn btn-default btn-block products-btn">Products</a>
+				<div class="row prodbtn-row hidden-xs">
+					<div class="col-sm-3 col-md-12 kp">
+						<a href="#" class="btn btn-default btn-block products-btn">Products</a>
+					</div>
 				</div>
 			</div>
 
-			<div class="col-xs-7 search-row">
-				<div class="row">
+			<!-- CONTAINS TOP LEVEL LINKS AND SEARCH BAR FOR DESKTOP -->
+			<div class="col-xs-7 search-row hidden-xs">
+				<div class="row hidden-xs hidden-sm">
 					<div class="col-xs-12">
 						<ul class="logobar-nav">
 							<li><a href="#">About</a></li>
@@ -68,23 +85,106 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<form>
-							<input type="text" placeholder="enter keywords..." class="form-control" />
+							<div class="button-group row" role="group" aria-label="search">
+								<div class="col-xs-2 kpr">
+								    <select class="selectpicker form-control" title="Category">
+								    	<option>Installation</option>
+								    	<option>Category 1</option>
+								    	<option>Category 2</option>
+								    	<option>Category 3</option>
+								    	<option>Category 4</option>
+								    	<option>Category 5</option>
+								    	<option>Category 6</option>
+								    	<option>Category 7</option>
+								    	<option>Category 8</option>
+								    	<option>Category 9</option>
+								    </select>	
+								</div>
+								
+							    <div class="col-xs-10 kp">
+							    	<input type="search" placeholder="enter keywords..." class="form-control" />
+							    	<button type="submit" class="btn search-submit-btn"><i class="material-icons">search</i></button>
+							    </div>
+							    
+							</div>
 						</form>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-xs-2 pull-right">
+			<!-- HEADER ICONS -->
+			<div class="col-xs-3 col-sm-2 pull-right icons-wrapper">
 				<ul class="icons-row">
-					<li><a href="#"><i class="material-icons">notifications</i></a></li>
-					<li><a href="#"><i class="material-icons">person</i></a></li>
-					<li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+					
+					<!-- NOTIFICATIONS ICON. TABLET-UP -->
+					<li class="notifictaions-target hidden-xs">
+						<a 
+							tabindex="0" 
+							data-container=".notifictaions-target" 
+							data-trigger="focus" 
+							data-toggle="popover" 
+							data-placement="bottom" 
+							data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+							<i class="material-icons">notifications</i>
+						</a>
+					</li>
+					
+					<!-- ACCOUNT ICON TABLET-UP -->
+					<li class="account-target hidden-xs">
+						<a 
+							tabindex="0" 
+							data-container=".account-target" 
+							data-trigger="focus" 
+							data-toggle="popover" 
+							data-placement="bottom" 
+							data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+							<i class="material-icons">person</i>
+						</a>
+					</li>
+					
+					<!-- SEARCH ICON. MOBILE ONLY (EXCEPT LANDING PAGE) -->
+					<li class="search-target visible-xs-inline-block">
+						<a 
+							data-toggle="collapse" 
+							href="#searchCollapse" 
+							aria-expanded="false" 
+							aria-controls="searchCollapse">
+							<i class="material-icons">search</i>
+						</a>
+					</li>
+
+					<!-- CART ICON. VISIBLE AT ALL TIMES -->
+					<li class="cart-target">
+						<a 
+							tabindex="0" 
+							data-container=".cart-target" 
+							data-trigger="focus" 
+							data-toggle="popover" 
+							data-placement="bottom" 
+							data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+							<i class="material-icons">shopping_cart</i>
+						</a>
+					</li>
+				
 				</ul>
 			</div>
+			<!-- END ICONS -->
+
 		</div>
-		
+	</div>
+	<!-- END HEADER INSIDES -->
+
+	<!-- SEARCH DROPDOWN FOR MOBILE -->
+	<div class="collapse" id="searchCollapse">
+	  <div class="well row">
+	    <div class="col-xs-12 search-row">
+	    	<input type="search" placeholder="enter keywords..." class="form-control" />
+	    	<button type="submit" class="btn search-submit-btn"><i class="material-icons">search</i></button>
+	    </div>
+	  </div>
 	</div>
 
+	<!-- PRODUCTS DROPDOWN FOR TABLET-UP -->
 	<div class="collapse" id="collapseExample">
 	  <div class="well">
 	    <div class="row">
@@ -104,13 +204,17 @@
 	  </div>
 	</div>
   
-</div>
+</header>
+<!-- END HEADER -->
 
+
+<!-- CONTENT JUST FOR LENGTH -->
 <div class="content"></div>
 
     
     <script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
     <script src="/projects/header/js/header.js" charset="utf-8"></script>
   </body>
 </html>

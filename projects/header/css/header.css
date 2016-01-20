@@ -4,12 +4,40 @@ body {
   margin: 0;
   padding: 0;
   color: #58585a;
-  background: #ffffff; }
+  background: #ffffff;
+  min-width: 320px;
+  position: relative; }
+  body * {
+    outline: none !important;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
   body .well {
     border-radius: 0;
     border-width: 0 0 1px 0;
     box-shadow: none;
     -webkit-box-shadow: none; }
+  body .kp {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  body .kpr {
+    padding-right: 0 !important; }
+  body .kpl {
+    padding-left: 0 !important; }
+  body .dropdown-menu {
+    border-radius: 0;
+    left: auto;
+    border-color: #ccc;
+    margin-top: 0;
+    border-top-width: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none; }
+  body .popover {
+    bottom: 0px !important;
+    height: 160px;
+    width: 300px;
+    border-radius: 0;
+    border-color: #ccc; }
 
 .utility-bar {
   background: #001C3A;
@@ -121,13 +149,14 @@ body {
     padding-top: 112px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    overflow: hidden; }
+    transition: all 0.3s; }
     .header ul.icons-row li {
       display: inline-block;
-      padding-left: 25px; }
+      padding-left: 25px;
+      position: relative; }
       .header ul.icons-row li a {
-        color: #58585a; }
+        color: #58585a;
+        cursor: pointer; }
   .header .hamburgerIcon {
     width: 0;
     height: 0;
@@ -141,6 +170,32 @@ body {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
+    .header .search-row .open > .dropdown-toggle.btn-default, .header .search-row .btn-default.focus, .header .search-row .btn-default:focus {
+      background-color: #fff !important;
+      border-color: #ccc !important; }
+    .header .search-row button {
+      border-radius: 0;
+      border-right-width: 0;
+      height: 36px;
+      color: #58585a; }
+      .header .search-row button:hover {
+        background-color: #fff !important;
+        border-color: #ccc !important; }
+      .header .search-row button:active {
+        background-color: #fff !important;
+        border-color: #ccc !important;
+        box-shadow: none;
+        -webkit-box-shadow: none; }
+      .header .search-row button.search-submit-btn {
+        border-width: 0;
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        top: 0; }
+        .header .search-row button.search-submit-btn i {
+          color: #999; }
+        .header .search-row button.search-submit-btn:hover {
+          background-color: transparent !important; }
   .header.shrink {
     height: 70px; }
     .header.shrink .utility-bar {
@@ -200,7 +255,7 @@ body {
   height: 2000px;
   /*just to get the page to scroll*/ }
 
-#nav-icon3 {
+.nav-icon {
   width: 30px;
   height: 45px;
   position: absolute;
@@ -216,7 +271,7 @@ body {
   transition: .5s ease-in-out;
   cursor: pointer; }
 
-#nav-icon3 span {
+.nav-icon span {
   display: block;
   position: absolute;
   height: 5px;
@@ -234,33 +289,113 @@ body {
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out; }
 
-#nav-icon3 span:nth-child(1) {
+.nav-icon span:nth-child(1) {
   top: 0px; }
 
-#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+.nav-icon span:nth-child(2), .nav-icon span:nth-child(3) {
   top: 10px; }
 
-#nav-icon3 span:nth-child(4) {
+.nav-icon span:nth-child(4) {
   top: 20px; }
 
-#nav-icon3.open span:nth-child(1) {
+.nav-icon.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%; }
 
-#nav-icon3.open span:nth-child(2) {
+.nav-icon.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-#nav-icon3.open span:nth-child(3) {
+.nav-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-#nav-icon3.open span:nth-child(4) {
+.nav-icon.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%; }
+
+body {
+  padding-top: 69px; }
+
+header {
+  background: #f5b335;
+  height: 59px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%; }
+
+.nav-up {
+  top: -59px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.nav-down {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+@media (max-width: 350px) {
+  header.header .logo-row h1 {
+    height: 55px;
+    width: 140px;
+    margin: 0 auto;
+    position: relative;
+    left: -15px; } }
+@media (max-width: 768px) {
+  header.header {
+    height: 59px; }
+    header.header .logo-row h1 {
+      height: 55px;
+      width: 140px;
+      margin: 0 auto; }
+    header.header .icons-wrapper {
+      padding-left: 0px; }
+      header.header .icons-wrapper ul.icons-row {
+        height: auto;
+        padding-top: 18px; }
+        header.header .icons-wrapper ul.icons-row li {
+          padding-left: 0; }
+          header.header .icons-wrapper ul.icons-row li.search-target {
+            float: left;
+            position: absolute;
+            right: 55px; }
+    header.header .hamburgerIcon-m {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      width: 50px;
+      height: 50px;
+      opacity: 1; }
+      header.header .hamburgerIcon-m .nav-icon {
+        top: 19px;
+        left: 20px;
+        width: 25px; }
+        header.header .hamburgerIcon-m .nav-icon span {
+          height: 4px; }
+        header.header .hamburgerIcon-m .nav-icon span:nth-child(2), header.header .hamburgerIcon-m .nav-icon span:nth-child(3) {
+          top: 8px; }
+        header.header .hamburgerIcon-m .nav-icon span:nth-child(4) {
+          top: 16px; }
+    header.header #searchCollapse .well {
+      padding-top: 4px; }
+    header.header #searchCollapse .search-row button.search-submit-btn {
+      right: 11px;
+      top: 1px; } }
+@media (min-width: 769px) and (max-width: 991px) {
+  header.header .container {
+    width: 100%; }
+    header.header .container .prodbtn-row {
+      padding-left: 15px;
+      padding-right: 15px; }
+    header.header .container .logo-row h1 {
+      height: 65px;
+      width: 170px;
+      margin: 0 auto; } }

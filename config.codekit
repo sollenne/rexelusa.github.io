@@ -8127,7 +8127,7 @@
 			"flagValue": -1
 			},
 		"bitwise": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"boss": {
@@ -8135,7 +8135,7 @@
 			"flagValue": -1
 			},
 		"browser": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"browserify": {
@@ -8151,7 +8151,7 @@
 			"flagValue": -1
 			},
 		"curly": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"debug": {
@@ -8167,11 +8167,11 @@
 			"flagValue": -1
 			},
 		"elision": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eqeqeq": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eqnull": {
@@ -8199,7 +8199,7 @@
 			"flagValue": -1
 			},
 		"freeze": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"funcscope": {
@@ -8231,7 +8231,7 @@
 			"flagValue": -1
 			},
 		"jquery": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"lastsemic": {
@@ -8239,7 +8239,7 @@
 			"flagValue": -1
 			},
 		"latedef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"laxbreak": {
@@ -8291,11 +8291,11 @@
 			"flagValue": -1
 			},
 		"newcap": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"noarg": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"nocomma": {
@@ -8315,7 +8315,7 @@
 			"flagValue": -1
 			},
 		"nonew": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"nonstandard": {
@@ -8323,7 +8323,7 @@
 			"flagValue": -1
 			},
 		"notypeof": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"noyield": {
@@ -8355,7 +8355,7 @@
 			"flagValue": -1
 			},
 		"regexp": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"rhino": {
@@ -8395,11 +8395,11 @@
 			"flagValue": -1
 			},
 		"undef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"varstmt": {
@@ -8429,7 +8429,7 @@
 			"flagValue": -1
 			},
 		"browser": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"couch": {
